@@ -1,6 +1,6 @@
 # Replication materials
 
-*What Economic Dependence Does and Does Not Do in Networks of Alliance and Conflict*
+*Economic Dependence, Cooperation, and Conflict in Interstate Networks*
 
 Data, commented scripts, codebook, and software output for every analysis in the article and its Online Appendix.
 
