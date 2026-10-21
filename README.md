@@ -56,7 +56,9 @@ The principal population of the article is all dyad-years. Scripts 66 to 83 were
 | Figure 4 (periods), Appendix P | 70, 79, 80 | `embedding_over_time_output.txt`, `era_bins_rates.csv`, `era_bins_shares.csv`, `fig_eras.*` |
 | Appendix L (embedded pairs only) | 66, 68, 73, 77, 81 | `triad_population_output.txt`, `predictors_in_T_output.txt`, `claims_table_output.txt`, `hostility_gradient_output.txt`, `within_between_output.txt` |
 | Appendix M (unbalanced triads) | 71, 72 | `negative_tie_resolution_output.txt` |
-| Appendix T (lagged embedding) | 86 | `population_selection_output.txt` |
+| Appendix T (lagged embedding and partner counts) | 86, 97 | `population_selection_output.txt`, `lagged_network_output.txt` |
+| Appendix N, geography (actor-overlap intervals) | 95 | `geography_actor_overlap_output.txt` |
+| Appendix U (upper tail of exposure) | 96 | `upper_tail_output.txt` |
 | Appendices E, F, H, I, J, K | 35 to 65 | `*_output.txt` |
 | Appendices A to D, G | 02 to 34, 56 | `*_output.txt`, `*.rds` |
 

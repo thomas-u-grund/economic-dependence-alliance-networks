@@ -1,0 +1,21 @@
+FULL PANEL, larger share x contiguity: dyad-clustered SE vs actor-overlap SE
+
+dispute onset, baseline (N=608957, events=1441)
+  non-contiguous  dyad-clustered  0.298 [ 0.265,  0.330] (p=0.000) | actor-overlap  0.298 [ 0.237,  0.358] (p=0.000) | SE ratio 1.86
+  interaction     dyad-clustered -0.310 [-0.363, -0.256] (p=0.000) | actor-overlap -0.310 [-0.355, -0.264] (p=0.000) | SE ratio 0.85
+  contiguous      dyad-clustered -0.012 [-0.063,  0.039] (p=0.644) | actor-overlap -0.012 [-0.068,  0.044] (p=0.672) | SE ratio 1.09
+
+dispute onset, + volume + decade FE (N=608957, events=1441)
+  non-contiguous  dyad-clustered  0.197 [ 0.158,  0.237] (p=0.000) | actor-overlap  0.197 [ 0.110,  0.285] (p=0.000) | SE ratio 2.23
+  interaction     dyad-clustered -0.306 [-0.374, -0.237] (p=0.000) | actor-overlap -0.306 [-0.374, -0.237] (p=0.000) | SE ratio 1.00
+  contiguous      dyad-clustered -0.108 [-0.179, -0.038] (p=0.003) | actor-overlap -0.108 [-0.188, -0.029] (p=0.008) | SE ratio 1.13
+
+alliance formation, baseline (N=565832, events=900)
+  non-contiguous  dyad-clustered  0.207 [ 0.168,  0.246] (p=0.000) | actor-overlap  0.207 [ 0.126,  0.289] (p=0.000) | SE ratio 2.09
+  interaction     dyad-clustered -0.316 [-0.429, -0.203] (p=0.000) | actor-overlap -0.316 [-0.409, -0.223] (p=0.000) | SE ratio 0.83
+  contiguous      dyad-clustered -0.109 [-0.222,  0.004] (p=0.059) | actor-overlap -0.109 [-0.250,  0.033] (p=0.132) | SE ratio 1.25
+
+alliance formation, + volume + decade FE (N=565832, events=900)
+  non-contiguous  dyad-clustered  0.171 [ 0.127,  0.215] (p=0.000) | actor-overlap  0.171 [ 0.056,  0.286] (p=0.004) | SE ratio 2.64
+  interaction     dyad-clustered -0.251 [-0.352, -0.151] (p=0.000) | actor-overlap -0.251 [-0.330, -0.173] (p=0.000) | SE ratio 0.78
+  contiguous      dyad-clustered -0.080 [-0.183,  0.022] (p=0.125) | actor-overlap -0.080 [-0.213,  0.052] (p=0.234) | SE ratio 1.29

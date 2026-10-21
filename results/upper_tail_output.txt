@@ -1,0 +1,87 @@
+Non-contiguous onset risk set: 584069 dyad-years; p99 of the larger share = 0.1892 (18.9%)
+Upper tail (>= p99): 5841 dyad-years, 456 dyads, 75 onsets (rate 12.84 per 1,000) vs rest 0.92 per 1,000
+Share allied (defence pact): 30.3%; with a top-5 CINC state: 67.0% (all non-contiguous risk set: 5.7% allied, 7.6% top-5)
+
+By era: tail dyad-years, share of tail, share of all non-contiguous dyad-years, tail onsets
+        era tail_n  all_n onsets tail_share all_share
+1 1870-1913    502   9402     17      0.086     0.016
+2   1914-45    545  21970     12      0.093     0.038
+3   1946-89   2979 267399     36      0.510     0.458
+4 1990-2010   1815 285298     10      0.311     0.488
+
+Most frequent states in the tail (dyad-years in which the state is a member)
+   ccode    n                     name share
+1      2 2307 United States of America 0.395
+2    200 1254           United Kingdom 0.215
+3    220  721                   France 0.123
+4    740  599                    Japan 0.103
+5    255  186                  Germany 0.032
+6    900  172                Australia 0.029
+7    365  171                   Russia 0.029
+8    140  145                   Brazil 0.025
+9    710  138                    China 0.024
+10   211  124                  Belgium 0.021
+11   155  106                    Chile 0.018
+12   920  105              New Zealand 0.018
+
+Most frequent dyads in the tail
+                                            pair   n first last onsets allied
+1              United States of America - Brazil 103  1873 2005      0   0.54
+2               United States of America - Japan  92  1879 2004      3   0.58
+3            United States of America - Colombia  81  1913 2010      0   0.78
+4                United States of America - Peru  76  1907 2008      5   0.74
+5           United States of America - Venezuela  75  1923 2009      2   0.81
+6           United States of America - Guatemala  66  1925 2010      1   0.94
+7  United States of America - Dominican Republic  64  1927 2010      1   0.95
+8                     Argentina - United Kingdom  64  1870 1959      0   0.00
+9         United States of America - El Salvador  63  1948 2010      0   1.00
+10         United States of America - Costa Rica  63  1948 2010      0   1.00
+11             United States of America - Panama  60  1948 2010      1   1.00
+12                     United Kingdom - Portugal  60  1871 1949      1   1.00
+13           United States of America - Honduras  58  1948 2010      0   1.00
+14        United States of America - Philippines  58  1948 2005      0   0.95
+15              United States of America - Haiti  56  1946 2010      2   1.00
+   share
+1  0.018
+2  0.016
+3  0.014
+4  0.013
+5  0.013
+6  0.011
+7  0.011
+8  0.011
+9  0.011
+10 0.011
+11 0.010
+12 0.010
+13 0.010
+14 0.010
+15 0.010
+
+Top 10 dyads account for 12.8% of tail dyad-years; top 5 states appear in 84.1%
+
+Non-contiguous larger-share association, leaving out parts of the sample (dyad-clustered)
+all non-contiguous                           baseline          0.248 [ 0.209,  0.287] | N=584069 events=607
+all non-contiguous                           + vol + decade    0.076 [ 0.026,  0.125] | N=584069 events=607
+leave out era 1870-1913                      baseline          0.230 [ 0.194,  0.266] | N=574667 events=553
+leave out era 1870-1913                      + vol + decade    0.064 [ 0.015,  0.114] | N=574667 events=553
+leave out era 1914-45                        baseline          0.267 [ 0.227,  0.308] | N=562099 events=483
+leave out era 1914-45                        + vol + decade    0.108 [ 0.058,  0.159] | N=562099 events=483
+leave out era 1946-89                        baseline          0.285 [ 0.221,  0.350] | N=316670 events=322
+leave out era 1946-89                        + vol + decade    0.083 [ 0.000,  0.166] | N=316670 events=322
+leave out era 1990-2010                      baseline          0.225 [ 0.181,  0.269] | N=298771 events=463
+leave out era 1990-2010                      + vol + decade    0.049 [-0.007,  0.105] | N=298771 events=463
+leave out United States of America           baseline          0.285 [ 0.234,  0.336] | N=574302 events=492
+leave out United States of America           + vol + decade    0.110 [ 0.039,  0.182] | N=574302 events=492
+leave out United Kingdom                     baseline          0.245 [ 0.206,  0.285] | N=574655 events=496
+leave out United Kingdom                     + vol + decade    0.102 [ 0.049,  0.156] | N=574655 events=496
+leave out France                             baseline          0.247 [ 0.203,  0.291] | N=575086 events=551
+leave out France                             + vol + decade    0.061 [ 0.006,  0.117] | N=575086 events=551
+leave out Japan                              baseline          0.252 [ 0.212,  0.291] | N=574595 events=583
+leave out Japan                              + vol + decade    0.077 [ 0.028,  0.126] | N=574595 events=583
+leave out Germany                            baseline          0.251 [ 0.210,  0.292] | N=579712 events=564
+leave out Germany                            + vol + decade    0.082 [ 0.031,  0.133] | N=579712 events=564
+leave out top 10 tail dyads                  baseline          0.259 [ 0.218,  0.301] | N=583128 events=591
+leave out top 10 tail dyads                  + vol + decade    0.092 [ 0.038,  0.145] | N=583128 events=591
+leave out any pair with a top-5 state        baseline          0.348 [ 0.289,  0.406] | N=539432 events=295
+leave out any pair with a top-5 state        + vol + decade    0.230 [ 0.155,  0.304] | N=539432 events=295
