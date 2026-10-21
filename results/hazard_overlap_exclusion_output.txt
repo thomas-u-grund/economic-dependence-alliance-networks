@@ -1,0 +1,7 @@
+dispute-years: 4321  with alliance in force: 612 
+all disputes                             flip_i  dep= 0.405 (se 0.118, p=0.0006) | N=2897 ev=317 dyads=649
+all disputes                             gone_i  dep=-0.073 (se 0.057, p=0.2034) | N=2897 ev=1129 dyads=649
+disputes WITHOUT concurrent alliance flip_i : too few events
+disputes WITHOUT concurrent alliance     gone_i  dep=-0.012 (se 0.054, p=0.8180) | N=2340 ev=1120 dyads=545
+disputes WITH concurrent alliance        flip_i  dep= 0.367 (se 0.143, p=0.0105) | N=557 ev=310 dyads=161
+disputes WITH concurrent alliance gone_i : too few events

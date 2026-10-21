@@ -1,0 +1,32 @@
+
+-- DISPUTES / flip_i
+  baseline                           dep= 0.497 (se 0.136, p=0.0003) | N=2427 ev=273
+  + contiguity                       dep= 0.500 (se 0.131, p=0.0001) | N=2427 ev=273
+  + economic-size asymmetry          dep= 0.465 (se 0.125, p=0.0002) | N=2427 ev=273
+  + regime type (min Polity2, gap)   dep= 0.583 (se 0.123, p=0.0000) | N=2427 ev=273
+  + joint democracy                  dep= 0.496 (se 0.136, p=0.0003) | N=2427 ev=273
+  + all                              dep= 0.536 (se 0.113, p=0.0000) | N=2427 ev=273 | contig=0.071 (p=0.770) size=0.175 (p=0.234) minpol=-0.194 (p=0.018)
+
+-- DISPUTES / gone_i
+  baseline                           dep=-0.078 (se 0.061, p=0.1970) | N=2427 ev=943
+  + contiguity                       dep=-0.075 (se 0.060, p=0.2073) | N=2427 ev=943
+  + economic-size asymmetry          dep=-0.093 (se 0.064, p=0.1449) | N=2427 ev=943
+  + regime type (min Polity2, gap)   dep=-0.078 (se 0.060, p=0.1937) | N=2427 ev=943
+  + joint democracy                  dep=-0.068 (se 0.060, p=0.2561) | N=2427 ev=943
+  + all                              dep=-0.087 (se 0.062, p=0.1597) | N=2427 ev=943 | contig=-0.214 (p=0.102) size=0.043 (p=0.526) minpol=0.204 (p=0.004)
+
+-- ALLIANCES / flip_i
+  baseline                           dep= 0.330 (se 0.064, p=0.0000) | N=35628 ev=292
+  + contiguity                       dep= 0.326 (se 0.085, p=0.0001) | N=35628 ev=292
+  + economic-size asymmetry          dep= 0.310 (se 0.063, p=0.0000) | N=35628 ev=292
+  + regime type (min Polity2, gap)   dep= 0.342 (se 0.063, p=0.0000) | N=35628 ev=292
+  + joint democracy                  dep= 0.321 (se 0.065, p=0.0000) | N=35628 ev=292
+  + all                              dep= 0.267 (se 0.088, p=0.0024) | N=35628 ev=292 | contig=2.239 (p=0.000) size=0.232 (p=0.060) minpol=-0.205 (p=0.080)
+
+-- ALLIANCES / gone_i
+  baseline                           dep=-0.502 (se 0.186, p=0.0071) | N=35628 ev=194
+  + contiguity                       dep=-0.517 (se 0.188, p=0.0060) | N=35628 ev=194
+  + economic-size asymmetry          dep=-0.275 (se 0.156, p=0.0790) | N=35628 ev=194
+  + regime type (min Polity2, gap)   dep=-0.476 (se 0.162, p=0.0033) | N=35628 ev=194
+  + joint democracy                  dep=-0.471 (se 0.156, p=0.0026) | N=35628 ev=194
+  + all                              dep=-0.275 (se 0.140, p=0.0488) | N=35628 ev=194 | contig=-0.310 (p=0.091) size=-0.493 (p=0.000) minpol=-0.735 (p=0.000)

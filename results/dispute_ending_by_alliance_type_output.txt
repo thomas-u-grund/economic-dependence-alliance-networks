@@ -1,0 +1,4 @@
+dispute-years with alliance in force: 557 
+defense pact                                                 dep= 0.289 (se 0.144, p=0.0450) | N=557 ends=319 dyads=161
+both in a large (>=8 member) alliance                        dep= 0.375 (se 0.186, p=0.0435) | N=459 ends=267 dyads=130
+other alliance                                               dep= 0.184 (se 0.297, p=0.5361) | N=98 ends=52 dyads=39

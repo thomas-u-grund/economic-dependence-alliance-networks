@@ -1,0 +1,28 @@
+
+######## (i) DISPUTE BEGINS INSIDE ALLIANCE (alliance-years): N=44196, events=327, dyads=1320, pact groups=19, corr(larger share, log distance)=-0.01
+  A main                                                     larger share  0.341 (se 0.057, p=0.0000) | N used=44196
+  B1 + land border, water contiguity, log capital distance   larger share  0.321 (se 0.077, p=0.0000) | N used=44196
+  B2 + log trade volume                                      larger share  0.296 (se 0.085, p=0.0005) | N used=44196
+  C + prior militarised activity                             larger share  0.243 (se 0.068, p=0.0004) | N used=44196
+  D + pact fixed effects                                     larger share  0.250 (se 0.073, p=0.0007) | N used=43691
+
+######## (i-b) land-border dyads only: N=5865, events=223, dyads=199, pact groups=19, corr(larger share, log distance)=0.07
+  A main                                                     larger share  0.093 (se 0.136, p=0.4971) | N used=5865
+  B1 + land border, water contiguity, log capital distance   larger share  0.112 (se 0.136, p=0.4097) | N used=5865
+  B2 + log trade volume                                      larger share  0.106 (se 0.143, p=0.4563) | N used=5865
+  C + prior militarised activity                             larger share  0.145 (se 0.130, p=0.2666) | N used=5865
+  D + pact fixed effects                                     larger share  0.155 (se 0.136, p=0.2550) | N used=5726
+
+######## (i-c) within large pacts only (largest covering alliance >=5 members): N=42535, events=282, dyads=1274, pact groups=18, corr(larger share, log distance)=-0.05
+  A main                                                     larger share  0.343 (se 0.060, p=0.0000) | N used=42535
+  B1 + land border, water contiguity, log capital distance   larger share  0.289 (se 0.089, p=0.0012) | N used=42535
+  B2 + log trade volume                                      larger share  0.272 (se 0.097, p=0.0049) | N used=42535
+  C + prior militarised activity                             larger share  0.231 (se 0.077, p=0.0025) | N used=42535
+  D + pact fixed effects                                     larger share  0.254 (se 0.079, p=0.0013) | N used=42030
+
+######## (ii) DISPUTE ENDS INSIDE ALLIANCE (allied dispute-years): N=552, events=308, dyads=159, pact groups=13, corr(larger share, log distance)=0.22
+  A main                                                     larger share  0.400 (se 0.150, p=0.0078) | N used=552
+  B1 + land border, water contiguity, log capital distance   larger share  0.418 (se 0.152, p=0.0059) | N used=552
+  B2 + log trade volume                                      larger share  0.473 (se 0.172, p=0.0059) | N used=552
+  C + prior militarised activity                             larger share  0.479 (se 0.172, p=0.0054) | N used=552
+  D + pact fixed effects                                     larger share  0.500 (se 0.181, p=0.0058) | N used=544

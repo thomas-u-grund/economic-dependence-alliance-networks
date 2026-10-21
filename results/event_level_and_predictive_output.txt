@@ -1,0 +1,66 @@
+
+===== (a)-(c) EVENT-LEVEL WEIGHTING AND TRANSITION SPLIT (M4) =====
+M4 baseline (triad-clustered)                                  b= 0.298 se=0.090 p=0.0010  events=3456  (episodes=414)
+M4 baseline (clustered by episode)                             b= 0.298 se=0.110 p=0.0069  events=3456  (episodes=414)
+M4 episode-weighted: each episode total weight 1 (cl: episode) b= 0.378 se=0.110 p=0.0006  events=3456  (episodes=414)
+M4 restricted to episodes in <=1 triad-events (cl: episode)    b= 0.536 se=0.200 p=0.0075  events=108  (episodes=108)
+M4 restricted to episodes in <=2 triad-events (cl: episode)    b= 0.366 se=0.152 p=0.0163  events=144  (episodes=126)
+M4 restricted to episodes in <=5 triad-events (cl: episode)    b= 0.244 se=0.123 p=0.0474  events=274  (episodes=158)
+M4 restricted to episodes in <=10 triad-events (cl: episode)   b= 0.214 se=0.099 p=0.0297  events=1122  (episodes=259)
+
+-- by transition type --
+dispute -> alliance (dispute endings), unweighted [no start-sign term] b= 0.482 se=0.190 p=0.0111  events=3339  (episodes=323)
+dispute -> alliance, episode-weighted                          b= 0.574 se=0.161 p=0.0004  events=3339  (episodes=323)
+alliance -> dispute, unweighted                                b= 0.059 se=0.188 p=0.7519  events=117  (episodes=91)
+alliance -> dispute, episode-weighted                          b= 0.241 se=0.191 p=0.2079  events=117  (episodes=91)
+
+===== (d) OUT-OF-SAMPLE PREDICTIVE GAIN =====
+
+ 10-fold CV, folds keep each political episode together 
+        model    mean_ll      top1    n
+1        full -0.1658963 0.9646991 3456
+2 no_dep_asym -0.1668794 0.9646991 3456
+  mean per-event log-lik gain = 0.0010 (bootstrap 95% CI -0.0007 to 0.0028); top-1 accuracy gain = 0.0000
+
+ 8-fold CV, folds keep each decade together (temporal/bloc-era block) 
+        model    mean_ll      top1    n
+1        full -0.1676675 0.9646991 3456
+2 no_dep_asym -0.1675252 0.9646991 3456
+  mean per-event log-lik gain = -0.0001 (bootstrap 95% CI -0.0026 to 0.0022); top-1 accuracy gain = 0.0000
+
+===== (e) HETEROGENEITY BY DIVERSIFICATION OF THE MORE EXPOSED STATE =====
+M4, subsample with HHI available                               b= 0.298 se=0.110 p=0.0069  events=3456  (episodes=414)
+M4, exposed state's trade concentrated (HHI > median)          b= 0.062 se=0.160 p=0.6989  events=2406  (episodes=345)
+M4, exposed state's trade diversified (HHI <= median)          b= 1.124 se=0.312 p=0.0003  events=2403  (episodes=361)
+
+-- concentration among the exposed state's OTHER partners (focal tie excluded) --
+M4, other-partner trade concentrated (> median)                b= 0.113 se=0.268 p=0.6749  events=2493  (episodes=347)
+M4, other-partner trade diversified (<= median)                b= 0.358 se=0.175 p=0.0408  events=2437  (episodes=388)
+M4 + z_dep x z_hhio                                            b= 0.344 se=0.102 p=0.0008  events=3456  (episodes=414)
+                Estimate Std. Error   z value     Pr(>|z|)
+z_dep         0.34351212 0.10206187  3.365724 0.0007634296
+z_dep:z_hhio -0.05140867 0.01807311 -2.844484 0.0044483440
+M4 + z_dep x z_hhi (coef 'z_dep' is at mean HHI)               b= 0.388 se=0.126 p=0.0021  events=3456  (episodes=414)
+
+z test of coefficients:
+
+                   Estimate Std. Error z value  Pr(>|z|)    
+z_ul              0.9287067  0.1809031  5.1337 2.841e-07 ***
+z_dep             0.3876164  0.1259728  3.0770  0.002091 ** 
+initial_negative  2.7095208  0.2667283 10.1584 < 2.2e-16 ***
+z_mut             0.2049863  0.0835876  2.4524  0.014192 *  
+z_cap             0.0050818  0.1588095  0.0320  0.974472    
+z_emb            -0.0383854  0.2115754 -0.1814  0.856033    
+z_hhi             0.1645733  0.0532802  3.0888  0.002009 ** 
+z_dep:z_hhi      -0.0564496  0.0198134 -2.8491  0.004385 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+===== (f) RECURRENCE: cluster by changed dyad =====
+Distinct changed dyads: 169  episodes: 414 
+Episodes per dyad:    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   1.00    1.00    2.00    2.45    3.00   10.00 
+Dyads with >=3 episodes: 55 
+M4 unweighted, clustered by changed dyad                       b= 0.298 se=0.129 p=0.0214  events=3456  (episodes=414)
+M4 episode-weighted, clustered by changed dyad                 b= 0.378 se=0.130 p=0.0036  events=3456  (episodes=414)

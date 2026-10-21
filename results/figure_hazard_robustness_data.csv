@@ -1,0 +1,15 @@
+"spec","dB","dS","aB","aS"
+"Baseline (defence pacts)",0.405,0.118,0.347,0.056
+"All four treaty types",0.315,0.09,0.317,0.049
+"+ Bloc and decade FE",0.477,0.117,0.368,0.056
+"+ Lagged 1y, bloc, decade FE",0.413,0.122,0.372,0.056
+"Larger share lagged 3 years",0.301,0.142,0.356,0.058
+"Larger share lagged 5 years",0.215,0.143,0.32,0.053
+"Complementary log-log",0.198,0.141,0.334,0.054
+"Cox hazard",0.174,0.083,0.336,0.053
+"+ Prior spells of dyad",0.428,0.12,0.153,0.059
+"Dyadic-robust (shared-state) SEs",0.405,0.12,0.347,0.043
+"Hostility level >= 4",0.378,0.143,0.371,0.065
+"Change within 3 years",0.403,0.145,0.392,0.063
+"Dyad fixed effects",0.323,0.232,0.172,0.105
+"Dyad and decade FE",0.429,0.264,0.118,0.108

@@ -1,0 +1,17 @@
+
+===== (a)-(c) EVENT-LEVEL WEIGHTING AND TRANSITION SPLIT (M4) =====
+M4 baseline (triad-clustered)                                  b= 0.332 se=0.101 p=0.0010  events=3456  (episodes=414)
+M4 baseline (clustered by episode)                             b= 0.332 se=0.123 p=0.0069  events=3456  (episodes=414)
+M4 baseline (clustered by changed dyad)                        b= 0.332 se=0.145 p=0.0214  events=3456  (episodes=414)
+M4 episode-weighted (clustered by changed dyad)                b= 0.422 se=0.145 p=0.0036  events=3456  (episodes=414)
+M4 episode-weighted: each episode total weight 1 (cl: episode) b= 0.422 se=0.123 p=0.0006  events=3456  (episodes=414)
+M4 restricted to episodes in <=1 triad-events (cl: episode)    b= 0.599 se=0.224 p=0.0075  events=108  (episodes=108)
+M4 restricted to episodes in <=2 triad-events (cl: episode)    b= 0.409 se=0.170 p=0.0163  events=144  (episodes=126)
+M4 restricted to episodes in <=5 triad-events (cl: episode)    b= 0.273 se=0.138 p=0.0474  events=274  (episodes=158)
+M4 restricted to episodes in <=10 triad-events (cl: episode)   b= 0.239 se=0.110 p=0.0297  events=1122  (episodes=259)
+
+-- by transition type --
+dispute -> alliance (dispute endings), unweighted [no start-sign term] b= 0.538 se=0.212 p=0.0111  events=3339  (episodes=323)
+dispute -> alliance, episode-weighted                          b= 0.641 se=0.179 p=0.0004  events=3339  (episodes=323)
+alliance -> dispute, unweighted                                b= 0.066 se=0.210 p=0.7519  events=117  (episodes=91)
+alliance -> dispute, episode-weighted                          b= 0.269 se=0.213 p=0.2079  events=117  (episodes=91)

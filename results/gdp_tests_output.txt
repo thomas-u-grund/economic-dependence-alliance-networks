@@ -1,0 +1,16 @@
+
+######## DISPUTES: GDP-covered sample N=1881, sign changes=262, share where the more share-exposed state has the lower GDP: 0.84
+G0 larger trade share (baseline, same sample) | z_dep  0.505 (se 0.133, p=0.0001) | N=1881 events=262
+G1 bilateral trade / GDP (max, min)      | z_emax  0.208 (se 0.463, p=0.6537) | z_emin -0.130 (se 0.425, p=0.7596) | N=1881 events=262
+G1 both measures                         | z_dep  0.540 (se 0.128, p=0.0000) | z_emax -0.194 (se 0.375, p=0.6048) | z_emin  0.094 (se 0.370, p=0.8003) | N=1881 events=262
+G1b share + log volume + log min GDP     | z_dep  0.543 (se 0.131, p=0.0000) | z_lvol -0.132 (se 0.186, p=0.4779) | z_lgmin -0.317 (se 0.159, p=0.0468) | N=1881 events=262
+G2 x (exposed state has lower GDP)       | z_dep -0.291 (se 0.516, p=0.5724) | weak_gdp  0.060 (se 0.318, p=0.8497) | z_dep:weak_gdp  0.833 (se 0.503, p=0.0975) | N=1881 events=262
+G3 x |log GDP ratio|                     | z_dep  0.595 (se 0.136, p=0.0000) | z_gr -0.134 (se 0.291, p=0.6448) | z_dep:z_gr -0.070 (se 0.105, p=0.5063) | N=1881 events=262
+
+######## ALLIANCES: GDP-covered sample N=32320, sign changes=269, share where the more share-exposed state has the lower GDP: 0.87
+G0 larger trade share (baseline, same sample) | z_dep  0.348 (se 0.066, p=0.0000) | N=32320 events=269
+G1 bilateral trade / GDP (max, min)      | z_emax  0.708 (se 0.278, p=0.0108) | z_emin -0.184 (se 0.272, p=0.4992) | N=32320 events=269
+G1 both measures                         | z_dep  0.255 (se 0.073, p=0.0005) | z_emax  0.466 (se 0.276, p=0.0917) | z_emin -0.046 (se 0.270, p=0.8655) | N=32320 events=269
+G1b share + log volume + log min GDP     | z_dep  0.270 (se 0.073, p=0.0002) | z_lvol  0.562 (se 0.145, p=0.0001) | z_lgmin -0.369 (se 0.153, p=0.0162) | N=32320 events=269
+G2 x (exposed state has lower GDP)       | z_dep  0.250 (se 0.183, p=0.1735) | weak_gdp -0.196 (se 0.212, p=0.3540) | z_dep:weak_gdp  0.099 (se 0.165, p=0.5490) | N=32320 events=269
+G3 x |log GDP ratio|                     | z_dep  0.278 (se 0.095, p=0.0033) | z_gr  0.068 (se 0.239, p=0.7768) | z_dep:z_gr  0.042 (se 0.041, p=0.3124) | N=32320 events=269

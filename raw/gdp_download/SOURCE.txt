@@ -1,0 +1,3 @@
+unknown_download.xlsx = Maddison Project Database 2023 (Bolt & van Zanden 2024, J. Economic Surveys), sheets GDPpc / Population / Full data.
+Fetched 2026-10-24 from https://dataverse.nl/api/access/datafile/421302 (identified by contents: GDP pc in 2011 prices, 169 countries, years 1-2022). Cite Bolt & van Zanden (2024).
+Processed into data/gdp_maddison.csv (year, ccode, gdp = gdppc * pop); SUN/RUS and YUG/SRB split at 1991/1992; CSK->315.

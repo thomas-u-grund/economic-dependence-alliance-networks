@@ -1,0 +1,20 @@
+== T1: larger share x (more exposed state is the weaker state) ==
+Disputes: share of dyad-years where the more exposed state is weaker: 0.78
+disputes sign change                           | z_dep -0.663 (se 0.589, p=0.2604) | weak_exp  0.691 (se 0.340, p=0.0423) | z_dep:weak_exp  1.090 (se 0.578, p=0.0592) | N=2145 events=284
+Alliances: share of dyad-years where the more exposed state is weaker: 0.83
+alliances sign change                          | z_dep  0.338 (se 0.161, p=0.0356) | weak_exp -0.072 (se 0.214, p=0.7356) | z_dep:weak_exp  0.009 (se 0.147, p=0.9496) | N=38134 events=295
+disputes ending inside alliance                | z_dep  1.193 (se 0.690, p=0.0835) | z_dep:weak_exp -0.879 (se 0.683, p=0.1984) | N=481 events=285
+
+== T2: alliance depth ==
+disputes ending x defense pact: skipped (all allied dyads have a defence pact under this definition)
+disputes ending x both in 8+ alliance          | z_dep  0.260 (se 0.198, p=0.1909) | big  0.437 (se 0.379, p=0.2482) | z_dep:big  0.064 (se 0.221, p=0.7728) | N=557 events=319
+alliances turn hostile x defense pact: skipped (all allied dyads have a defence pact under this definition)
+alliances turn hostile x 8+ alliance           | z_dep  0.160 (se 0.099, p=0.1047) | big -0.852 (se 0.303, p=0.0050) | z_dep:big  0.228 (se 0.096, p=0.0171) | N=44394 events=330
+
+== T3: timing placebo (current, lag 1, lead 2 of the larger share; common sample) ==
+Disputes: corr(current, lead2) = 0.82
+disputes sign change                           | z_dep  0.492 (se 0.152, p=0.0012) | z_lag -0.348 (se 0.197, p=0.0780) | z_lead  0.338 (se 0.154, p=0.0276) | N=2630 events=312
+  (current only, same sample)                  | z_dep  0.443 (se 0.127, p=0.0005) | N=2630 events=312
+Alliances: corr(current, lead2) = 0.95
+alliances sign change                          | z_dep  0.199 (se 0.140, p=0.1559) | z_lag  0.241 (se 0.116, p=0.0378) | z_lead -0.071 (se 0.108, p=0.5072) | N=43502 events=314
+  (current only, same sample)                  | z_dep  0.361 (se 0.058, p=0.0000) | N=43502 events=314

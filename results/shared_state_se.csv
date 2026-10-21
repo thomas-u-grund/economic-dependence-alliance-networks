@@ -1,0 +1,9 @@
+outcome,spec,N,events,est,se_dyad,se_dyadic,ratio,p_dyad,p_dyadic,ci_lo_dyadic,ci_hi_dyadic,negvar
+dispute onset,baseline,108000,707,0.163,0.0236,0.0127,0.54,5.41e-12,2.24e-37,0.138,0.188,FALSE
+dispute onset,+ volume + decade FE,108000,707,0.102,0.0262,0.0235,0.899,9.93e-5,1.51e-5,0.0558,0.148,FALSE
+dispute ending,baseline,1700,824,0.0283,0.0246,0.021,0.857,0.248,0.178,-0.0129,0.0696,FALSE
+dispute ending,+ volume + decade FE,1700,824,0.016,0.0264,0.0253,0.957,0.544,0.526,-0.0335,0.0656,FALSE
+alliance formation,baseline,65600,150,0.144,0.0367,0.0483,1.32,8.41e-5,0.00285,0.0495,0.239,FALSE
+alliance formation,+ volume + decade FE,65600,150,0.121,0.0422,0.0572,1.35,0.00418,0.0344,0.00887,0.233,FALSE
+alliance ending,baseline,42500,183,-0.0875,0.0606,0.0979,1.62,0.149,0.372,-0.279,0.104,FALSE
+alliance ending,+ volume + decade FE,42500,183,-0.0604,0.0574,0.0924,1.61,0.293,0.513,-0.241,0.121,FALSE

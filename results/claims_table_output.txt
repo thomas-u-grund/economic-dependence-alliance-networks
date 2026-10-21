@@ -1,0 +1,47 @@
+Claims table: larger trade share, log-odds per SD; equivalence bound +-0.15; dyad-clustered SEs. split_std/common_std = standardised coefficient of log1p split/common partners in the same model.
+
+                                   outcome                      spec      N
+                             dispute onset                  baseline 108068
+                             dispute onset      + volume + decade FE 108068
+                             dispute onset           contiguous only  11728
+                            dispute ending                  baseline   1700
+                            dispute ending      + volume + decade FE   1700
+                            dispute ending           contiguous only    957
+                        alliance formation                  baseline  65586
+                        alliance formation      + volume + decade FE  65586
+                        alliance formation           contiguous only   2458
+                           alliance ending                  baseline  42482
+                           alliance ending      + volume + decade FE  42482
+                           alliance ending           contiguous only   9270
+ dispute ending, unbalanced (+,+,-) triads spec D (controls, allied)    567
+ dispute ending, unbalanced (+,+,-) triads          spec D + pact FE    559
+ events dyads    est  ci_lo ci_hi   MDE                 verdict
+    707   357  0.163  0.116 0.209 0.066        different from 0
+    707   357  0.102  0.051 0.153 0.073        different from 0
+    402   164  0.070  0.008 0.131 0.088        different from 0
+    824   426  0.028 -0.020 0.076 0.069 no effect beyond +-0.15
+    824   426  0.016 -0.036 0.068 0.074 no effect beyond +-0.15
+    439   182  0.032 -0.057 0.121 0.127 no effect beyond +-0.15
+    150   143  0.144  0.072 0.216 0.103        different from 0
+    150   143  0.121  0.038 0.204 0.118        different from 0
+     34    30 -0.141 -0.434 0.152 0.418            inconclusive
+    183   171 -0.087 -0.206 0.031 0.170            inconclusive
+    183   171 -0.060 -0.173 0.052 0.161            inconclusive
+     56    50 -0.108 -0.324 0.107 0.308            inconclusive
+    329   170  0.075 -0.035 0.185 0.157            inconclusive
+    329   170  0.057 -0.058 0.171 0.163            inconclusive
+
+Structure benchmark (standardised, same models):
+            outcome                 spec split_std common_std
+      dispute onset             baseline     0.390     -0.208
+      dispute onset + volume + decade FE     0.446     -0.110
+      dispute onset      contiguous only     0.275     -0.173
+     dispute ending             baseline     0.014      0.196
+     dispute ending + volume + decade FE     0.040      0.184
+     dispute ending      contiguous only     0.116      0.264
+ alliance formation             baseline     0.032      0.325
+ alliance formation + volume + decade FE     0.036      0.324
+ alliance formation      contiguous only    -0.365      0.245
+    alliance ending             baseline     0.106     -0.776
+    alliance ending + volume + decade FE     0.123     -0.719
+    alliance ending      contiguous only     0.099     -0.908

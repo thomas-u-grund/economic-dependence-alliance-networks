@@ -1,0 +1,12 @@
+
+######## DISPUTES: dyad-years in >=1 triad N=1813, sign changes=298, mean share unbalanced 0.43
+U and B separately           AIC    889.0 | larger share  0.344 (p=0.0028) | l_unbal  1.604 (p=0.0000)  l_bal  0.232 (p=0.0922)  
+share unbalanced U/(U+B)     AIC   1149.9 | larger share  0.314 (p=0.0016) | z_share  1.612 (p=0.0000)  
+share + log total triads     AIC    900.1 | larger share  0.314 (p=0.0013) | z_share  1.262 (p=0.0000)  l_tot  1.121 (p=0.0000)  
+net U - B                    AIC   1071.6 | larger share  0.313 (p=0.0005) | net  1.377 (p=0.0000)  
+
+######## ALLIANCES: dyad-years in >=1 triad N=43737, sign changes=315, mean share unbalanced 0.02
+U and B separately           AIC   3334.1 | larger share  0.334 (p=0.0000) | l_unbal  0.681 (p=0.0000)  l_bal -0.362 (p=0.0111)  
+share unbalanced U/(U+B)     AIC   3357.4 | larger share  0.354 (p=0.0000) | z_share  0.123 (p=0.0000)  
+share + log total triads     AIC   3351.2 | larger share  0.345 (p=0.0000) | z_share  0.092 (p=0.0006)  l_tot -0.240 (p=0.0545)  
+net U - B                    AIC   3359.6 | larger share  0.353 (p=0.0000) | net  0.241 (p=0.0499)  

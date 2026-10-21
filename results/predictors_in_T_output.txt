@@ -1,0 +1,30 @@
+
+######## DISPUTE ONSET in T: N=108068, events=707, dyads=5835
+z_dur    joint coef (per SD) -0.615 (se 0.037, p=0.0000) | single-predictor held-out AUC 0.757
+z_mx     joint coef (per SD)  0.250 (se 0.036, p=0.0000) | single-predictor held-out AUC 0.614
+z_mn     joint coef (per SD) -0.040 (se 0.023, p=0.0891) | single-predictor held-out AUC 0.636
+z_cap    joint coef (per SD) -0.371 (se 0.068, p=0.0000) | single-predictor held-out AUC 0.585
+z_same   joint coef (per SD) -0.208 (se 0.054, p=0.0001) | single-predictor held-out AUC 0.533
+z_diff   joint coef (per SD)  0.390 (se 0.036, p=0.0000) | single-predictor held-out AUC 0.627
+contig   joint coef  2.011 (se 0.115, p=0.0000)
+Exposure + controls                              larger  0.251 (0.034) | same    -- | diff    -- | AIC    7040.5 | held-out gain 0.00681 AUC 0.8375
++ third-state counts (structure)                 larger  0.250 (0.036) | same -0.208 (0.054) | diff  0.390 (0.036) | AIC    6827.6 | held-out gain 0.00777 AUC 0.8630
+Structure + controls (no shares)                 larger    -- | same -0.171 (0.055) | diff  0.395 (0.037) | AIC    6908.4 | held-out gain 0.00741 AUC 0.8508
+Structure + controls, larger share only removed  larger    -- | same -0.178 (0.056) | diff  0.404 (0.037) | AIC    6896.7 | held-out gain 0.00747 AUC 0.8528
+Incremental held-out LL per obs of the larger share (structure in): 0.00030 (95% CI 0.00007 to 0.00056)
+Incremental held-out LL per obs of structure (exposure in): 0.00096 (95% CI 0.00062 to 0.00131)
+
+######## DISPUTE ENDING in T: N=1700, events=824, dyads=461
+z_dur    joint coef (per SD) -0.696 (se 0.053, p=0.0000) | single-predictor held-out AUC 0.660
+z_mx     joint coef (per SD)  0.067 (se 0.058, p=0.2483) | single-predictor held-out AUC 0.518
+z_mn     joint coef (per SD)  0.032 (se 0.087, p=0.7088) | single-predictor held-out AUC 0.518
+z_cap    joint coef (per SD)  0.054 (se 0.068, p=0.4268) | single-predictor held-out AUC 0.515
+z_same   joint coef (per SD)  0.196 (se 0.060, p=0.0011) | single-predictor held-out AUC 0.525
+z_diff   joint coef (per SD)  0.014 (se 0.054, p=0.7965) | single-predictor held-out AUC 0.473
+contig   joint coef -0.169 (se 0.140, p=0.2265)
+Exposure + controls                              larger  0.092 (0.058) | same    -- | diff    -- | AIC    2168.2 | held-out gain 0.05222 AUC 0.6695
++ third-state counts (structure)                 larger  0.067 (0.058) | same  0.196 (0.060) | diff  0.014 (0.054) | AIC    2160.3 | held-out gain 0.05493 AUC 0.6802
+Structure + controls (no shares)                 larger    -- | same  0.205 (0.061) | diff  0.005 (0.054) | AIC    2158.7 | held-out gain 0.05714 AUC 0.6829
+Structure + controls, larger share only removed  larger    -- | same  0.203 (0.060) | diff  0.013 (0.054) | AIC    2159.4 | held-out gain 0.05508 AUC 0.6803
+Incremental held-out LL per obs of the larger share (structure in): -0.00015 (95% CI -0.00154 to 0.00113)
+Incremental held-out LL per obs of structure (exposure in): 0.00271 (95% CI -0.00200 to 0.00703)

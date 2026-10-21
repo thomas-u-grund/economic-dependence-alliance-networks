@@ -1,0 +1,15 @@
+outcome,predictor,coef_per_SD,se,p,AUC_single
+DISPUTE ONSET in T,log duration,-0.615,0.037,0,0.757
+DISPUTE ONSET in T,larger trade share (exposure),0.25,0.036,0,0.614
+DISPUTE ONSET in T,smaller trade share,-0.04,0.023,0.0891,0.636
+DISPUTE ONSET in T,capability asymmetry,-0.371,0.068,0,0.585
+DISPUTE ONSET in T,common partners (log1p),-0.208,0.054,1e-4,0.533
+DISPUTE ONSET in T,split partners (log1p),0.39,0.036,0,0.627
+DISPUTE ONSET in T,contiguity (0/1),2.011,0.115,0,NA
+DISPUTE ENDING in T,log duration,-0.696,0.053,0,0.66
+DISPUTE ENDING in T,larger trade share (exposure),0.067,0.058,0.2483,0.518
+DISPUTE ENDING in T,smaller trade share,0.032,0.087,0.7088,0.518
+DISPUTE ENDING in T,capability asymmetry,0.054,0.068,0.4268,0.515
+DISPUTE ENDING in T,common partners (log1p),0.196,0.06,0.0011,0.525
+DISPUTE ENDING in T,split partners (log1p),0.014,0.054,0.7965,0.473
+DISPUTE ENDING in T,contiguity (0/1),-0.169,0.14,0.2265,NA

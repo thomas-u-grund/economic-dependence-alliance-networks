@@ -1,0 +1,20 @@
+Risk set (embedded, no MID at t): 104894 dyad-years; onsets: threat 30, display 230, force/war 435, any 695, any fatalities 77
+
+== larger share (per SD), spec: baseline ==
+  y_thr    est -0.169 (se 0.140) CI [-0.443,  0.104] p=0.2245 events 30
+  y_dis    est  0.123 (se 0.032) CI [ 0.059,  0.186] p=0.0001 events 230
+  y_force  est  0.177 (se 0.027) CI [ 0.125,  0.229] p=0.0000 events 435
+  y_any    est  0.157 (se 0.024) CI [ 0.110,  0.203] p=0.0000 events 695
+  y_fat    est  0.236 (se 0.045) CI [ 0.147,  0.324] p=0.0000 events 77
+
+== larger share (per SD), spec: + z_vol + decade ==
+  y_thr    est -0.511 (se 0.238) CI [-0.977, -0.044] p=0.0318 events 30
+  y_dis    est  0.022 (se 0.040) CI [-0.058,  0.101] p=0.5929 events 230
+  y_force  est  0.138 (se 0.029) CI [ 0.081,  0.195] p=0.0000 events 435
+  y_any    est  0.092 (se 0.027) CI [ 0.040,  0.145] p=0.0006 events 695
+  y_fat    est  0.232 (se 0.049) CI [ 0.136,  0.328] p=0.0000 events 77
+
+== stacked difference test: larger share x (force/war vs threat), and (display vs threat) ==
+  y_thr -> y_force : difference in larger-share coefficient  0.346 (se 0.142, p=0.0148)
+  y_thr -> y_dis : difference in larger-share coefficient  0.292 (se 0.143, p=0.0405)
+  y_dis -> y_force : difference in larger-share coefficient  0.054 (se 0.039, p=0.1602)

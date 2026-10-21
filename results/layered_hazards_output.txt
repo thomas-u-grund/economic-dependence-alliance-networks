@@ -1,0 +1,16 @@
+
+== DISPUTE LAYER ==
+dispute layer: onset | no alliance (D->C)                      larger  0.136 (se 0.027, p=0.0000) | smaller  0.033 | events 1120 of 565832 | dyads with event 523
+dispute layer: onset | alliance in force (A->B)                larger  0.178 (se 0.030, p=0.0000) | smaller -0.069 | events 321 of 43125 | dyads with event 157
+dispute layer: ending | no alliance (C->D)                     larger -0.011 (se 0.022, p=0.6180) | smaller  0.005 | events 1051 of 2192 | dyads with event 481
+dispute layer: ending | alliance in force (B->A)               larger  0.084 (se 0.047, p=0.0737) | smaller  0.051 | events 308 of 538 | dyads with event 148
+
+== ALLIANCE LAYER ==
+alliance layer: ending | no dispute (A->D)                     larger -0.117 (se 0.057, p=0.0410) | smaller  0.004 | events 195 of 43125 | dyads with event 181
+alliance layer: ending | dispute (B->C)                        larger -0.214 (se 0.170, p=0.2061) | smaller  0.133 | events 13 of 538 | dyads with event 12
+alliance layer: formation | no dispute (D->A)                  larger  0.093 (se 0.025, p=0.0002) | smaller -0.020 | events 900 of 565832 | dyads with event 859
+alliance layer: formation | dispute (C->B)                     larger  0.148 (se 0.066, p=0.0239) | smaller -0.030 | events 9 of 2192 | dyads with event 9
+
+== POOLED, with interaction larger share x alliance in force ==
+dispute onset    larger share (no alliance)  0.162 (p=0.0000) | alliance main -0.583 | larger x alliance -0.045 (se 0.039, p=0.2472) | N=608957 events=1441
+dispute ending   larger share (no alliance) -0.011 (p=0.5931) | alliance main  0.187 | larger x alliance  0.051 (se 0.036, p=0.1591) | N=2730 events=1359

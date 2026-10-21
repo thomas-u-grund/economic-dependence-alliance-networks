@@ -1,0 +1,21 @@
+== Counts by size of the smallest alliance covering the dyad (full signed panel) ==
+         asize allied_dyad_years dispute_years dispute_ends_in_alliance
+1  small (<=3)              3229           140                       71
+2 medium (4-7)              1510            24                       14
+3  large (>=8)             46080           448                      252
+  alliance_years_no_dispute alliance_sign_changes
+1                      3089                    94
+2                      1486                    23
+3                     45632                   270
+
+== Larger-share coefficient by alliance size (trade sample) ==
+dispute ends inside alliance | small (<=3)           larger share  0.581 (se 0.353, p=0.0993) | N=108 events=60 dyads=44
+alliance turns hostile | small (<=3)                 larger share  0.335 (se 0.190, p=0.0781) | N=2457 events=72 dyads=114
+dispute ends inside alliance | medium (4-7)          too few events (12)
+alliance turns hostile | medium (4-7)                too few events (16)
+dispute ends inside alliance | large (>=8)           larger share  0.351 (se 0.161, p=0.0290) | N=429 events=238 dyads=113
+alliance turns hostile | large (>=8)                 larger share  0.359 (se 0.060, p=0.0000) | N=40784 events=242 dyads=1227
+
+== Pooled interaction larger share x large alliance ==
+disputes inside alliances: larger share (not large) 0.425 (p=0.0189) | x large -0.092 (se 0.216, p=0.6686) | N=557 events=310
+alliances: larger share (not large) 0.152 (p=0.0626) | x large 0.249 (se 0.078, p=0.0015) | N=44394 events=330

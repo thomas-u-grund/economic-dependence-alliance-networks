@@ -1,0 +1,26 @@
+
+######## DISPUTES: N=2897, sign changes=317, dyads=649
+Exposure only        larger  0.312 (0.083) | smaller  0.010 (0.095) | U    -- | B    -- | AIC    1905.2 BIC    1935.1 McF-R2 0.053
++ unbalanced U       larger  0.407 (0.116) | smaller -0.053 (0.111) | U  1.576 (0.088) | B    -- | AIC    1071.9 BIC    1107.7 McF-R2 0.470
++ balanced B (full)  larger  0.405 (0.118) | smaller -0.032 (0.112) | U  1.583 (0.090) | B  0.209 (0.125) | AIC    1071.2 BIC    1113.0 McF-R2 0.472
+Network only         larger    -- | smaller    -- | U  1.568 (0.089) | B  0.177 (0.121) | AIC    1090.8 BIC    1120.6 McF-R2 0.460
+LR tests (naive, not cluster-robust): U added to exposure-only chi2=835.4; B added after U chi2=2.7; exposure added to network-only chi2=23.6
+Out-of-sample (dyad-grouped 10-fold, 5 repeats):
+                model heldout_ll_per_obs gain_over_null      AUC
+1       Exposure only          -0.332252       0.013056 0.654836
+2      + unbalanced U          -0.186354       0.158955 0.930059
+3 + balanced B (full)          -0.186326       0.158982 0.927431
+4        Network only          -0.189335       0.155974 0.916517
+
+######## ALLIANCES: N=44394, sign changes=330, dyads=1322
+Exposure only        larger  0.388 (0.055) | smaller  0.022 (0.040) | U    -- | B    -- | AIC    3512.8 BIC    3556.3 McF-R2 0.100
++ unbalanced U       larger  0.374 (0.055) | smaller  0.037 (0.041) | U  0.674 (0.143) | B    -- | AIC    3491.2 BIC    3543.4 McF-R2 0.106
++ balanced B (full)  larger  0.347 (0.056) | smaller  0.030 (0.037) | U  0.691 (0.141) | B -0.320 (0.103) | AIC    3473.0 BIC    3533.9 McF-R2 0.111
+Network only         larger    -- | smaller    -- | U  0.679 (0.141) | B -0.470 (0.101) | AIC    3545.0 BIC    3588.5 McF-R2 0.092
+LR tests (naive, not cluster-robust): U added to exposure-only chi2=23.6; B added after U chi2=20.3; exposure added to network-only chi2=76.1
+Out-of-sample (dyad-grouped 10-fold, 5 repeats):
+                model heldout_ll_per_obs gain_over_null      AUC
+1       Exposure only         -0.0396998     0.00414295 0.791347
+2      + unbalanced U         -0.0394593     0.00438340 0.793885
+3 + balanced B (full)         -0.0392688     0.00457394 0.802313
+4        Network only         -0.0400661     0.00377657 0.770684

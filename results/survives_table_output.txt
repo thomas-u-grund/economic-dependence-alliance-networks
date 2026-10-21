@@ -1,0 +1,119 @@
+== Controls path (script 67): larger share, log-odds per SD ==
+                            population events
+                    DISPUTE ONSET in T    701
+                    DISPUTE ONSET in T    701
+                    DISPUTE ONSET in T    701
+                    DISPUTE ONSET in T    701
+                    DISPUTE ONSET in T    701
+      DISPUTE ONSET in T, allied pairs    306
+      DISPUTE ONSET in T, allied pairs    306
+      DISPUTE ONSET in T, allied pairs    306
+      DISPUTE ONSET in T, allied pairs    306
+      DISPUTE ONSET in T, allied pairs    306
+  DISPUTE ONSET in T, non-allied pairs    395
+  DISPUTE ONSET in T, non-allied pairs    395
+  DISPUTE ONSET in T, non-allied pairs    395
+  DISPUTE ONSET in T, non-allied pairs    395
+  DISPUTE ONSET in T, non-allied pairs    395
+ DISPUTE ONSET in T, land-border pairs    306
+ DISPUTE ONSET in T, land-border pairs    306
+ DISPUTE ONSET in T, land-border pairs    306
+ DISPUTE ONSET in T, land-border pairs    306
+ DISPUTE ONSET in T, land-border pairs    306
+                   DISPUTE ENDING in T    819
+                   DISPUTE ENDING in T    819
+                   DISPUTE ENDING in T    819
+                   DISPUTE ENDING in T    819
+                   DISPUTE ENDING in T    819
+     DISPUTE ENDING in T, allied pairs    294
+     DISPUTE ENDING in T, allied pairs    294
+     DISPUTE ENDING in T, allied pairs    294
+     DISPUTE ENDING in T, allied pairs    294
+     DISPUTE ENDING in T, allied pairs    294
+                                              step   est    se pct_of_baseline
+                               A main (contiguity) 0.155 0.025             100
+ B1 + land, water contiguity, log capital distance 0.152 0.026              98
+                             B2 + log trade volume 0.121 0.029              78
+                    C + prior militarised activity 0.114 0.025              74
+                            D + pact fixed effects 0.118 0.025              76
+                               A main (contiguity) 0.170 0.032             100
+ B1 + land, water contiguity, log capital distance 0.155 0.034              91
+                             B2 + log trade volume 0.140 0.037              82
+                    C + prior militarised activity 0.118 0.032              69
+                            D + pact fixed effects 0.118 0.034              69
+                               A main (contiguity) 0.140 0.028             100
+ B1 + land, water contiguity, log capital distance 0.142 0.027             101
+                             B2 + log trade volume 0.110 0.031              79
+                    C + prior militarised activity 0.127 0.033              91
+                            D + pact fixed effects 0.127 0.033              91
+                               A main (contiguity) 0.026 0.042             100
+ B1 + land, water contiguity, log capital distance 0.028 0.042             108
+                             B2 + log trade volume 0.025 0.047              96
+                    C + prior militarised activity 0.037 0.046             142
+                            D + pact fixed effects 0.036 0.047             138
+                               A main (contiguity) 0.027 0.025             100
+ B1 + land, water contiguity, log capital distance 0.024 0.025              89
+                             B2 + log trade volume 0.011 0.027              41
+                    C + prior militarised activity 0.012 0.028              44
+                            D + pact fixed effects 0.008 0.028              30
+                               A main (contiguity) 0.081 0.051             100
+ B1 + land, water contiguity, log capital distance 0.089 0.054             110
+                             B2 + log trade volume 0.111 0.060             137
+                    C + prior militarised activity 0.107 0.060             132
+                            D + pact fixed effects 0.111 0.065             137
+  ci_lo ci_hi
+  0.106 0.204
+  0.101 0.203
+  0.064 0.178
+  0.065 0.163
+  0.069 0.167
+  0.107 0.233
+  0.088 0.222
+  0.067 0.213
+  0.055 0.181
+  0.051 0.185
+  0.085 0.195
+  0.089 0.195
+  0.049 0.171
+  0.062 0.192
+  0.062 0.192
+ -0.056 0.108
+ -0.054 0.110
+ -0.067 0.117
+ -0.053 0.127
+ -0.056 0.128
+ -0.022 0.076
+ -0.025 0.073
+ -0.042 0.064
+ -0.043 0.067
+ -0.047 0.063
+ -0.019 0.181
+ -0.017 0.195
+ -0.007 0.229
+ -0.011 0.225
+ -0.016 0.238
+
+== Within-dyad (script 69) ==
+                              population              step   est    se
+ DISPUTE ONSET in T: N=108068 events=707            pooled 0.163 0.024
+ DISPUTE ONSET in T: N=108068 events=707          FE: dyad 0.070 0.039
+ DISPUTE ONSET in T: N=108068 events=707 FE: dyad + decade 0.057 0.040
+  DISPUTE ENDING in T: N=1700 events=824            pooled 0.028 0.025
+  DISPUTE ENDING in T: N=1700 events=824          FE: dyad 0.094 0.039
+  DISPUTE ENDING in T: N=1700 events=824 FE: dyad + decade 0.090 0.046
+ pct_of_baseline  ci_lo ci_hi
+             100  0.116 0.210
+              43 -0.006 0.146
+              35 -0.021 0.135
+             100 -0.021 0.077
+             336  0.018 0.170
+             321  0.000 0.180
+
+== Volume + decade path in T (script 73) ==
+        outcome                 spec   est  ci_lo ci_hi
+  dispute onset             baseline 0.163  0.116 0.209
+  dispute onset + volume + decade FE 0.102  0.051 0.153
+  dispute onset      contiguous only 0.059 -0.012 0.129
+ dispute ending             baseline 0.028 -0.020 0.076
+ dispute ending + volume + decade FE 0.016 -0.036 0.068
+ dispute ending      contiguous only 0.029 -0.068 0.126

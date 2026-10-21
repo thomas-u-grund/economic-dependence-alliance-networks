@@ -1,0 +1,31 @@
+population,events,step,est,se,pct_of_baseline,ci_lo,ci_hi
+DISPUTE ONSET in T,701,A main (contiguity),0.155,0.025,100,0.106,0.204
+DISPUTE ONSET in T,701,"B1 + land, water contiguity, log capital distance",0.152,0.026,98,0.101,0.203
+DISPUTE ONSET in T,701,B2 + log trade volume,0.121,0.029,78,0.064,0.178
+DISPUTE ONSET in T,701,C + prior militarised activity,0.114,0.025,74,0.065,0.163
+DISPUTE ONSET in T,701,D + pact fixed effects,0.118,0.025,76,0.069,0.167
+"DISPUTE ONSET in T, allied pairs",306,A main (contiguity),0.17,0.032,100,0.107,0.233
+"DISPUTE ONSET in T, allied pairs",306,"B1 + land, water contiguity, log capital distance",0.155,0.034,91,0.088,0.222
+"DISPUTE ONSET in T, allied pairs",306,B2 + log trade volume,0.14,0.037,82,0.067,0.213
+"DISPUTE ONSET in T, allied pairs",306,C + prior militarised activity,0.118,0.032,69,0.055,0.181
+"DISPUTE ONSET in T, allied pairs",306,D + pact fixed effects,0.118,0.034,69,0.051,0.185
+"DISPUTE ONSET in T, non-allied pairs",395,A main (contiguity),0.14,0.028,100,0.085,0.195
+"DISPUTE ONSET in T, non-allied pairs",395,"B1 + land, water contiguity, log capital distance",0.142,0.027,101,0.089,0.195
+"DISPUTE ONSET in T, non-allied pairs",395,B2 + log trade volume,0.11,0.031,79,0.049,0.171
+"DISPUTE ONSET in T, non-allied pairs",395,C + prior militarised activity,0.127,0.033,91,0.062,0.192
+"DISPUTE ONSET in T, non-allied pairs",395,D + pact fixed effects,0.127,0.033,91,0.062,0.192
+"DISPUTE ONSET in T, land-border pairs",306,A main (contiguity),0.026,0.042,100,-0.056,0.108
+"DISPUTE ONSET in T, land-border pairs",306,"B1 + land, water contiguity, log capital distance",0.028,0.042,108,-0.054,0.11
+"DISPUTE ONSET in T, land-border pairs",306,B2 + log trade volume,0.025,0.047,96,-0.067,0.117
+"DISPUTE ONSET in T, land-border pairs",306,C + prior militarised activity,0.037,0.046,142,-0.053,0.127
+"DISPUTE ONSET in T, land-border pairs",306,D + pact fixed effects,0.036,0.047,138,-0.056,0.128
+DISPUTE ENDING in T,819,A main (contiguity),0.027,0.025,100,-0.022,0.076
+DISPUTE ENDING in T,819,"B1 + land, water contiguity, log capital distance",0.024,0.025,89,-0.025,0.073
+DISPUTE ENDING in T,819,B2 + log trade volume,0.011,0.027,41,-0.042,0.064
+DISPUTE ENDING in T,819,C + prior militarised activity,0.012,0.028,44,-0.043,0.067
+DISPUTE ENDING in T,819,D + pact fixed effects,0.008,0.028,30,-0.047,0.063
+"DISPUTE ENDING in T, allied pairs",294,A main (contiguity),0.081,0.051,100,-0.019,0.181
+"DISPUTE ENDING in T, allied pairs",294,"B1 + land, water contiguity, log capital distance",0.089,0.054,110,-0.017,0.195
+"DISPUTE ENDING in T, allied pairs",294,B2 + log trade volume,0.111,0.06,137,-0.007,0.229
+"DISPUTE ENDING in T, allied pairs",294,C + prior militarised activity,0.107,0.06,132,-0.011,0.225
+"DISPUTE ENDING in T, allied pairs",294,D + pact fixed effects,0.111,0.065,137,-0.016,0.238

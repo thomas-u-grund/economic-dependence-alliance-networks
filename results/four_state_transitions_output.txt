@@ -1,0 +1,24 @@
+Transition counts (rows = state at t, columns = state at t+1), sample with trade data
+    to
+from     A     B     C     D
+   A 43839   320    10   225
+   B   310   230     8     9
+   C     7     3  1210  1120
+
+Row shares
+    to
+from      A      B      C      D
+   A 0.9875 0.0072 0.0002 0.0051
+   B 0.5566 0.4129 0.0144 0.0162
+   C 0.0030 0.0013 0.5171 0.4786
+
+Larger-share coefficient, transition vs all other outcomes from the same starting state (logit, dyad-clustered SE)
+A -> B: larger share  0.362 (se 0.057, p=0.0000) | smaller  0.032 | events 320 of 44394, dyads with event 154
+A -> C: 10 events (too few)
+A -> D: larger share -0.328 (se 0.128, p=0.0106) | smaller  0.048 | events 225 of 44394, dyads with event 206
+B -> A: larger share  0.271 (se 0.106, p=0.0105) | smaller  0.089 | events 310 of 557, dyads with event 149
+B -> C: 8 events (too few)
+B -> D: 9 events (too few)
+C -> A: 7 events (too few)
+C -> B: 3 events (too few)
+C -> D: larger share -0.011 (se 0.050, p=0.8180) | smaller  0.022 | events 1120 of 2340, dyads with event 513
