@@ -7,7 +7,7 @@ Data, commented scripts, codebook, and software output for every analysis in the
 ## Contents
 
 ```
-scripts/        01-83, one script per analysis (index: scripts/README.md)
+scripts/        01-94, one script per analysis (index: scripts/README.md)
 raw/            source data as downloaded (Correlates of War alliances, MIDs, trade, contiguity, capabilities;
                 ATOP 5.1; Penn World Table / Maddison GDP; Polity 5; state system)
 data/           intermediate files built from raw/ by scripts 01-05 (CSV); two large ones are gzipped
@@ -18,15 +18,15 @@ session_info.txt   R version and package versions
 
 ## Requirements
 
-R (4.6.0 used; see `session_info.txt`) and the packages `dplyr, readr, tidyr, stringr, purrr, readxl, igraph, sandwich, lmtest, survival, fixest, car, nnet, countrycode, ggplot2, patchwork`, plus `cshapes` (scripts 63, 67, 72, 73, 82) and `pwt10` (script 55) from CRAN. Install with `install.packages(c(...))`.
+R (4.6.0 used; see `session_info.txt`) and the packages `dplyr, readr, tidyr, stringr, purrr, readxl, igraph, sandwich, lmtest, survival, fixest, car, nnet, countrycode, ggplot2, patchwork`, plus `cshapes` (scripts 63, 67, 72, 73, 82, 87, 88, 92) and `pwt10` (script 55) from CRAN. Install with `install.packages(c(...))`.
 
 ## How to reproduce
 
 All paths are relative to the repository root, so run every script from there (`Rscript scripts/NN_name.R`).
 
 1. `bash scripts/00_unpack_data.sh` unpacks `data/tie_trade.csv` and `data/triads_all_years.csv` (kept gzipped because of their size). Alternatively, rebuild them from `raw/` with scripts 01 and 02.
-2. The article's alliance definition is the Correlates of War defence pact (Type I). Set `ALLIANCE_DEF=defense` for all scripts from 35 onward (`export ALLIANCE_DEF=defense`). Leave it unset to use all four commitment types. `scripts/run_all_defense.sh` re-runs scripts 35 to 64 with the switch on. Scripts 66 to 83 expect it on.
-3. Scripts 66 to 83 build the dyad-year analysis panel in memory from `raw/` and `data/tie_trade.csv` (the shared preamble is in `scripts/49_layered_hazards.R`) and write their output to `results/`. Scripts 74, 75, and 80 only assemble earlier output and need 66 to 73 and 77 to 79 to have run.
+2. The article's alliance definition is the Correlates of War defence pact (Type I). Set `ALLIANCE_DEF=defense` for all scripts from 35 onward (`export ALLIANCE_DEF=defense`). Leave it unset to use all four commitment types. `scripts/run_all_defense.sh` re-runs scripts 35 to 64 with the switch on. Scripts 66 to 94 expect it on.
+3. Scripts 66 to 94 build the dyad-year analysis panel in memory from `raw/` and `data/tie_trade.csv` (the shared preamble is in `scripts/49_layered_hazards.R`) and write their output to `results/`. Scripts 74, 75, and 80 only assemble earlier output and need 66 to 73 and 77 to 79 to have run.
 
 Example:
 ```
@@ -39,22 +39,24 @@ Seeds are set where randomness is used (cross-validation, bootstrap). Running a 
 
 ## Where each table and figure comes from
 
+The principal population of the article is all dyad-years. Scripts 66 to 83 were first run on embedded pairs only; scripts 86 to 94 repeat the main analyses on all dyad-years, and the embedded-pair results are in Appendix L.
+
 | Item in the article | Script | Output in `results/` |
 |---|---|---|
 | Table 1 (composition) | 66 | `triad_population_output.txt` |
 | Figure 1 (schematic) | 43 | `fig_pressure.*` |
-| Figure 2A (transitions) | 73, 80 | `claims_table.csv`, `claims_table_output.txt`, `fig_exposure_map.*` |
-| Figure 2B (severity) | 77, 80 | `hostility_gradient_output.txt` |
-| Table 2 (controls) | 67, 74 | `proximity_in_T_output.txt`, `survives_table_output.txt` |
-| Table 3 (predictors) | 68, 75 | `predictors_in_T_output.txt`, `structure_and_eras_table_output.txt` |
-| Figure 3 (periods) | 79, 80 | `era_bins_rates.csv`, `era_bins_shares.csv`, `fig_eras.*` |
-| Section 5.3, 5.9 (dyad fixed effects) | 69 | `dyad_fe_in_T_output.txt` |
-| Section 5.5 (eras) | 70 | `embedding_over_time_output.txt` |
-| Section 5.6, Appendix M | 71, 72 | `negative_tie_resolution_output.txt` |
-| Section 5.7, Appendix O | 77, 78 | `hostility_gradient_output.txt`, `initiator_output.txt` |
-| Appendix N | 76 | `shared_state_se_output.txt` |
-| Section 5.3, Appendix Q (within-between, interactions, escalation given onset) | 81, 82, 83 | `within_between_output.txt`, `heterogeneity_output.txt`, `escalation_given_onset_output.txt` |
-| Appendix L, P | 66, 73, 77 | as above |
+| Figure 2A (transitions, all dyad-years), Appendix P | 86, 91, 92 | `population_selection_output.txt`, `fullpanel_shared_se_output.txt`, `fig_exposure_map_full.*` |
+| Figure 2B (severity), Section 5.5, Appendix O | 89, 92 | `fullpanel_severity_initiator_output.txt` |
+| Section 5.3 (contiguity, distance), Appendix Q | 88, 94 | `fullpanel_within_het_output.txt`, `fullpanel_contiguity_implied_output.txt` |
+| Section 5.3, Appendix R (major powers, regions) | 84 | `distant_pairs_output.txt` |
+| Figure 3 (predicted onsets), Appendix S | 85, 92 | `effect_sizes_output.txt`, `predicted_onset_by_percentile.csv`, `fig_predicted_onset.*` |
+| Section 5.4 (within-between, fixed effects), Appendix Q | 88, 93 | `fullpanel_within_het_output.txt`, `fullpanel_dyad_fe_output.txt` |
+| Table 2 (controls) | 87 | `fullpanel_controls_output.txt` |
+| Table 3 (predictors, held-out comparisons) | 90 | `fullpanel_predictors_output.txt` |
+| Figure 4 (periods), Appendix P | 70, 79, 80 | `embedding_over_time_output.txt`, `era_bins_rates.csv`, `era_bins_shares.csv`, `fig_eras.*` |
+| Appendix L (embedded pairs only) | 66, 68, 73, 77, 81 | `triad_population_output.txt`, `predictors_in_T_output.txt`, `claims_table_output.txt`, `hostility_gradient_output.txt`, `within_between_output.txt` |
+| Appendix M (unbalanced triads) | 71, 72 | `negative_tie_resolution_output.txt` |
+| Appendix T (lagged embedding) | 86 | `population_selection_output.txt` |
 | Appendices E, F, H, I, J, K | 35 to 65 | `*_output.txt` |
 | Appendices A to D, G | 02 to 34, 56 | `*_output.txt`, `*.rds` |
 

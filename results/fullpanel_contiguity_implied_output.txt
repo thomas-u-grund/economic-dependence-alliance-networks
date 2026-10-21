@@ -1,0 +1,6 @@
+dispute onset        baseline           non-contiguous  0.298 [ 0.265,  0.330] | interaction -0.310 [-0.363, -0.256] | contiguous -0.012 [-0.063,  0.039] | N=608957 events=1441 (contiguous rows 24888)
+dispute onset        + vol + decade FE  non-contiguous  0.197 [ 0.158,  0.237] | interaction -0.306 [-0.374, -0.237] | contiguous -0.108 [-0.179, -0.038] | N=608957 events=1441 (contiguous rows 24888)
+dispute ending       baseline           non-contiguous -0.003 [-0.046,  0.040] | interaction  0.012 [-0.063,  0.087] | contiguous  0.009 [-0.053,  0.071] | N=2730 events=1359 (contiguous rows 1674)
+dispute ending       + vol + decade FE  non-contiguous -0.032 [-0.081,  0.017] | interaction  0.029 [-0.042,  0.101] | contiguous -0.003 [-0.063,  0.057] | N=2730 events=1359 (contiguous rows 1674)
+alliance formation   baseline           non-contiguous  0.207 [ 0.168,  0.246] | interaction -0.316 [-0.429, -0.203] | contiguous -0.109 [-0.222,  0.004] | N=565832 events=900 (contiguous rows 15340)
+alliance formation   + vol + decade FE  non-contiguous  0.171 [ 0.127,  0.215] | interaction -0.251 [-0.352, -0.151] | contiguous -0.080 [-0.183,  0.022] | N=565832 events=900 (contiguous rows 15340)

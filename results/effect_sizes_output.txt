@@ -1,0 +1,40 @@
+
+######## EMBEDDED PAIRS (T): 108068 dyad-years, 707 onsets; larger share percentiles (raw share): p50 0.0034, p90 0.0662, p99 0.4059; SD 0.0478 ########
+Predicted onsets per 1,000 dyad-years (other covariates at sample means; 95% CI, dyad-clustered)
+  non-contiguous share at p50 = 0.0034 :   1.80 [  1.53,   2.10]
+  non-contiguous share at p90 = 0.0662 :   2.34 [  2.01,   2.72]
+  non-contiguous share at p99 = 0.4059 :   9.71 [  6.90,  13.64]
+  contiguous     share at p50 = 0.0034 :  15.18 [ 12.47,  18.45]
+  contiguous     share at p90 = 0.0662 :  15.50 [ 12.76,  18.81]
+  contiguous     share at p99 = 0.4059 :  17.34 [ 10.06,  29.73]
+Odds ratios (non-contiguous | contiguous):
+  p50 -> p90, non-contiguous: OR 1.30 [1.23, 1.38]
+  p50 -> p90, contiguous: OR 1.02 [0.94, 1.12]
+  p90 -> p99, non-contiguous: OR 4.18 [3.09, 5.67]
+  p90 -> p99, contiguous: OR 1.12 [0.70, 1.81]
+Influence checks, larger-share coefficient (non-contiguous | interaction with contiguity), controls as above:
+  all observations                              0.201 [ 0.159,  0.244] | interaction -0.185 [-0.254, -0.117] | onsets 707
+  drop dyad-years above the 99th percentile     0.301 [ 0.222,  0.379] | interaction -0.260 [-0.365, -0.155] | onsets 678
+  drop the 20 most exposed dyads                0.247 [ 0.190,  0.303] | interaction -0.219 [-0.297, -0.141] | onsets 698
+  log(larger share + 0.0001), standardised      0.417 [ 0.214,  0.619] | interaction -0.384 [-0.585, -0.184] | onsets 707
+  percentile rank of the larger share           0.345 [ 0.150,  0.540] | interaction -0.346 [-0.540, -0.153] | onsets 707
+
+######## FULL PANEL: 608957 dyad-years, 1441 onsets; larger share percentiles (raw share): p50 0.0002, p90 0.0289, p99 0.2308; SD 0.0478 ########
+Predicted onsets per 1,000 dyad-years (other covariates at sample means; 95% CI, dyad-clustered)
+  non-contiguous share at p50 = 0.0002 :   0.68 [  0.61,   0.76]
+  non-contiguous share at p90 = 0.0289 :   0.79 [  0.71,   0.88]
+  non-contiguous share at p99 = 0.2308 :   2.22 [  1.86,   2.65]
+  contiguous     share at p50 = 0.0002 :  14.94 [ 12.45,  17.93]
+  contiguous     share at p90 = 0.0289 :  14.22 [ 11.81,  17.12]
+  contiguous     share at p99 = 0.2308 :  10.04 [  7.02,  14.36]
+Odds ratios (non-contiguous | contiguous):
+  p50 -> p90, non-contiguous: OR 1.16 [1.13, 1.18]
+  p50 -> p90, contiguous: OR 0.95 [0.91, 0.99]
+  p90 -> p99, non-contiguous: OR 2.82 [2.43, 3.27]
+  p90 -> p99, contiguous: OR 0.70 [0.53, 0.93]
+Influence checks, larger-share coefficient (non-contiguous | interaction with contiguity), controls as above:
+  all observations                              0.246 [ 0.210,  0.281] | interaction -0.329 [-0.393, -0.265] | onsets 1441
+  drop dyad-years above the 99th percentile     0.663 [ 0.568,  0.759] | interaction -0.752 [-0.878, -0.627] | onsets 1334
+  drop the 20 most exposed dyads                0.276 [ 0.236,  0.315] | interaction -0.359 [-0.431, -0.288] | onsets 1411
+  log(larger share + 0.0001), standardised      0.776 [ 0.639,  0.912] | interaction -0.856 [-1.000, -0.711] | onsets 1441
+  percentile rank of the larger share           0.666 [ 0.519,  0.813] | interaction -0.814 [-0.978, -0.649] | onsets 1441

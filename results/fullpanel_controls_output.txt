@@ -1,0 +1,49 @@
+
+######## (i) DISPUTE ONSET, full panel: N=598807, events=1397, dyads=15750, corr(larger share, log distance)=-0.19
+  A main (contiguity)                                     larger share  0.140 (se 0.026, p=0.0000) | N used=598807
+  B1 + land, water contiguity, log capital distance       larger share  0.136 (se 0.026, p=0.0000) | N used=598807
+  B2 + log trade volume                                   larger share  0.078 (se 0.026, p=0.0027) | N used=598807
+  C + prior militarised activity                          larger share  0.069 (se 0.022, p=0.0022) | N used=598807
+  D + pact fixed effects                                  larger share  0.075 (se 0.023, p=0.0010) | N used=598314
+
+######## (i-a) DISPUTE ONSET, allied pairs: N=42927, events=318, dyads=1318, corr(larger share, log distance)=-0.01
+  A main (contiguity)                                     larger share  0.176 (se 0.030, p=0.0000) | N used=42927
+  B1 + land, water contiguity, log capital distance       larger share  0.161 (se 0.032, p=0.0000) | N used=42927
+  B2 + log trade volume                                   larger share  0.145 (se 0.035, p=0.0000) | N used=42927
+  C + prior militarised activity                          larger share  0.121 (se 0.031, p=0.0001) | N used=42927
+  D + pact fixed effects                                  larger share  0.126 (se 0.034, p=0.0002) | N used=42434
+
+######## (i-n) DISPUTE ONSET, non-allied pairs: N=555880, events=1079, dyads=15371, corr(larger share, log distance)=-0.18
+  A main (contiguity)                                     larger share  0.126 (se 0.028, p=0.0000) | N used=555880
+  B1 + land, water contiguity, log capital distance       larger share  0.129 (se 0.027, p=0.0000) | N used=555880
+  B2 + log trade volume                                   larger share  0.065 (se 0.027, p=0.0147) | N used=555880
+  C + prior militarised activity                          larger share  0.055 (se 0.026, p=0.0309) | N used=555880
+  D + pact fixed effects                                  larger share  0.055 (se 0.026, p=0.0309) | N used=555880
+
+######## (i-b) DISPUTE ONSET, land-border pairs: N=13656, events=626, dyads=332, corr(larger share, log distance)=-0.02
+  A main (contiguity)                                     larger share  0.032 (se 0.027, p=0.2308) | N used=13656
+  B1 + land, water contiguity, log capital distance       larger share  0.033 (se 0.027, p=0.2275) | N used=13656
+  B2 + log trade volume                                   larger share  0.018 (se 0.030, p=0.5544) | N used=13656
+  C + prior militarised activity                          larger share  0.021 (se 0.029, p=0.4619) | N used=13656
+  D + pact fixed effects                                  larger share  0.023 (se 0.030, p=0.4453) | N used=13521
+
+######## (i-c) DISPUTE ONSET, non-contiguous pairs: N=574803, events=589, dyads=15221, corr(larger share, log distance)=-0.11
+  A main (contiguity)                                     larger share  0.241 (se 0.020, p=0.0000) | N used=574803
+  B1 + land, water contiguity, log capital distance       larger share  0.236 (se 0.020, p=0.0000) | N used=574803
+  B2 + log trade volume                                   larger share  0.154 (se 0.023, p=0.0000) | N used=574803
+  C + prior militarised activity                          larger share  0.111 (se 0.022, p=0.0000) | N used=574803
+  D + pact fixed effects                                  larger share  0.149 (se 0.021, p=0.0000) | N used=573186
+
+######## (ii) DISPUTE ENDING, full panel: N=2655, events=1319, dyads=601, corr(larger share, log distance)=0.03
+  A main (contiguity)                                     larger share  0.002 (se 0.020, p=0.9156) | N used=2655
+  B1 + land, water contiguity, log capital distance       larger share  0.001 (se 0.020, p=0.9544) | N used=2655
+  B2 + log trade volume                                   larger share -0.016 (se 0.020, p=0.4345) | N used=2655
+  C + prior militarised activity                          larger share -0.016 (se 0.022, p=0.4560) | N used=2655
+  D + pact fixed effects                                  larger share -0.020 (se 0.022, p=0.3701) | N used=2647
+
+######## (ii-a) DISPUTE ENDING, allied pairs: N=533, events=306, dyads=151, corr(larger share, log distance)=0.22
+  A main (contiguity)                                     larger share  0.094 (se 0.049, p=0.0569) | N used=533
+  B1 + land, water contiguity, log capital distance       larger share  0.098 (se 0.051, p=0.0539) | N used=533
+  B2 + log trade volume                                   larger share  0.125 (se 0.058, p=0.0308) | N used=533
+  C + prior militarised activity                          larger share  0.124 (se 0.059, p=0.0348) | N used=533
+  D + pact fixed effects                                  larger share  0.133 (se 0.065, p=0.0387) | N used=525

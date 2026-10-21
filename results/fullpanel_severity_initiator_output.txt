@@ -1,0 +1,38 @@
+Risk set (full panel, no MID at t): 589089 dyad-years; onsets: threat 67, display 454, force/war 867, any 1388, any fatalities 176
+
+== larger share (per SD), spec: baseline ==
+  y_thr     0.108 [ 0.015,  0.202] p=0.0226 events 67
+  y_dis     0.107 [ 0.045,  0.168] p=0.0007 events 454
+  y_force   0.159 [ 0.107,  0.211] p=0.0000 events 867
+  y_fat     0.162 [ 0.070,  0.254] p=0.0005 events 176
+  y_any     0.143 [ 0.094,  0.193] p=0.0000 events 1388
+
+== larger share (per SD), spec: + z_vol + decade ==
+  y_thr    -0.091 [-0.262,  0.079] p=0.2942 events 67
+  y_dis    -0.017 [-0.086,  0.053] p=0.6362 events 454
+  y_force   0.091 [ 0.037,  0.146] p=0.0010 events 867
+  y_fat     0.144 [ 0.044,  0.243] p=0.0045 events 176
+  y_any     0.051 [ 0.000,  0.101] p=0.0483 events 1388
+
+== stacked difference tests ==
+  y_thr -> y_force : difference in larger-share coefficient  0.051 (se 0.052, p=0.3329)
+  y_thr -> y_dis : difference in larger-share coefficient -0.002 (se 0.051, p=0.9760)
+  y_dis -> y_force : difference in larger-share coefficient  0.052 (se 0.029, p=0.0762)
+
+== initiation: onsets 1335, with a clear initiator and capability data 1309 (dyads 577) ==
+The MORE exposed state initiates in 433 of 1055 (0.410; 95% CI 0.381-0.441); the more exposed state is the weaker one in 0.778; the stronger state initiates in 0.578
+  exposure only 
+z test of coefficients:
+
+       Estimate Std. Error z value Pr(>|z|)
+dshare  -0.0554     0.0343 -1.6172   0.1058
+
+  + capability  
+z test of coefficients:
+
+       Estimate Std. Error z value Pr(>|z|)    
+dshare   0.0068     0.0360  0.1876   0.8512    
+dcinc    0.1380     0.0323  4.2794   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
