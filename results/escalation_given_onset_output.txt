@@ -1,0 +1,9 @@
+Onsets in embedded pairs with hostility information: 707; use of force or war: 467 (66.1%); any fatalities: 82 (11.6%)
+
+== larger share (per SD), spec: baseline ==
+  y_force   0.046 [-0.036,  0.127] p=0.2749 events 467 of 707
+  y_fat     0.111 [-0.008,  0.229] p=0.0670 events 82 of 707
+
+== larger share (per SD), spec: + z_vol + decade ==
+  y_force   0.122 [ 0.022,  0.222] p=0.0167 events 467 of 707
+  y_fat     0.178 [ 0.052,  0.305] p=0.0059 events 82 of 707

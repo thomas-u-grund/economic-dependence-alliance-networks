@@ -1,0 +1,17 @@
+(a) Embedded pairs: larger share x contiguity (land or water, any type)
+onset, baseline                                      base (contig=0)  0.227 [ 0.188,  0.265] | interaction -0.181 [-0.245, -0.116] | implied at contig=1  0.046 [-0.013,  0.104] | N=108068 events=707
+ending, baseline                                     base (contig=0)  0.001 [-0.049,  0.051] | interaction  0.081 [-0.012,  0.175] | implied at contig=1  0.082 [-0.001,  0.165] | N=1700 events=824
+onset, + vol + decade FE                             base (contig=0)  0.162 [ 0.116,  0.208] | interaction -0.161 [-0.234, -0.088] | implied at contig=1  0.001 [-0.071,  0.073] | N=108068 events=707
+ending, + vol + decade FE                            base (contig=0) -0.014 [-0.065,  0.037] | interaction  0.097 [ 0.005,  0.189] | implied at contig=1  0.083 [-0.002,  0.168] | N=1700 events=824
+
+(b) Full panel: larger share x embedded pair (T)
+onset, baseline                                      base (T=0)  0.176 [ 0.118,  0.233] | interaction -0.046 [-0.109,  0.016] | implied at T=1  0.129 [ 0.070,  0.188] | N=608957 events=1441
+ending, baseline                                     base (T=0) -0.029 [-0.076,  0.018] | interaction  0.055 [-0.000,  0.111] | implied at T=1  0.026 [-0.020,  0.073] | N=2730 events=1359
+onset, + vol + decade FE                             base (T=0)  0.082 [ 0.025,  0.139] | interaction -0.037 [-0.105,  0.030] | implied at T=1  0.045 [-0.019,  0.109] | N=608957 events=1441
+ending, + vol + decade FE                            base (T=0) -0.048 [-0.098,  0.002] | interaction  0.055 [-0.002,  0.113] | implied at T=1  0.007 [-0.042,  0.056] | N=2730 events=1359
+
+(c) Embedded pairs, 1886+: larger share x standardised log capital distance (controls include contiguity)
+onset, baseline                                      base (z_lcap=0)  0.209 [ 0.154,  0.263] | interaction  0.054 [ 0.026,  0.081] | implied at z_lcap=1  0.262 [ 0.189,  0.335] | N=107491 events=701
+ending, baseline                                     base (z_lcap=0)  0.003 [-0.052,  0.058] | interaction -0.031 [-0.068,  0.007] | implied at z_lcap=1 -0.027 [-0.106,  0.051] | N=1684 events=819
+onset, + vol + decade FE                             base (z_lcap=0)  0.149 [ 0.088,  0.209] | interaction  0.052 [ 0.020,  0.083] | implied at z_lcap=1  0.200 [ 0.118,  0.282] | N=107491 events=701
+ending, + vol + decade FE                            base (z_lcap=0) -0.020 [-0.078,  0.037] | interaction -0.039 [-0.075, -0.004] | implied at z_lcap=1 -0.060 [-0.138,  0.019] | N=1684 events=819

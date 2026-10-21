@@ -7,7 +7,7 @@ Data, commented scripts, codebook, and software output for every analysis in the
 ## Contents
 
 ```
-scripts/        01-80, one script per analysis (index: scripts/README.md)
+scripts/        01-83, one script per analysis (index: scripts/README.md)
 raw/            source data as downloaded (Correlates of War alliances, MIDs, trade, contiguity, capabilities;
                 ATOP 5.1; Penn World Table / Maddison GDP; Polity 5; state system)
 data/           intermediate files built from raw/ by scripts 01-05 (CSV); two large ones are gzipped
@@ -18,15 +18,15 @@ session_info.txt   R version and package versions
 
 ## Requirements
 
-R (4.6.0 used; see `session_info.txt`) and the packages `dplyr, readr, tidyr, stringr, purrr, readxl, igraph, sandwich, lmtest, survival, fixest, car, nnet, countrycode, ggplot2, patchwork`, plus `cshapes` (scripts 63, 67, 72, 73) and `pwt10` (script 55) from CRAN. Install with `install.packages(c(...))`.
+R (4.6.0 used; see `session_info.txt`) and the packages `dplyr, readr, tidyr, stringr, purrr, readxl, igraph, sandwich, lmtest, survival, fixest, car, nnet, countrycode, ggplot2, patchwork`, plus `cshapes` (scripts 63, 67, 72, 73, 82) and `pwt10` (script 55) from CRAN. Install with `install.packages(c(...))`.
 
 ## How to reproduce
 
 All paths are relative to the repository root, so run every script from there (`Rscript scripts/NN_name.R`).
 
 1. `bash scripts/00_unpack_data.sh` unpacks `data/tie_trade.csv` and `data/triads_all_years.csv` (kept gzipped because of their size). Alternatively, rebuild them from `raw/` with scripts 01 and 02.
-2. The article's alliance definition is the Correlates of War defence pact (Type I). Set `ALLIANCE_DEF=defense` for all scripts from 35 onward (`export ALLIANCE_DEF=defense`). Leave it unset to use all four commitment types. `scripts/run_all_defense.sh` re-runs scripts 35 to 64 with the switch on. Scripts 66 to 80 expect it on.
-3. Scripts 66 to 80 build the dyad-year analysis panel in memory from `raw/` and `data/tie_trade.csv` (the shared preamble is in `scripts/49_layered_hazards.R`) and write their output to `results/`. Scripts 74, 75, and 80 only assemble earlier output and need 66 to 73 and 77 to 79 to have run.
+2. The article's alliance definition is the Correlates of War defence pact (Type I). Set `ALLIANCE_DEF=defense` for all scripts from 35 onward (`export ALLIANCE_DEF=defense`). Leave it unset to use all four commitment types. `scripts/run_all_defense.sh` re-runs scripts 35 to 64 with the switch on. Scripts 66 to 83 expect it on.
+3. Scripts 66 to 83 build the dyad-year analysis panel in memory from `raw/` and `data/tie_trade.csv` (the shared preamble is in `scripts/49_layered_hazards.R`) and write their output to `results/`. Scripts 74, 75, and 80 only assemble earlier output and need 66 to 73 and 77 to 79 to have run.
 
 Example:
 ```
@@ -53,6 +53,7 @@ Seeds are set where randomness is used (cross-validation, bootstrap). Running a 
 | Section 5.6, Appendix M | 71, 72 | `negative_tie_resolution_output.txt` |
 | Section 5.7, Appendix O | 77, 78 | `hostility_gradient_output.txt`, `initiator_output.txt` |
 | Appendix N | 76 | `shared_state_se_output.txt` |
+| Section 5.3, Appendix Q (within-between, interactions, escalation given onset) | 81, 82, 83 | `within_between_output.txt`, `heterogeneity_output.txt`, `escalation_given_onset_output.txt` |
 | Appendix L, P | 66, 73, 77 | as above |
 | Appendices E, F, H, I, J, K | 35 to 65 | `*_output.txt` |
 | Appendices A to D, G | 02 to 34, 56 | `*_output.txt`, `*.rds` |

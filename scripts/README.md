@@ -20,4 +20,7 @@ Run from the repository root (`Rscript scripts/NN_name.R`). Set `ALLIANCE_DEF=de
 | 76 | Dyad-clustered versus actor-overlap standard errors | Appendix N |
 | 77-78 | Severity of onsets and initiation | Figure 2B, Section 5.7, Appendix O |
 | 79-80 | Period data and Figures 2-3 | Figures 2, 3 |
+| 81 | Within-between (Mundlak) decomposition of the larger share | Section 5.3, Appendix Q |
+| 82 | Interactions with contiguity, embedding, and distance | Section 5.3, Appendix Q |
+| 83 | Escalation conditional on onset | Section 5.7, Appendix Q |
 `run_all_defense.sh` re-runs scripts 35 to 64 with `ALLIANCE_DEF=defense`.
