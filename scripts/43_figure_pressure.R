@@ -1,19 +1,27 @@
-# 43: Schematic of structural pressure on one tie (focal dispute A-C): one unbalanced and one balanced triad.
-
-draw <- function() {
-  par(mar = c(0.5, 0.5, 0.5, 0.5), family = "sans")
-  plot(NA, xlim = c(-1.2, 9.2), ylim = c(-3.4, 3.4), axes = FALSE, xlab = "", ylab = "", asp = 1)
-  P <- list(A = c(0, 0), C = c(4, 0), B = c(2, 2.3), D = c(2, -2.3))
-  polygon(rbind(P$A, P$C, P$B), col = "#fde0dd", border = NA)
-  polygon(rbind(P$A, P$C, P$D), col = "#deebf7", border = NA)
-  seg <- function(a, b, pos = TRUE, lwd = 2.6) segments(P[[a]][1], P[[a]][2], P[[b]][1], P[[b]][2], lty = ifelse(pos, 1, 2), lwd = lwd, col = ifelse(pos, "#2166ac", "#b2182b"))
-  seg("A", "B"); seg("B", "C"); seg("A", "D"); seg("A", "C", FALSE, 3.6); seg("C", "D", FALSE)
-  for (n in names(P)) { points(P[[n]][1], P[[n]][2], pch = 21, bg = "white", cex = 4.6, lwd = 2); text(P[[n]][1], P[[n]][2], n, font = 2, cex = 1.1) }
-  text(2, 0.32, "focal pair (dispute)", col = "#b2182b", cex = .85, font = 3)
-  text(5.0, 1.45, "B is a common partner\n(ally of both)\nTriad A-B-C: (+, +, \u2212), unbalanced\nA dispute between A and C is\ninconsistent with it", cex = .85, col = "#67000d", adj = 0)
-  text(5.0, -1.55, "D is a split partner\n(ally of A, adversary of C)\nTriad A-C-D: (+, \u2212, \u2212), balanced\nA dispute between A and C is\nconsistent with it", cex = .85, col = "#08306b", adj = 0)
-  arrows(4.9, 1.0, 2.9, 0.9, length = .08, col = "#67000d"); arrows(4.9, -1.1, 2.9, -0.9, length = .08, col = "#08306b")
-  legend("topleft", c("Alliance (+)", "Dispute (−)"), lty = c(1, 2), lwd = 2.4, col = c("#2166ac", "#b2182b"), bty = "n", cex = .85)
+# 43: Schematic of common and split partners around a focal pair A-C in a dispute (two panels).
+setwd("/Users/tgrund/FILES_NEW/RESEARCH/2026 Trade")
+pos <- "#2166ac"; neg <- "#b2182b"
+panel <- function(title, third, s1, s2, tint, verdict, why, expect) {
+  plot(NA, xlim = c(-1.0, 5.0), ylim = c(-4.3, 3.9), axes = FALSE, xlab = "", ylab = "", asp = 1)
+  P <- list(A = c(0, 0), C = c(4, 0), X = c(2, 3))
+  polygon(rbind(P$A, P$C, P$X), col = tint, border = NA)
+  seg <- function(a, b, s, lwd = 3.4) { u <- P[[b]] - P[[a]]; u <- u / sqrt(sum(u^2)); r <- 0.42; p0 <- P[[a]] + r * u; p1 <- P[[b]] - r * u
+    segments(p0[1], p0[2], p1[1], p1[2], lty = ifelse(s > 0, 1, 2), lwd = lwd, col = ifelse(s > 0, pos, neg), lend = 1) }
+  seg("A", "C", -1, 4.6); seg("A", "X", s1); seg("X", "C", s2)
+  for (n in c("A", "C", "X")) { points(P[[n]][1], P[[n]][2], pch = 21, bg = "white", cex = 6.2, lwd = 2.4); text(P[[n]][1], P[[n]][2], ifelse(n == "X", third, n), font = 2, cex = 1.35) }
+  text(2, -0.62, "focal pair in a dispute", col = neg, cex = 1.0, font = 3)
+  text(2, 4.05, title, font = 2, cex = 1.5, xpd = NA)
+  text(2, -1.55, verdict, cex = 1.2, font = 2, xpd = NA)
+  text(2, -2.25, why, cex = 1.0, xpd = NA)
+  segments(-0.8, -2.85, 4.8, -2.85, col = "grey70", lwd = 1)
+  text(2, -3.45, expect, cex = 1.05, font = 3, xpd = NA)
 }
-pdf("results/fig_pressure.pdf", width = 6.8, height = 5.2); draw(); dev.off()
-png("results/fig_pressure.png", width = 1360, height = 1040, res = 200); draw(); dev.off()
+draw <- function() {
+  par(mfrow = c(1, 2), mar = c(0.3, 0.3, 0.6, 0.3), family = "sans")
+  panel("Common partner", "B", 1, 1, "#e8eef7", "Triad (+, +, −): unbalanced", "A and C are both allied with B,\nso a dispute between them is inconsistent", "Balance theory expects the dispute to end")
+  panel("Split partner", "D", 1, -1, "#f7e8ea", "Triad (+, −, −): balanced", "D is allied with A and in dispute with C,\nso a dispute between A and C is consistent", "Balance theory expects disputes to begin")
+  par(fig = c(0, 1, 0, 1), new = TRUE, mar = c(0, 0, 0, 0)); plot.new()
+  legend("bottom", c("Alliance (+)", "Dispute (−)"), lty = c(1, 2), lwd = 3, col = c(pos, neg), bty = "n", horiz = TRUE, cex = 1.05, inset = -0.005, xpd = NA)
+}
+pdf("results/fig_pressure.pdf", width = 8.4, height = 4.9); draw(); dev.off()
+png("results/fig_pressure.png", width = 1680, height = 980, res = 200); draw(); dev.off()

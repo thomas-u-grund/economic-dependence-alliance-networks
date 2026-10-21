@@ -39,30 +39,30 @@ Seeds are set where randomness is used (cross-validation, bootstrap). Running a 
 
 ## Where each table and figure comes from
 
-The principal population of the article is all dyad-years. Scripts 66 to 83 were first run on embedded pairs only; scripts 86 to 94 repeat the main analyses on all dyad-years, and the embedded-pair results are in Appendix L.
+The principal population of the article is all dyad-years. Scripts 66 to 83 were first run on embedded pairs only; scripts 86 to 94 repeat the main analyses on all dyad-years, and the embedded-pair results are in Appendix A.
 
 | Item in the article | Script | Output in `results/` |
 |---|---|---|
 | Table 1 (composition) | 66 | `triad_population_output.txt` |
 | Figure 1 (schematic) | 43 | `fig_pressure.*` |
-| Figure 2A (transitions, all dyad-years), Appendix P | 86, 91, 92 | `population_selection_output.txt`, `fullpanel_shared_se_output.txt`, `fig_exposure_map_full.*` |
-| Figure 2B (severity), Section 5.5, Appendix O | 89, 92 | `fullpanel_severity_initiator_output.txt` |
-| Section 5.3 (contiguity, distance), Appendix Q | 88, 94 | `fullpanel_within_het_output.txt`, `fullpanel_contiguity_implied_output.txt` |
-| Section 5.3, Appendix R (major powers, regions) | 84 | `distant_pairs_output.txt` |
-| Figure 3 (predicted onsets), Appendix S | 85, 92 | `effect_sizes_output.txt`, `predicted_onset_by_percentile.csv`, `fig_predicted_onset.*` |
-| Section 5.4 (within-between, fixed effects), Appendix Q | 88, 93 | `fullpanel_within_het_output.txt`, `fullpanel_dyad_fe_output.txt` |
+| Figure 2A (transitions, all dyad-years), Appendix E | 86, 91, 92 | `population_selection_output.txt`, `fullpanel_shared_se_output.txt`, `fig_exposure_map_full.*` |
+| Figure 2B (severity), Section 5.5, Appendix D | 89, 92 | `fullpanel_severity_initiator_output.txt` |
+| Section 5.3 (contiguity, distance), Appendix F | 88, 94 | `fullpanel_within_het_output.txt`, `fullpanel_contiguity_implied_output.txt` |
+| Section 5.3, Appendix G (major powers, regions) | 84 | `distant_pairs_output.txt` |
+| Figure 3 (predicted onsets), Appendix H | 85, 92 | `effect_sizes_output.txt`, `predicted_onset_by_percentile.csv`, `fig_predicted_onset.*` |
+| Section 5.4 (within-between, fixed effects), Appendix F | 88, 93, 98 | `fullpanel_within_het_output.txt`, `fullpanel_dyad_fe_output.txt`, `within_between_by_contiguity_output.txt` |
 | Table 2 (controls) | 87 | `fullpanel_controls_output.txt` |
 | Table 3 (predictors, held-out comparisons) | 90 | `fullpanel_predictors_output.txt` |
-| Figure 4 (periods), Appendix P | 70, 79, 80 | `embedding_over_time_output.txt`, `era_bins_rates.csv`, `era_bins_shares.csv`, `fig_eras.*` |
-| Appendix L (embedded pairs only) | 66, 68, 73, 77, 81 | `triad_population_output.txt`, `predictors_in_T_output.txt`, `claims_table_output.txt`, `hostility_gradient_output.txt`, `within_between_output.txt` |
-| Appendix M (unbalanced triads) | 71, 72 | `negative_tie_resolution_output.txt` |
-| Appendix T (lagged embedding and partner counts) | 86, 97 | `population_selection_output.txt`, `lagged_network_output.txt` |
-| Appendix N, geography (actor-overlap intervals) | 95 | `geography_actor_overlap_output.txt` |
-| Appendix U (upper tail of exposure) | 96 | `upper_tail_output.txt` |
-| Appendices E, F, H, I, J, K | 35 to 65 | `*_output.txt` |
-| Appendices A to D, G | 02 to 34, 56 | `*_output.txt`, `*.rds` |
+| Figure 4 (periods), Appendix E | 70, 79, 80 | `embedding_over_time_output.txt`, `era_bins_rates.csv`, `era_bins_shares.csv`, `fig_eras.*` |
+| Appendix A (embedded pairs only) | 66, 68, 73, 77, 81 | `triad_population_output.txt`, `predictors_in_T_output.txt`, `claims_table_output.txt`, `hostility_gradient_output.txt`, `within_between_output.txt` |
+| Appendix B (unbalanced triads) | 71, 72 | `negative_tie_resolution_output.txt` |
+| Appendix I (lagged embedding and partner counts) | 86, 97 | `population_selection_output.txt`, `lagged_network_output.txt` |
+| Appendix C, geography (actor-overlap intervals) | 95 | `geography_actor_overlap_output.txt` |
+| Appendix J (upper tail of exposure) | 96 | `upper_tail_output.txt` |
+| Appendices L, M, N, O, P, Q | 35 to 65 | `*_output.txt` |
+| Appendices R to U, V | 02 to 34, 56 | `*_output.txt`, `*.rds` |
 
-Scripts 01 to 34 belong to the triad-level design of Appendices A to D and G and use the original signed network, in which neutrality, non-aggression, and entente agreements count as alliances along with defence pacts. They have not been re-run under the defence-pact definition.
+Scripts 01 to 34 belong to the triad-level design of Appendices R to U and V and use the original signed network, in which neutrality, non-aggression, and entente agreements count as alliances along with defence pacts. They have not been re-run under the defence-pact definition.
 
 ## Files not included
 
