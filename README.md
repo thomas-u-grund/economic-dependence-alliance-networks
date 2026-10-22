@@ -51,6 +51,7 @@ The principal population of the article is all dyad-years. Scripts 66 to 83 were
 | Section 5.3, Appendix G (major powers, regions) | 84 | `distant_pairs_output.txt` |
 | Figure 3 (predicted onsets), Appendix H | 85, 92 | `effect_sizes_output.txt`, `predicted_onset_by_percentile.csv`, `fig_predicted_onset.*` |
 | Section 5.3 (colonial ties, territorial claims, issue in dispute, upper tail by era, coverage), Section 5.4 (five-year exposure), Appendices F, J | 99 | `what_distinguishes_output.txt` |
+| Section 5.3 (diplomatic exchange, UN voting alignment, halves of the period), Appendix J | 100 | `diplomacy_alignment_output.txt` |
 | Section 5.4 (within-between, fixed effects), Appendix F | 88, 93, 98 | `fullpanel_within_het_output.txt`, `fullpanel_dyad_fe_output.txt`, `within_between_by_contiguity_output.txt` |
 | Table 2 (controls) | 87 | `fullpanel_controls_output.txt` |
 | Table 3 (predictors, held-out comparisons) | 90 | `fullpanel_predictors_output.txt` |
