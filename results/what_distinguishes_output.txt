@@ -1,0 +1,95 @@
+== 1. COLONIAL TIES ==
+Non-contiguous risk set 584069 dyad-years; colonial-tie dyad-years 7095 (1.2%), dyads 138. Top-1% tail: 5841 dyad-years, colonial 26.7%; tail onsets 75, of which in colonial-tie pairs 13. Elsewhere in risk set: colonial 1.0%
+Onset rate per 1,000 non-contiguous: colonial 4.09 vs other 1.00
+onset, non-contiguous, all                                 baseline         0.248 [ 0.209,  0.287] | N=584069 events=607
+onset, non-contiguous, colonial-tie pairs dropped          baseline         0.255 [ 0.209,  0.300] | N=576974 events=578
+onset, non-contiguous, colonial-tie pairs only             baseline         0.168 [ 0.092,  0.243] | N=7095 events=29
+onset, non-contiguous, interaction                         baseline        -0.198 [-0.342, -0.054] | N=584069 events=607
+onset, non-contiguous, all                                 +vol+decade      0.076 [ 0.026,  0.125] | N=584069 events=607
+onset, non-contiguous, colonial-tie pairs dropped          +vol+decade      0.070 [ 0.014,  0.127] | N=576974 events=578
+onset, non-contiguous, colonial-tie pairs only             +vol+decade      0.163 [ 0.036,  0.289] | N=7095 events=29
+onset, non-contiguous, interaction                         +vol+decade     -0.031 [-0.151,  0.088] | N=584069 events=607
+alliance formation, non-contiguous, all                    baseline         0.178 [ 0.134,  0.222] | N=550492 events=677
+alliance formation, non-contiguous, colonial-tie pairs dropped baseline         0.238 [ 0.197,  0.280] | N=543995 events=667
+alliance formation, non-contiguous, all                    +vol+decade      0.106 [ 0.052,  0.160] | N=550492 events=677
+alliance formation, non-contiguous, colonial-tie pairs dropped +vol+decade      0.158 [ 0.101,  0.216] | N=543995 events=667
+
+== 2. TERRITORIAL CLAIMS (years <= 2001) ==
+Non-contiguous <=2001: 456886 dyad-years, with an active claim 1751 (0.38%); claim onset rate 25.13 vs 1.12 per 1,000. Top-1% tail with a claim: 11.3%
+onset, non-contiguous <=2001, all                          baseline         0.244 [ 0.204,  0.285] | N=456886 events=556
+onset, non-contiguous <=2001, claim pairs dropped          baseline         0.244 [ 0.201,  0.287] | N=455135 events=512
+onset, non-contiguous <=2001, all                          +vol+decade      0.075 [ 0.024,  0.126] | N=456886 events=556
+onset, non-contiguous <=2001, claim pairs dropped          +vol+decade      0.080 [ 0.026,  0.134] | N=455135 events=512
+all dyads <=2001, no claim control, baseline               geography interaction -0.313 [-0.370, -0.256] | N=477587 events=1272
+all dyads <=2001, claim and claim x share, baseline        geography interaction -0.297 [-0.356, -0.237] | N=477587 events=1272
+all dyads <=2001, no claim control, +vol+decade            geography interaction -0.310 [-0.385, -0.236] | N=477587 events=1272
+all dyads <=2001, claim and claim x share, +vol+decade     geography interaction -0.299 [-0.373, -0.225] | N=477587 events=1272
+
+== 3. DISPUTE ISSUE (territorial revisionism vs other) ==
+Onsets in the full risk set (no dispute at t): 1441; territorial 315, other 1126. Non-contiguous onsets: territorial 108, other 499. Contiguous: territorial 207, other 627
+territorial-issue onsets, baseline                         geography interaction -0.367 [-0.483, -0.252] | N=608957 events=315
+other-issue onsets, baseline                               geography interaction -0.288 [-0.344, -0.233] | N=608957 events=1126
+territorial-issue onset, non-contiguous                    baseline         0.193 [ 0.116,  0.270] | N=584069 events=108
+other-issue onset, non-contiguous                          baseline         0.255 [ 0.215,  0.294] | N=584069 events=499
+territorial-issue onset, contiguous                        baseline        -0.013 [-0.101,  0.075] | N=24888 events=207
+other-issue onset, contiguous                              baseline         0.054 [ 0.004,  0.105] | N=24888 events=627
+territorial-issue onsets, +vol+decade                      geography interaction -0.364 [-0.535, -0.193] | N=608957 events=315
+other-issue onsets, +vol+decade                            geography interaction -0.286 [-0.357, -0.216] | N=608957 events=1126
+territorial-issue onset, non-contiguous                    +vol+decade     -0.059 [-0.181,  0.063] | N=584069 events=108
+other-issue onset, non-contiguous                          +vol+decade      0.093 [ 0.041,  0.145] | N=584069 events=499
+territorial-issue onset, contiguous                        +vol+decade     -0.080 [-0.195,  0.034] | N=24888 events=207
+other-issue onset, contiguous                              +vol+decade      0.048 [-0.008,  0.103] | N=24888 events=627
+
+== 4. UPPER TAIL BY PERIOD: non-contiguous dyad-years and onsets by exposure band ==
+         era    band dyad_years dyads onsets per1000
+1  1870-1913    <p90       6662   415     12    1.80
+2  1870-1913 p90-p99       2238   146     25   11.17
+3  1870-1913   >=p99        502    35     17   33.86
+4    1914-45    <p90      18224  1332     78    4.28
+5    1914-45 p90-p99       3201   329     34   10.62
+6    1914-45   >=p99        545    77     12   22.02
+7    1946-89    <p90     240227 11059    167    0.70
+8    1946-89 p90-p99      24193  2089     82    3.39
+9    1946-89   >=p99       2979   283     36   12.08
+10 1990-2010    <p90     260549 13988     94    0.36
+11 1990-2010 p90-p99      22934  2315     40    1.74
+12 1990-2010   >=p99       1815   252     10    5.51
+
+Top-1% non-contiguous onsets (75): by dyad
+                                         pair onsets
+1                     United Kingdom - Russia      6
+2                     United Kingdom - Turkey      6
+3          United States of America - Ecuador      6
+4             United States of America - Peru      5
+5            United States of America - Japan      3
+6                               China - Japan      2
+7                            France - Morocco      2
+8                       United Kingdom - Iraq      2
+9            United States of America - China      2
+10           United States of America - Haiti      2
+11           United States of America - Libya      2
+12       United States of America - Nicaragua      2
+13  United States of America - United Kingdom      2
+14       United States of America - Venezuela      2
+15 Belgium - Democratic Republic of the Congo      1
+16                           France - Comoros      1
+17                             France - Congo      1
+18                             France - Gabon      1
+19                       France - Ivory Coast      1
+20                            France - Russia      1
+
+== 5. LONGER-RUN WITHIN-PAIR EXPOSURE (dyad FE, non-contiguous) ==
+current share (reference)          baseline   0.049 [-0.028,  0.126] | dyads used 379, obs 25035
+current share (reference)          +volume    0.094 [ 0.015,  0.174] | dyads used 379, obs 25035
+5-year mean of the share           baseline   0.115 [ 0.035,  0.196] | dyads used 379, obs 25035
+5-year mean of the share           +volume    0.146 [ 0.055,  0.238] | dyads used 379, obs 25035
+change: 5-yr mean minus previous 5-yr mean baseline  -0.040 [-0.128,  0.049] | dyads used 338, obs 22025
+change: 5-yr mean minus previous 5-yr mean +volume   -0.003 [-0.086,  0.080] | dyads used 338, obs 22025
+
+== 6. COVERAGE: dyadic MID onsets (hostility >= 3) inside the trade panel ==
+Dispute dyad-years (hostility >= 3) 1870-2010: 3962; inside the trade panel: 2730 (68.9%)
+        era dispute_dyad_years in_panel  pct
+1 1870-1913                354      176 49.7
+2   1914-45                921      339 36.8
+3   1946-89               1650     1385 83.9
+4 1990-2010               1037      830 80.0
