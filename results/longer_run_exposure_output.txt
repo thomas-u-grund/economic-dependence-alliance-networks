@@ -1,0 +1,25 @@
+Windows (calendar years, >= 3 observed years): Wa = years t-4..t; Wb = t-5..t-1; change_a = Wa minus mean over t-9..t-5; change_b = Wb minus mean over t-10..t-6. Outcome: dispute begins in t+1.
+
+NON-CONTIGUOUS pairs
+current-year share (same sample as Wa)   baseline   0.018 [-0.064,  0.100] | dyads with onset 364, obs 23440
+current-year share (same sample as Wa)   +volume    0.067 [-0.018,  0.152] | dyads with onset 364, obs 23440
+mean, years t-4..t                       baseline   0.088 [ 0.001,  0.176] | dyads with onset 364, obs 23440
+mean, years t-4..t                       +volume    0.123 [ 0.024,  0.222] | dyads with onset 364, obs 23440
+mean, years t-5..t-1                     baseline   0.102 [ 0.008,  0.196] | dyads with onset 349, obs 22225
+mean, years t-5..t-1                     +volume    0.122 [ 0.017,  0.228] | dyads with onset 349, obs 22225
+change: Wa minus mean t-9..t-5           baseline  -0.033 [-0.132,  0.067] | dyads with onset 313, obs 18933
+change: Wa minus mean t-9..t-5           +volume    0.006 [-0.087,  0.098] | dyads with onset 313, obs 18933
+change: Wb minus mean t-10..t-6          baseline  -0.009 [-0.084,  0.066] | dyads with onset 305, obs 18131
+change: Wb minus mean t-10..t-6          +volume    0.021 [-0.050,  0.091] | dyads with onset 305, obs 18131
+
+CONTIGUOUS pairs
+current-year share (same sample as Wa)   baseline  -0.028 [-0.114,  0.059] | dyads with onset 251, obs 11803
+current-year share (same sample as Wa)   +volume   -0.028 [-0.115,  0.059] | dyads with onset 251, obs 11803
+mean, years t-4..t                       baseline  -0.018 [-0.107,  0.072] | dyads with onset 251, obs 11803
+mean, years t-4..t                       +volume   -0.017 [-0.106,  0.072] | dyads with onset 251, obs 11803
+mean, years t-5..t-1                     baseline  -0.024 [-0.104,  0.057] | dyads with onset 244, obs 11276
+mean, years t-5..t-1                     +volume   -0.024 [-0.102,  0.055] | dyads with onset 244, obs 11276
+change: Wa minus mean t-9..t-5           baseline  -0.011 [-0.081,  0.058] | dyads with onset 225, obs 9653
+change: Wa minus mean t-9..t-5           +volume   -0.013 [-0.083,  0.058] | dyads with onset 225, obs 9653
+change: Wb minus mean t-10..t-6          baseline   0.008 [-0.061,  0.077] | dyads with onset 224, obs 9301
+change: Wb minus mean t-10..t-6          +volume    0.008 [-0.061,  0.077] | dyads with onset 224, obs 9301

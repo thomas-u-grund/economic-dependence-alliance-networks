@@ -1,4 +1,4 @@
-# 99: FULL PANEL: what distinguishes the distant, highly exposed pairs? Colonial ties, territorial claims, dispute issue, upper-tail events, longer-run within-pair exposure, coverage.
+# 99: FULL PANEL: what distinguishes the distant, highly exposed pairs? Colonial ties, territorial claims, dispute issue, upper-tail events, coverage (longer-run within-pair exposure: see script 101).
 #     Run with ALLIANCE_DEF=defense. Questions specified in HAZARD_ROBUSTNESS_LOG.md before running.
 suppressMessages({ library(dplyr); library(readr); library(tidyr); library(sandwich); library(lmtest); library(fixest); library(zoo) })
 src <- readLines("scripts/49_layered_hazards.R"); k <- grep("^sink\\(", src)[1]; eval(parse(text = src[1:(k - 1)]))
@@ -55,13 +55,7 @@ print(as.data.frame(nc %>% group_by(era, band) %>% summarise(dyad_years = n(), d
 nm <- read_csv("raw/states/States2024/statelist2024.csv", show_col_types = FALSE) %>% distinct(ccode, .keep_all = TRUE) %>% select(ccode, statenme)
 ev <- tl %>% filter(onset_m == 1) %>% transmute(pair = paste(nm$statenme[match(lo, nm$ccode)], "-", nm$statenme[match(hi, nm$ccode)]), year_t = year, colonial, claim, allied = a) %>% arrange(year_t)
 cat(sprintf("\nTop-1%% non-contiguous onsets (%d): by dyad\n", nrow(ev))); print(as.data.frame(ev %>% count(pair, name = "onsets") %>% arrange(desc(onsets)) %>% head(20)))
-cat("\n== 5. LONGER-RUN WITHIN-PAIR EXPOSURE (dyad FE, non-contiguous) ==\n")
-d <- d %>% arrange(dyad, year) %>% group_by(dyad) %>% mutate(mx5 = rollapplyr(z_mx, 5, mean, partial = TRUE), mx5lag = lag(mx5, 5), ch5 = mx5 - mx5lag) %>% ungroup()
-n5 <- d %>% filter(m == 0, contig == 0)
-for (v in c("z_mx", "mx5", "ch5")) for (sp in c("", "+ z_vol")) { x <- n5 %>% filter(!is.na(.data[[v]])); x$l_dur <- log(x$dur_m); x$v <- x[[v]]
-  m <- feglm(as.formula(paste("onset_m ~ v + z_mn + z_cap + l_dur + l_same + l_diff", sp, "| dyad")), x, family = "binomial", cluster = ~dyad)
-  cat(sprintf("%-34s %-9s %s | dyads used %d, obs %d\n", c(z_mx = "current share (reference)", mx5 = "5-year mean of the share", ch5 = "change: 5-yr mean minus previous 5-yr mean")[v], ifelse(sp == "", "baseline", "+volume"), ci(coef(m)["v"], se(m)["v"]), length(unique(x$dyad[x$onset_m == 1])), nobs(m))) }
-cat("\n== 6. COVERAGE: dyadic MID onsets (hostility >= 3) inside the trade panel ==\n")
+cat("\n== 5. COVERAGE: dyadic MID onsets (hostility >= 3) inside the trade panel ==\n")
 allm <- read_csv("raw/mids/dyadic_mid_4.03_update/dyadic_mid_4.03.csv", show_col_types = FALSE) %>% filter(hihost >= 3, year >= 1870, year <= 2010) %>% transmute(year, lo = pmin(statea, stateb), hi = pmax(statea, stateb)) %>% distinct()
 inp <- d %>% distinct(year, lo, hi, contig) %>% mutate(inpanel = 1L)
 cv <- allm %>% left_join(inp, by = c("year", "lo", "hi")) %>% mutate(inpanel = replace_na(inpanel, 0L), era = cut(year, c(1869, 1913, 1945, 1989, 2011), labels = c("1870-1913", "1914-45", "1946-89", "1990-2010")))
