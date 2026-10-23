@@ -14,12 +14,12 @@
 | File | Content |
 |---|---|
 | `tie_trade.csv(.gz)` | One row per dyad-year (1870-2011) with trade and capability measures: `ccode_low`, `ccode_high` (COW codes, low < high), `trade_share_low`, `trade_share_high` (share of each state's own total trade that is with the partner; missing if total trade under US$50 million or if the dyadic flow exceeds either state's total), `total_dyadic_trade` (US$ millions), `log_trade_volume`, `cinc_low`, `cinc_high`, `cap_asymmetry` (absolute difference in log CINC), `dep_exposed`, `dep_sheltered`, `dep_asymmetry` (larger share, smaller share, their difference), and further transformations. |
-| `signed_ties.csv` | Signed network of the original triad design: `year`, `ccode_low`, `ccode_high`, `sign` (+1 alliance, -1 dispute; dispute overrides alliance). Built with all four commitment types. The `multiplex` column is not used (it is always FALSE). The defence-pact network is built in memory by `scripts/38_hazard_panel_lib.R` and `49_layered_hazards.R`. |
+| `signed_ties.csv` | Signed network of the original triad design: `year`, `ccode_low`, `ccode_high`, `sign` (+1 alliance, -1 dispute; dispute overrides alliance). Built with all four commitment types. The `multiplex` column is not used (it is always FALSE). The defence-pact network is built in memory by `scripts/03_layered_hazards.R`. |
 | `state_years.csv`, `gdp_maddison.csv` | State-years (COW code, year); Maddison GDP by COW code. |
 | `triads_all_years.csv(.gz)`, `.rds`, `triads_summary_by_year.csv` | Triads of the signed network by year (original design). |
 | `person_year_risk_table.csv/.rds`, `spell_bounds.rds` | Triad-spell risk table of the triad-level design (Appendices A-D, G). |
 
-## 3. Analysis panel (built in memory by scripts 49 and 66-80)
+## 3. Analysis panel (built in memory by scripts 03 to 40)
 One row per dyad-year with trade data, 1870-2010 (611,687 rows). Defence-pact definition (`ALLIANCE_DEF=defense`).
 | Variable | Definition |
 |---|---|
@@ -39,7 +39,7 @@ One row per dyad-year with trade data, 1870-2010 (611,687 rows). Defence-pact de
 | `z_mx`, `z_mn`, `z_cap`, `z_vol` | `mx`, `mn`, `cap`, `lvol` standardised over the whole panel (mean 0, SD 1) |
 | `onset_m`, `end_m`, `form_a`, `end_a` | Transition indicators: dispute begins (`m == 0` and `m1 == 1`), dispute ends (`m == 1`, `m1 == 0`), alliance forms (`a == 0`, `a1 == 1`), alliance ends (`a == 1`, `a1 == 0`) |
 | `decade` | Decade factor |
-Scripts 72 and 77-78 add: `n_pp` (common allies), `n_nn` (common enemies), `capdist` (capital distance, CShapes, km), `pact` (largest covering defence pact of five or more members, otherwise "other"/"none"), `h`/`fat` (highest hostility and fatality level in the dyad-year), `init` (initiating state).
+Scripts 10 and 15-16 add: `n_pp` (common allies), `n_nn` (common enemies), `capdist` (capital distance, CShapes, km), `pact` (largest covering defence pact of five or more members, otherwise "other"/"none"), `h`/`fat` (highest hostility and fatality level in the dyad-year), `init` (initiating state).
 
 ## 4. Output files (`results/`)
-`*_output.txt` are the printed output of the script with the same number (captured with `sink`); `*.csv` are tables behind figures and appendix tables; `*.png/.pdf` are figures; `*.rds` are saved model objects. See README for the map from article items to files.
+`*_output.txt` are the printed output of the script that produces them (see the README) (captured with `sink`); `*.csv` are tables behind figures and appendix tables; `*.png/.pdf` are figures; `*.rds` are saved model objects. See README for the map from article items to files.

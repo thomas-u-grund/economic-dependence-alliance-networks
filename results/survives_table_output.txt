@@ -1,4 +1,4 @@
-== Controls path (script 67): larger share, log-odds per SD ==
+== Controls path (script 05): larger share, log-odds per SD ==
                             population events
                     DISPUTE ONSET in T    701
                     DISPUTE ONSET in T    701
@@ -93,7 +93,7 @@
  -0.011 0.225
  -0.016 0.238
 
-== Within-dyad (script 69) ==
+== Within-dyad (script 07) ==
                               population              step   est    se
  DISPUTE ONSET in T: N=108068 events=707            pooled 0.163 0.024
  DISPUTE ONSET in T: N=108068 events=707          FE: dyad 0.070 0.039
@@ -109,11 +109,11 @@
              336  0.018 0.170
              321  0.000 0.180
 
-== Volume + decade path in T (script 73) ==
+== Volume + decade path in T (script 11) ==
         outcome                 spec   est  ci_lo ci_hi
   dispute onset             baseline 0.163  0.116 0.209
   dispute onset + volume + decade FE 0.102  0.051 0.153
-  dispute onset      contiguous only 0.059 -0.012 0.129
+  dispute onset      contiguous only 0.070  0.008 0.131
  dispute ending             baseline 0.028 -0.020 0.076
  dispute ending + volume + decade FE 0.016 -0.036 0.068
- dispute ending      contiguous only 0.029 -0.068 0.126
+ dispute ending      contiguous only 0.032 -0.057 0.121

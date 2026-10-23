@@ -1,2 +1,0 @@
-flip_i: larger share alliances  0.351 (se 0.057) | extra for disputes  0.004 (se 0.107, p=0.9687) | N=47291 events=647
-gone_i: larger share alliances -0.328 (se 0.128) | extra for disputes  0.264 (se 0.135, p=0.0502) | N=47291 events=1354

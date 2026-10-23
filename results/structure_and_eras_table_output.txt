@@ -30,7 +30,7 @@
       0.473
          NA
 
-== Held-out information gains (script 68) ==
+== Held-out information gains (script 06) ==
 Exposure + controls                              larger  0.251 (0.034) | same    -- | diff    -- | AIC    7040.5 | held-out gain 0.00681 AUC 0.8375
 + third-state counts (structure)                 larger  0.250 (0.036) | same -0.208 (0.054) | diff  0.390 (0.036) | AIC    6827.6 | held-out gain 0.00777 AUC 0.8630
 Structure + controls (no shares)                 larger    -- | same -0.171 (0.055) | diff  0.395 (0.037) | AIC    6908.4 | held-out gain 0.00741 AUC 0.8508
@@ -44,7 +44,7 @@ Structure + controls, larger share only removed  larger    -- | same  0.203 (0.0
 Incremental held-out LL per obs of the larger share (structure in): -0.00015 (95% CI -0.00154 to 0.00113)
 Incremental held-out LL per obs of structure (exposure in): 0.00271 (95% CI -0.00200 to 0.00703)
 
-== Era stability (script 70): embedded vs not, odds ratio with controls + decade FE ==
+== Era stability (script 08): embedded vs not, odds ratio with controls + decade FE ==
        era logodds    se   OR
  1946-1989   1.028 0.135 2.79
  1870-1913   0.953 0.366 2.59
@@ -62,7 +62,7 @@ Incremental held-out LL per obs of structure (exposure in): 0.00271 (95% CI -0.0
  l_same 1914-1945 -0.439 0.197
  l_same 1990-2011 -0.081 0.066
 
-== Onset rate by era (rows from script 70 part a) ==
+== Onset rate by era (rows from script 08 part a) ==
 1 1946-1989     279974     20.8    667            55.3   0.64      0.13
 2 1870-1913      11536      5.5    118            20.3   4.13      0.87
 3 1914-1945      24534     11.1    207            44.9   3.71      0.53
