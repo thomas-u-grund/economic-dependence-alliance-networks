@@ -1,0 +1,43 @@
+At-risk dyad-years with capital distance (1886-2010): 598807; onsets 1397; contiguous 24004 (808 onsets)
+Larger-share cut points (panel-wide): p50 0.0002, p90 0.0285, p99 0.2242
+
+(a) Onsets per 1,000 dyad-years at risk by exposure tier
+             geo           tier      n   k   rate     lo     hi
+1     Contiguous   Below median   2992 138 46.123 38.887 54.262
+2     Contiguous Median to 90th   9800 307 31.327 27.966 34.969
+3     Contiguous   90th to 99th   9607 308 32.060 28.628 35.779
+4     Contiguous         Top 1%   1605  55 34.268 25.918 44.373
+5 Not contiguous   Below median 296412 164  0.553  0.472  0.645
+6 Not contiguous Median to 90th 229722 201  0.875  0.758  1.005
+7 Not contiguous   90th to 99th  44285 170  3.839  3.284  4.460
+8 Not contiguous         Top 1%   4384  54 12.318  9.266 16.041
+
+(b) Non-contiguous pairs: onsets per 1,000 by capital-distance band (km) and exposure
+         band                        expo      n   k  rate    lo    hi
+1      <2,000       Above 90th percentile   8189  36 4.396 3.081 6.081
+2      <2,000 At or below 90th percentile  34343  66 1.922 1.487 2.444
+3 2,000-5,000       Above 90th percentile  13486  81 6.006 4.773 7.460
+4 2,000-5,000 At or below 90th percentile 113601  99 0.871 0.708 1.061
+5 5,000-9,000       Above 90th percentile  14960  58 3.877 2.945 5.009
+6 5,000-9,000 At or below 90th percentile 171526 104 0.606 0.495 0.735
+7      >9,000       Above 90th percentile  12034  49 4.072 3.014 5.380
+8      >9,000 At or below 90th percentile 206664  96 0.465 0.376 0.567
+
+(c) Top 1% of the larger share among non-contiguous at-risk dyad-years: > 0.1862; 5749 dyad-years in 460 dyads; onsets 66
+Median capital distance: tail 5094 km; other non-contiguous 7560 km; tail above 5,000 km: 51%; other: 71%
+Dyads drawn: 460 of 460
+
+States by tail dyad-years:
+               country_name   ny
+1  United States of America 2318
+2            United Kingdom 1130
+3                    France  701
+4                     Japan  599
+5   German Federal Republic  187
+6                 Australia  172
+7     Russia (Soviet Union)  166
+8                   Belgium  128
+9                    Brazil  127
+10                    China  123
+11                    Chile  109
+12              New Zealand  106

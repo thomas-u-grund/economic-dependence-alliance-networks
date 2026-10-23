@@ -43,8 +43,8 @@ The principal population of the article is all dyad-years. Scripts 66 to 83 were
 
 | Item in the article | Script | Output in `results/` |
 |---|---|---|
-| Table 1 (composition) | 66 | `triad_population_output.txt` |
-| Figure 1 (schematic) | 43 | `fig_pressure.*` |
+| Appendix A, Table 2 (composition by embedding and alliance) | 66 | `triad_population_output.txt` |
+| Figures 1 and 4 (raw onset rates by exposure, contiguity and distance; map of the most exposed non-contiguous pairs), Sections 5.1 and 5.3 | 102 | `geography_descriptives_output.txt`, `fig_geography_descriptives.*`, `fig_geography_map.*` |
 | Figure 2A (transitions, all dyad-years), Appendix E | 86, 91, 92 | `population_selection_output.txt`, `fullpanel_shared_se_output.txt`, `fig_exposure_map_full.*` |
 | Figure 2B (severity), Section 5.5, Appendix D | 89, 92 | `fullpanel_severity_initiator_output.txt` |
 | Section 5.3 (contiguity, distance), Appendix F | 88, 94 | `fullpanel_within_het_output.txt`, `fullpanel_contiguity_implied_output.txt` |
@@ -54,9 +54,9 @@ The principal population of the article is all dyad-years. Scripts 66 to 83 were
 | Section 5.4 (longer-run within-pair exposure), Appendix F | 101 | `longer_run_exposure_output.txt` |
 | Section 5.3 (diplomatic exchange, UN voting alignment, halves of the period), Appendix J | 100 | `diplomacy_alignment_output.txt` |
 | Section 5.4 (within-between, fixed effects), Appendix F | 88, 93, 98 | `fullpanel_within_het_output.txt`, `fullpanel_dyad_fe_output.txt`, `within_between_by_contiguity_output.txt` |
-| Table 2 (controls) | 87 | `fullpanel_controls_output.txt` |
-| Table 3 (predictors, held-out comparisons) | 90 | `fullpanel_predictors_output.txt` |
-| Figure 4 (periods), Appendix E | 70, 79, 80 | `embedding_over_time_output.txt`, `era_bins_rates.csv`, `era_bins_shares.csv`, `fig_eras.*` |
+| Table 1 (controls) | 87 | `fullpanel_controls_output.txt` |
+| Appendix E, Table 14 (predictors, held-out comparisons) | 90 | `fullpanel_predictors_output.txt` |
+| Figure A1 (periods), Appendix E | 70, 79, 80 | `embedding_over_time_output.txt`, `era_bins_rates.csv`, `era_bins_shares.csv`, `fig_eras.*` |
 | Appendix A (embedded pairs only) | 66, 68, 73, 77, 81 | `triad_population_output.txt`, `predictors_in_T_output.txt`, `claims_table_output.txt`, `hostility_gradient_output.txt`, `within_between_output.txt` |
 | Appendix B (unbalanced triads) | 71, 72 | `negative_tie_resolution_output.txt` |
 | Appendix I (lagged embedding and partner counts) | 86, 97 | `population_selection_output.txt`, `lagged_network_output.txt` |
