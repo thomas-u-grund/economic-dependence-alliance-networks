@@ -1,5 +1,4 @@
 # 43: Schematic of common and split partners around a focal pair A-C in a dispute (two panels).
-setwd("/Users/tgrund/FILES_NEW/RESEARCH/2026 Trade")
 pos <- "#2166ac"; neg <- "#b2182b"
 panel <- function(title, third, s1, s2, tint, verdict, why, expect) {
   plot(NA, xlim = c(-1.0, 5.0), ylim = c(-4.3, 3.9), axes = FALSE, xlab = "", ylab = "", asp = 1)

@@ -1,6 +1,5 @@
 # 102: Geographic descriptives (raw onset rates by exposure tier, contiguity and distance) and map of the highly exposed non-contiguous pairs. Run with ALLIANCE_DEF=defense.
 suppressMessages({ library(dplyr); library(readr); library(tidyr); library(ggplot2); library(patchwork); library(sf); library(cshapes); library(rnaturalearth) })
-setwd("/Users/tgrund/FILES_NEW/RESEARCH/2026 Trade")
 src <- readLines("scripts/49_layered_hazards.R"); k <- grep("^sink\\(", src)[1]; eval(parse(text = src[1:(k - 1)]))
 d <- d %>% mutate(onset_m = as.integer(m1 == 1)) %>% filter(year >= 1886, year <= 2011)
 yrs <- sort(unique(d$year))
