@@ -44,7 +44,7 @@ The principal population of the article is all dyad-years. Scripts 66 to 83 were
 | Item in the article | Script | Output in `results/` |
 |---|---|---|
 | Appendix A, Table 2 (composition by embedding and alliance) | 66 | `triad_population_output.txt` |
-| Figures 1 and 4 (raw onset rates by exposure, contiguity and distance; map of the most exposed non-contiguous pairs), Sections 5.1 and 5.3 | 102 | `geography_descriptives_output.txt`, `fig_geography_descriptives.*`, `fig_geography_map.*` |
+| Figure 1 (raw onset rates by exposure, contiguity and distance) and Figure A2 (map of the most exposed non-contiguous pairs), Section 5.1 and Appendix J | 102 | `geography_descriptives_output.txt`, `fig_geography_descriptives.*`, `fig_geography_map.*` |
 | Figure 2A (transitions, all dyad-years), Appendix E | 86, 91, 92 | `population_selection_output.txt`, `fullpanel_shared_se_output.txt`, `fig_exposure_map_full.*` |
 | Figure 2B (severity), Section 5.5, Appendix D | 89, 92 | `fullpanel_severity_initiator_output.txt` |
 | Section 5.3 (contiguity, distance), Appendix F | 88, 94 | `fullpanel_within_het_output.txt`, `fullpanel_contiguity_implied_output.txt` |
