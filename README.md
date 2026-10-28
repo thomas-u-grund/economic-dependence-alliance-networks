@@ -49,15 +49,15 @@ The principal population of the article is all dyad-years; the results for embed
 | Minimum-trade rule (none, 0.01% and 0.05% of recorded world trade), Section 4.3 and Appendix H | 42 | `trade_threshold_output.txt` |
 | Figure 2A (transitions, all dyad-years), Section 5.2, Appendix D | 24, 29, 30 | `population_selection_output.txt`, `fullpanel_shared_se_output.txt`, `fig_exposure_map_full.*` |
 | Figure 2B (severity), Sections 5.2 and 5.5, Appendices C and D | 27, 30 | `fullpanel_severity_initiator_output.txt` |
-| Section 5.3 (contiguity, distance), Appendix E | 26, 32 | `fullpanel_within_het_output.txt`, `fullpanel_contiguity_implied_output.txt` |
+| Table 1 and Section 5.3 (contiguity, distance), Appendix E | 26, 32, 33 | `fullpanel_within_het_output.txt`, `fullpanel_contiguity_implied_output.txt` |
 | Section 5.3, Appendix F (major powers, regions) | 22 | `distant_pairs_output.txt` |
 | Figure 3 (predicted onsets), Appendix G | 23, 30 | `effect_sizes_output.txt`, `predicted_onset_by_percentile.csv`, `fig_predicted_onset.*` |
 | Section 5.3 (colonial ties, territorial claims, issue in dispute, upper tail by era, coverage), Appendix H | 37 | `what_distinguishes_output.txt` |
 | Section 5.4 (longer-run within-pair exposure), Appendix E | 39 | `longer_run_exposure_output.txt` |
 | Section 5.3 (diplomatic exchange, UN voting alignment, halves of the period), Appendix H | 38 | `diplomacy_alignment_output.txt` |
-| Section 5.4 (within-between, fixed effects), Appendix E | 26, 31, 36 | `fullpanel_within_het_output.txt`, `fullpanel_dyad_fe_output.txt`, `within_between_by_contiguity_output.txt` |
-| Table 1 (controls) | 25 | `fullpanel_controls_output.txt` |
-| Appendix C, Table 13 (predictors, held-out comparisons) | 28 | `fullpanel_predictors_output.txt` |
+| Table 2 and Section 5.4 (within-between, fixed effects), Appendix E | 26, 31, 36 | `fullpanel_within_het_output.txt`, `fullpanel_dyad_fe_output.txt`, `within_between_by_contiguity_output.txt` |
+| Table 3 (controls) | 25 | `fullpanel_controls_output.txt` |
+| Appendix D, Table 12 (predictors, held-out comparisons) | 28 | `fullpanel_predictors_output.txt` |
 | Figure A1 (periods), Appendix D | 08, 17, 18 | `embedding_over_time_output.txt`, `era_bins_rates.csv`, `era_bins_shares.csv`, `fig_eras.*` |
 | Appendix A, Section 5.2 (embedded pairs only) | 04, 06, 11, 15, 19 | `triad_population_output.txt`, `predictors_in_T_output.txt`, `claims_table_output.txt`, `hostility_gradient_output.txt`, `within_between_output.txt` |
 | not in the current appendix (removed 2026-10-27) (disputes inside unbalanced triads) | 09, 10 | `negative_tie_resolution_output.txt` |
