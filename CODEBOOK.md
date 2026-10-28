@@ -8,16 +8,11 @@
 | `trade/COW_Trade_4.0/` | COW bilateral trade v4.0 (current US$ millions). |
 | `contiguity/DirectContiguity320/` | COW direct contiguity v3.20 (`contdird.csv`; `conttype` 1 = land border, 2-5 = water). |
 | `nmc/NMCv7/` | National Material Capabilities v7 (`cinc`). |
-| `atop_download/`, `polity/`, `gdp_download/`, `states/` | ATOP 5.1; Polity 5; GDP downloads (Penn World Table, Maddison); COW state system. |
 
 ## 2. Built data files (`data/`)
 | File | Content |
 |---|---|
 | `tie_trade.csv(.gz)` | One row per dyad-year (1870-2011) with trade and capability measures: `ccode_low`, `ccode_high` (COW codes, low < high), `trade_share_low`, `trade_share_high` (share of each state's own total trade that is with the partner; missing if the state's total trade is under 0.01% of all trade recorded that year (relative threshold; script 42 compares it with a US$50 million nominal cutoff, no minimum and 0.05%) or if the dyadic flow exceeds either state's total), `total_dyadic_trade` (US$ millions), `log_trade_volume`, `cinc_low`, `cinc_high`, `cap_asymmetry` (absolute difference in log CINC), `dep_exposed`, `dep_sheltered`, `dep_asymmetry` (larger share, smaller share, their difference), and further transformations. |
-| `signed_ties.csv` | Signed network of the original triad design: `year`, `ccode_low`, `ccode_high`, `sign` (+1 alliance, -1 dispute; dispute overrides alliance). Built with all four commitment types. The `multiplex` column is not used (it is always FALSE). The defence-pact network is built in memory by `scripts/03_layered_hazards.R`. |
-| `state_years.csv`, `gdp_maddison.csv` | State-years (COW code, year); Maddison GDP by COW code. |
-| `triads_all_years.csv(.gz)`, `.rds`, `triads_summary_by_year.csv` | Triads of the signed network by year (original design). |
-| `person_year_risk_table.csv/.rds`, `spell_bounds.rds` | Triad-spell risk table of the triad-level design (Appendices A-D, G). |
 
 ## 3. Analysis panel (built in memory by scripts 03 to 40)
 One row per dyad-year with trade data, 1870-2010 (611,687 rows). Defence-pact definition (`ALLIANCE_DEF=defense`).

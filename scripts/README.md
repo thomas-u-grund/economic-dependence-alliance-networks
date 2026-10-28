@@ -3,14 +3,14 @@ Run from the repository root (`Rscript scripts/NN_name.R`). Set `ALLIANCE_DEF=de
 
 | Script | Purpose | Where used |
 |---|---|---|
-| 01 | `01_unpack_data.sh`: unpack the gzipped intermediate files | setup |
+| 01 | `01_unpack_data.sh`: unpack the gzipped analysis panel | setup |
 | 02 | Build the dyad-year trade/capability file and the signed network from `raw/` (optional after unpacking) | data builder |
 | 03 | Full dyad-year panel (preamble sourced by 04-40) and layered hazards | panel |
 | 04 | Embedded-pair composition and transitions | Appendix A, Table 2 |
 | 05-06 | Proximity diagnostics; predictors in embedded pairs | Appendix A |
 | 07 | Dyad fixed effects, embedded pairs | Appendix A |
 | 08 | Embedding across eras | Appendix D, Figure A1 |
-| 09-10 | Disputes inside unbalanced triads: counts and models | not in the current appendix (removed 2026-10-27) |
+| 10 | Sample of the claims table (embedded pairs); sourced by 11 | Appendix A |
 | 11-13 | Claims table and tables assembled from earlier output (embedded pairs) | Appendix A |
 | 14 | Dyad-clustered versus actor-overlap standard errors | Appendix B |
 | 15-16 | Severity of onsets and initiation, embedded pairs | Appendix A |
@@ -30,7 +30,6 @@ Run from the repository root (`Rscript scripts/NN_name.R`). Set `ALLIANCE_DEF=de
 | 32 | Contiguity interaction with implied effects, full panel | Section 5.3, Appendix E |
 | 33 | Contiguity interaction with actor-overlap intervals | Appendix B |
 | 34 | Upper tail of exposure among non-contiguous pairs; leave-out checks | Section 5.3, Appendix H |
-| 35 | Lagged partner counts | not in the current appendix (removed 2026-10-27) |
 | 36 | Within-between by contiguity | Section 5.4, Appendix E |
 | 37 | Colonial ties, territorial claims, issue in dispute, coverage | Section 5.3, Appendix H |
 | 38 | Diplomatic exchange, UN voting alignment, halves of the period | Section 5.3, Appendix H |
@@ -38,4 +37,4 @@ Run from the repository root (`Rscript scripts/NN_name.R`). Set `ALLIANCE_DEF=de
 | 40 | Geographic descriptives and map | Figure 1, Section 5.1; Figure A2, Appendix H |
 | 41 | Geography interaction: calendar-year effects, top 1% and 5% dropped, spline | Section 5.3, Appendix G (influence) |
 | 42 | Geography interaction under alternative minimum-trade rules (none, 0.01% and 0.05% of world trade) | Section 4.3, Appendix H |
-`run_all.sh` runs scripts 03 to 42 in order with `ALLIANCE_DEF=defense`.
+`run_all.sh` runs scripts 03 to 42 (numbers 09 and 35 are unused) in order with `ALLIANCE_DEF=defense`.
