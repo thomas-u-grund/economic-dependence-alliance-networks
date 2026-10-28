@@ -1,10 +1,10 @@
 
 ## DISPUTE ONSET, full panel
-pooled              larger  0.146 (se 0.025, p=0.0000)
-FE: dyad            larger -0.010 (se 0.036, p=0.7895) | N used=38145
-FE: dyad + decade   larger -0.000 (se 0.042, p=0.9922) | N used=38145
+pooled              larger  0.118 (se 0.024, p=0.0000)
+FE: dyad            larger -0.008 (se 0.030, p=0.7935) | N used=44186
+FE: dyad + decade   larger  0.000 (se 0.034, p=0.9903) | N used=44186
 
 ## DISPUTE ENDING, full panel
-pooled              larger  0.003 (se 0.019, p=0.8752)
-FE: dyad            larger -0.012 (se 0.044, p=0.7945) | N used=2250
-FE: dyad + decade   larger -0.022 (se 0.044, p=0.6204) | N used=2250
+pooled              larger  0.013 (se 0.020, p=0.5305)
+FE: dyad            larger -0.005 (se 0.042, p=0.9104) | N used=2314
+FE: dyad + decade   larger -0.009 (se 0.039, p=0.8091) | N used=2314

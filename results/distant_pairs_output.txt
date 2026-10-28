@@ -2,61 +2,61 @@
 ######## NON-CONTIGUOUS EMBEDDED PAIRS (T) ########
 
 == onset ==
-top5 baseline                                mod=0  0.286 [ 0.207,  0.366] | interaction -0.158 [-0.252, -0.064] | mod=1  0.128 [ 0.075,  0.182] | N=96340 events=305 (mod=1: 11034 rows)
-ever_major baseline                          mod=0  0.237 [ 0.051,  0.423] | interaction -0.100 [-0.293,  0.093] | mod=1  0.137 [ 0.086,  0.188] | N=96340 events=305 (mod=1: 22031 rows)
-same_region baseline                         mod=0  0.201 [ 0.140,  0.262] | interaction  0.027 [-0.048,  0.102] | mod=1  0.228 [ 0.176,  0.280] | N=96340 events=305 (mod=1: 36210 rows)
-no top-5 state, baseline                     larger share  0.231 [ 0.132,  0.331] | N=85306 events=139
-no major power, baseline                     larger share -0.042 [-0.500,  0.415] | N=74309 events=87
-all non-contiguous, baseline                 larger share  0.220 [ 0.178,  0.263] | N=96340 events=305
-top5 + vol + decade FE                       mod=0  0.232 [ 0.132,  0.332] | interaction -0.137 [-0.244, -0.030] | mod=1  0.095 [ 0.033,  0.158] | N=96340 events=305 (mod=1: 11034 rows)
-ever_major + vol + decade FE                 mod=0  0.266 [ 0.076,  0.455] | interaction -0.132 [-0.321,  0.058] | mod=1  0.134 [ 0.076,  0.192] | N=96340 events=305 (mod=1: 22031 rows)
-same_region + vol + decade FE                mod=0  0.080 [-0.009,  0.169] | interaction  0.034 [-0.059,  0.128] | mod=1  0.114 [ 0.048,  0.180] | N=96340 events=305 (mod=1: 36210 rows)
-no top-5 state, + vol + decade FE            larger share  0.155 [ 0.018,  0.292] | N=85306 events=139
-no major power, + vol + decade FE            larger share  0.008 [-0.378,  0.393] | N=74309 events=87
-all non-contiguous, + vol + decade FE        larger share  0.107 [ 0.047,  0.167] | N=96340 events=305
+top5 baseline                                mod=0  0.186 [ 0.087,  0.286] | interaction -0.042 [-0.162,  0.077] | mod=1  0.144 [ 0.082,  0.206] | N=82471 events=300 (mod=1: 10532 rows)
+ever_major baseline                          mod=0  0.067 [-0.082,  0.215] | interaction  0.076 [-0.087,  0.240] | mod=1  0.143 [ 0.083,  0.203] | N=82471 events=300 (mod=1: 20627 rows)
+same_region baseline                         mod=0  0.207 [ 0.143,  0.271] | interaction -0.012 [-0.098,  0.075] | mod=1  0.195 [ 0.130,  0.260] | N=82471 events=300 (mod=1: 28468 rows)
+no top-5 state, baseline                     larger share  0.122 [ 0.018,  0.225] | N=71939 events=134
+no major power, baseline                     larger share -0.165 [-0.575,  0.244] | N=61844 events=79
+all non-contiguous, baseline                 larger share  0.203 [ 0.155,  0.252] | N=82471 events=300
+top5 + vol + decade FE                       mod=0  0.132 [ 0.026,  0.237] | interaction -0.034 [-0.158,  0.089] | mod=1  0.097 [ 0.025,  0.170] | N=82471 events=300 (mod=1: 10532 rows)
+ever_major + vol + decade FE                 mod=0  0.063 [-0.092,  0.218] | interaction  0.069 [-0.096,  0.234] | mod=1  0.132 [ 0.065,  0.199] | N=82471 events=300 (mod=1: 20627 rows)
+same_region + vol + decade FE                mod=0  0.086 [-0.008,  0.181] | interaction  0.007 [-0.098,  0.111] | mod=1  0.093 [ 0.022,  0.164] | N=82471 events=300 (mod=1: 28468 rows)
+no top-5 state, + vol + decade FE            larger share  0.056 [-0.076,  0.189] | N=71939 events=134
+no major power, + vol + decade FE            larger share -0.132 [-0.371,  0.107] | N=61844 events=79
+all non-contiguous, + vol + decade FE        larger share  0.095 [ 0.033,  0.157] | N=82471 events=300
 
 == alliance formation ==
-top5 baseline                                mod=0  0.113 [ 0.036,  0.191] | interaction  0.086 [-0.027,  0.199] | mod=1  0.199 [ 0.116,  0.282] | N=63128 events=116 (mod=1: 8173 rows)
-ever_major baseline                          mod=0  0.420 [ 0.277,  0.564] | interaction -0.275 [-0.441, -0.110] | mod=1  0.145 [ 0.050,  0.240] | N=63128 events=116 (mod=1: 17498 rows)
-same_region baseline                         mod=0  0.245 [ 0.170,  0.320] | interaction -0.193 [-0.343, -0.043] | mod=1  0.052 [-0.085,  0.190] | N=63128 events=116 (mod=1: 8941 rows)
-no top-5 state, baseline                     larger share  0.094 [-0.002,  0.190] | N=54955 events=93
-no major power, baseline                     larger share  0.350 [ 0.186,  0.514] | N=45630 events=83
-all non-contiguous, baseline                 larger share  0.176 [ 0.108,  0.245] | N=63128 events=116
-top5 + vol + decade FE                       mod=0  0.054 [-0.054,  0.163] | interaction  0.120 [-0.016,  0.255] | mod=1  0.174 [ 0.075,  0.272] | N=63128 events=116 (mod=1: 8173 rows)
-ever_major + vol + decade FE                 mod=0  0.333 [ 0.166,  0.500] | interaction -0.226 [-0.413, -0.039] | mod=1  0.107 [-0.001,  0.215] | N=63128 events=116 (mod=1: 17498 rows)
-same_region + vol + decade FE                mod=0  0.216 [ 0.131,  0.301] | interaction -0.263 [-0.455, -0.072] | mod=1 -0.047 [-0.242,  0.148] | N=63128 events=116 (mod=1: 8941 rows)
-no top-5 state, + vol + decade FE            larger share  0.012 [-0.105,  0.130] | N=54955 events=93
-no major power, + vol + decade FE            larger share  0.183 [ 0.012,  0.354] | N=45630 events=83
-all non-contiguous, + vol + decade FE        larger share  0.133 [ 0.048,  0.218] | N=63128 events=116
+top5 baseline                                mod=0  0.082 [-0.001,  0.165] | interaction  0.125 [ 0.010,  0.240] | mod=1  0.207 [ 0.122,  0.292] | N=56619 events=105 (mod=1: 7895 rows)
+ever_major baseline                          mod=0  0.276 [ 0.191,  0.360] | interaction -0.124 [-0.251,  0.002] | mod=1  0.151 [ 0.052,  0.251] | N=56619 events=105 (mod=1: 16323 rows)
+same_region baseline                         mod=0  0.264 [ 0.176,  0.353] | interaction -0.223 [-0.376, -0.071] | mod=1  0.041 [-0.088,  0.170] | N=56619 events=105 (mod=1: 8127 rows)
+no top-5 state, baseline                     larger share  0.079 [-0.046,  0.204] | N=48724 events=80
+no major power, baseline                     larger share  0.254 [ 0.151,  0.357] | N=40296 events=70
+all non-contiguous, baseline                 larger share  0.181 [ 0.108,  0.254] | N=56619 events=105
+top5 + vol + decade FE                       mod=0 -0.033 [-0.170,  0.104] | interaction  0.187 [ 0.027,  0.346] | mod=1  0.154 [ 0.052,  0.255] | N=56619 events=105 (mod=1: 7895 rows)
+ever_major + vol + decade FE                 mod=0  0.201 [ 0.105,  0.298] | interaction -0.104 [-0.238,  0.030] | mod=1  0.097 [-0.007,  0.201] | N=56619 events=105 (mod=1: 16323 rows)
+same_region + vol + decade FE                mod=0  0.223 [ 0.124,  0.322] | interaction -0.276 [-0.470, -0.082] | mod=1 -0.053 [-0.238,  0.132] | N=56619 events=105 (mod=1: 8127 rows)
+no top-5 state, + vol + decade FE            larger share -0.051 [-0.220,  0.118] | N=48724 events=80
+no major power, + vol + decade FE            larger share  0.144 [ 0.029,  0.259] | N=40296 events=70
+all non-contiguous, + vol + decade FE        larger share  0.111 [ 0.020,  0.202] | N=56619 events=105
 
 ######## NON-CONTIGUOUS FULL PANEL ########
 
 == onset ==
-top5 baseline                                mod=0  0.364 [ 0.310,  0.417] | interaction -0.268 [-0.335, -0.201] | mod=1  0.096 [ 0.047,  0.144] | N=584069 events=607 (mod=1: 44637 rows)
-ever_major baseline                          mod=0  0.307 [ 0.210,  0.404] | interaction -0.188 [-0.289, -0.087] | mod=1  0.119 [ 0.074,  0.165] | N=584069 events=607 (mod=1: 66905 rows)
-same_region baseline                         mod=0  0.287 [ 0.235,  0.338] | interaction -0.078 [-0.144, -0.011] | mod=1  0.209 [ 0.161,  0.257] | N=584069 events=607 (mod=1: 113909 rows)
-no top-5 state, baseline                     larger share  0.348 [ 0.289,  0.406] | N=539432 events=295
-no major power, baseline                     larger share  0.290 [ 0.196,  0.384] | N=517164 events=199
-all non-contiguous, baseline                 larger share  0.248 [ 0.209,  0.287] | N=584069 events=607
-top5 + vol + decade FE                       mod=0  0.286 [ 0.223,  0.349] | interaction -0.245 [-0.319, -0.172] | mod=1  0.041 [-0.015,  0.096] | N=584069 events=607 (mod=1: 44637 rows)
-ever_major + vol + decade FE                 mod=0  0.286 [ 0.181,  0.391] | interaction -0.186 [-0.292, -0.079] | mod=1  0.101 [ 0.051,  0.150] | N=584069 events=607 (mod=1: 66905 rows)
-same_region + vol + decade FE                mod=0  0.104 [ 0.034,  0.175] | interaction -0.053 [-0.133,  0.027] | mod=1  0.052 [-0.006,  0.110] | N=584069 events=607 (mod=1: 113909 rows)
-no top-5 state, + vol + decade FE            larger share  0.230 [ 0.155,  0.304] | N=539432 events=295
-no major power, + vol + decade FE            larger share  0.159 [ 0.005,  0.313] | N=517164 events=199
-all non-contiguous, + vol + decade FE        larger share  0.076 [ 0.026,  0.125] | N=584069 events=607
+top5 baseline                                mod=0  0.286 [ 0.209,  0.364] | interaction -0.175 [-0.261, -0.090] | mod=1  0.111 [ 0.068,  0.155] | N=472849 events=664 (mod=1: 44369 rows)
+ever_major baseline                          mod=0  0.220 [ 0.110,  0.331] | interaction -0.103 [-0.218,  0.011] | mod=1  0.117 [ 0.074,  0.160] | N=472849 events=664 (mod=1: 67247 rows)
+same_region baseline                         mod=0  0.241 [ 0.187,  0.295] | interaction -0.069 [-0.134, -0.005] | mod=1  0.172 [ 0.128,  0.215] | N=472849 events=664 (mod=1: 92941 rows)
+no top-5 state, baseline                     larger share  0.236 [ 0.152,  0.320] | N=428480 events=312
+no major power, baseline                     larger share  0.137 [ 0.006,  0.268] | N=405602 events=186
+all non-contiguous, baseline                 larger share  0.210 [ 0.173,  0.248] | N=472849 events=664
+top5 + vol + decade FE                       mod=0  0.218 [ 0.137,  0.298] | interaction -0.180 [-0.268, -0.092] | mod=1  0.037 [-0.013,  0.088] | N=472849 events=664 (mod=1: 44369 rows)
+ever_major + vol + decade FE                 mod=0  0.213 [ 0.102,  0.325] | interaction -0.116 [-0.233,  0.001] | mod=1  0.097 [ 0.051,  0.144] | N=472849 events=664 (mod=1: 67247 rows)
+same_region + vol + decade FE                mod=0  0.072 [-0.001,  0.146] | interaction -0.020 [-0.098,  0.058] | mod=1  0.052 [ 0.005,  0.100] | N=472849 events=664 (mod=1: 92941 rows)
+no top-5 state, + vol + decade FE            larger share  0.137 [ 0.044,  0.230] | N=428480 events=312
+no major power, + vol + decade FE            larger share  0.050 [-0.102,  0.201] | N=405602 events=186
+all non-contiguous, + vol + decade FE        larger share  0.064 [ 0.019,  0.109] | N=472849 events=664
 
 == alliance formation ==
-top5 baseline                                mod=0  0.111 [ 0.053,  0.168] | interaction  0.094 [ 0.015,  0.173] | mod=1  0.205 [ 0.147,  0.262] | N=550492 events=677 (mod=1: 41509 rows)
-ever_major baseline                          mod=0  0.235 [ 0.167,  0.303] | interaction -0.092 [-0.179, -0.005] | mod=1  0.143 [ 0.085,  0.201] | N=550492 events=677 (mod=1: 62020 rows)
-same_region baseline                         mod=0  0.271 [ 0.224,  0.319] | interaction -0.231 [-0.329, -0.133] | mod=1  0.041 [-0.051,  0.133] | N=550492 events=677 (mod=1: 86520 rows)
-no top-5 state, baseline                     larger share  0.066 [-0.010,  0.142] | N=508983 events=607
-no major power, baseline                     larger share  0.208 [ 0.131,  0.284] | N=488472 events=566
-all non-contiguous, baseline                 larger share  0.178 [ 0.134,  0.222] | N=550492 events=677
-top5 + vol + decade FE                       mod=0 -0.029 [-0.125,  0.067] | interaction  0.189 [ 0.084,  0.294] | mod=1  0.160 [ 0.100,  0.220] | N=550492 events=677 (mod=1: 41509 rows)
-ever_major + vol + decade FE                 mod=0  0.149 [ 0.068,  0.230] | interaction -0.043 [-0.135,  0.048] | mod=1  0.105 [ 0.047,  0.164] | N=550492 events=677 (mod=1: 62020 rows)
-same_region + vol + decade FE                mod=0  0.250 [ 0.204,  0.297] | interaction -0.243 [-0.346, -0.140] | mod=1  0.007 [-0.097,  0.112] | N=550492 events=677 (mod=1: 86520 rows)
-no top-5 state, + vol + decade FE            larger share -0.091 [-0.221,  0.038] | N=508983 events=607
-no major power, + vol + decade FE            larger share  0.101 [ 0.004,  0.199] | N=488472 events=566
-all non-contiguous, + vol + decade FE        larger share  0.106 [ 0.052,  0.160] | N=550492 events=677
+top5 baseline                                mod=0  0.072 [-0.012,  0.156] | interaction  0.108 [ 0.009,  0.208] | mod=1  0.180 [ 0.119,  0.241] | N=446599 events=628 (mod=1: 41447 rows)
+ever_major baseline                          mod=0  0.171 [ 0.081,  0.262] | interaction -0.030 [-0.135,  0.076] | mod=1  0.142 [ 0.079,  0.205] | N=446599 events=628 (mod=1: 62573 rows)
+same_region baseline                         mod=0  0.278 [ 0.222,  0.333] | interaction -0.308 [-0.433, -0.184] | mod=1 -0.031 [-0.149,  0.088] | N=446599 events=628 (mod=1: 72469 rows)
+no top-5 state, baseline                     larger share  0.019 [-0.110,  0.147] | N=405152 events=551
+no major power, baseline                     larger share  0.137 [ 0.016,  0.258] | N=384026 events=510
+all non-contiguous, baseline                 larger share  0.164 [ 0.112,  0.216] | N=446599 events=628
+top5 + vol + decade FE                       mod=0 -0.087 [-0.243,  0.070] | interaction  0.225 [ 0.066,  0.384] | mod=1  0.138 [ 0.078,  0.198] | N=446599 events=628 (mod=1: 41447 rows)
+ever_major + vol + decade FE                 mod=0  0.098 [-0.022,  0.217] | interaction  0.003 [-0.124,  0.131] | mod=1  0.101 [ 0.039,  0.163] | N=446599 events=628 (mod=1: 62573 rows)
+same_region + vol + decade FE                mod=0  0.278 [ 0.226,  0.330] | interaction -0.279 [-0.371, -0.187] | mod=1 -0.001 [-0.088,  0.087] | N=446599 events=628 (mod=1: 72469 rows)
+no top-5 state, + vol + decade FE            larger share -0.139 [-0.342,  0.064] | N=405152 events=551
+no major power, + vol + decade FE            larger share  0.052 [-0.101,  0.205] | N=384026 events=510
+all non-contiguous, + vol + decade FE        larger share  0.101 [ 0.042,  0.160] | N=446599 events=628
 
-Share of non-contiguous embedded onset risk-set rows with a top-5 state: 0.115 ; ever_major: 0.229 ; same region: 0.376 
+Share of non-contiguous embedded onset risk-set rows with a top-5 state: 0.128 ; ever_major: 0.25 ; same region: 0.345 

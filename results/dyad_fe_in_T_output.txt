@@ -1,10 +1,10 @@
 
-## DISPUTE ONSET in T: N=108068 events=707
-pooled              larger  0.163 (se 0.024, p=0.0000)
-FE: dyad           larger  0.070 (se 0.039, p=0.0772) | N used=11640 | split  0.886 (p=0.0000) common -0.086 (p=0.5164)
-FE: dyad + decade  larger  0.057 (se 0.040, p=0.1534) | N used=11595 | split  1.013 (p=0.0000) common  0.058 (p=0.6135)
+## DISPUTE ONSET in T: N=92500 events=669
+pooled              larger  0.153 (se 0.025, p=0.0000)
+FE: dyad           larger  0.103 (se 0.039, p=0.0075) | N used=10981 | split  0.842 (p=0.0000) common -0.241 (p=0.0478)
+FE: dyad + decade  larger  0.092 (se 0.038, p=0.0156) | N used=10981 | split  0.993 (p=0.0000) common -0.094 (p=0.3667)
 
-## DISPUTE ENDING in T: N=1700 events=824
-pooled              larger  0.028 (se 0.025, p=0.2492)
-FE: dyad           larger  0.094 (se 0.039, p=0.0167) | N used=1323 | split -0.396 (p=0.0526) common -0.307 (p=0.1837)
-FE: dyad + decade  larger  0.090 (se 0.046, p=0.0524) | N used=1321 | split -0.356 (p=0.0804) common -0.249 (p=0.3642)
+## DISPUTE ENDING in T: N=1636 events=793
+pooled              larger  0.045 (se 0.028, p=0.1058)
+FE: dyad           larger  0.109 (se 0.043, p=0.0111) | N used=1265 | split -0.443 (p=0.0315) common -0.332 (p=0.1310)
+FE: dyad + decade  larger  0.111 (se 0.049, p=0.0231) | N used=1259 | split -0.430 (p=0.0372) common -0.380 (p=0.1570)

@@ -1,24 +1,24 @@
 ######## Within-between, full panel (larger share per SD, global scale) ########
-dispute onset baseline                   between  0.216 [ 0.151,  0.281] | within  0.027 [-0.046,  0.100] | difference  0.189 [ 0.107,  0.271] | N=608957 events=1441 dyads=15754 (with outcome variation: 630)
-dispute onset + vol + decade FE          between  0.099 [ 0.038,  0.161] | within -0.014 [-0.099,  0.070] | difference  0.114 [ 0.016,  0.211] | N=608957 events=1441 dyads=15754 (with outcome variation: 630)
-dispute ending baseline                  between  0.013 [-0.033,  0.058] | within -0.011 [-0.073,  0.051] | difference  0.023 [-0.051,  0.098] | N=2730 events=1359 dyads=603 (with outcome variation: 294)
-dispute ending + vol + decade FE         between -0.005 [-0.054,  0.045] | within -0.034 [-0.098,  0.030] | difference  0.029 [-0.048,  0.106] | N=2730 events=1359 dyads=603 (with outcome variation: 294)
-alliance formation baseline              between  0.181 [ 0.107,  0.255] | within -0.048 [-0.128,  0.031] | difference  0.229 [ 0.123,  0.336] | N=565832 events=900 dyads=15405 (with outcome variation: 818)
-alliance formation + vol + decade FE     between  0.140 [ 0.057,  0.224] | within -0.004 [-0.065,  0.057] | difference  0.144 [ 0.041,  0.247] | N=565832 events=900 dyads=15405 (with outcome variation: 818)
+dispute onset baseline                   between  0.198 [ 0.130,  0.266] | within  0.008 [-0.060,  0.077] | difference  0.189 [ 0.109,  0.270] | N=496688 events=1493 dyads=12870 (with outcome variation: 633)
+dispute onset + vol + decade FE          between  0.088 [ 0.024,  0.151] | within -0.034 [-0.115,  0.048] | difference  0.121 [ 0.026,  0.216] | N=496688 events=1493 dyads=12870 (with outcome variation: 633)
+dispute ending baseline                  between  0.031 [-0.019,  0.082] | within -0.009 [-0.068,  0.051] | difference  0.040 [-0.036,  0.116] | N=2794 events=1409 dyads=605 (with outcome variation: 300)
+dispute ending + vol + decade FE         between  0.002 [-0.053,  0.056] | within -0.028 [-0.086,  0.030] | difference  0.029 [-0.044,  0.103] | N=2794 events=1409 dyads=605 (with outcome variation: 300)
+alliance formation baseline              between  0.181 [ 0.102,  0.260] | within -0.090 [-0.190,  0.009] | difference  0.272 [ 0.157,  0.386] | N=462501 events=835 dyads=12696 (with outcome variation: 759)
+alliance formation + vol + decade FE     between  0.160 [ 0.059,  0.262] | within -0.006 [-0.077,  0.065] | difference  0.166 [ 0.045,  0.287] | N=462501 events=835 dyads=12696 (with outcome variation: 759)
 
 ######## Larger share x standardised log capital distance, full panel 1886+ (contiguity as control) ########
-dispute onset baseline                   at average distance  0.244 [ 0.192,  0.296] | interaction  0.092 [ 0.066,  0.118] | at +1 SD distance  0.336 [ 0.270,  0.403] | N=598807 events=1397
-dispute onset + vol + decade FE          at average distance  0.145 [ 0.093,  0.197] | interaction  0.087 [ 0.060,  0.113] | at +1 SD distance  0.231 [ 0.166,  0.297] | N=598807 events=1397
-dispute ending baseline                  at average distance -0.003 [-0.048,  0.041] | interaction -0.005 [-0.030,  0.021] | at +1 SD distance -0.008 [-0.070,  0.054] | N=2655 events=1319
-dispute ending + vol + decade FE         at average distance -0.030 [-0.078,  0.018] | interaction -0.010 [-0.037,  0.017] | at +1 SD distance -0.040 [-0.107,  0.027] | N=2655 events=1319
-alliance formation baseline              at average distance  0.196 [ 0.153,  0.238] | interaction  0.101 [ 0.060,  0.142] | at +1 SD distance  0.297 [ 0.237,  0.357] | N=555880 events=855
-alliance formation + vol + decade FE     at average distance  0.214 [ 0.165,  0.263] | interaction  0.079 [ 0.046,  0.113] | at +1 SD distance  0.294 [ 0.223,  0.364] | N=555880 events=855
+dispute onset baseline                   at average distance  0.218 [ 0.167,  0.268] | interaction  0.100 [ 0.072,  0.128] | at +1 SD distance  0.318 [ 0.252,  0.384] | N=481918 events=1422
+dispute onset + vol + decade FE          at average distance  0.119 [ 0.067,  0.171] | interaction  0.089 [ 0.061,  0.117] | at +1 SD distance  0.208 [ 0.141,  0.274] | N=481918 events=1422
+dispute ending baseline                  at average distance  0.006 [-0.038,  0.051] | interaction -0.005 [-0.036,  0.026] | at +1 SD distance  0.001 [-0.064,  0.067] | N=2689 events=1352
+dispute ending + vol + decade FE         at average distance -0.025 [-0.075,  0.024] | interaction -0.010 [-0.041,  0.021] | at +1 SD distance -0.035 [-0.106,  0.035] | N=2689 events=1352
+alliance formation baseline              at average distance  0.189 [ 0.138,  0.239] | interaction  0.105 [ 0.059,  0.151] | at +1 SD distance  0.294 [ 0.225,  0.363] | N=447955 events=783
+alliance formation + vol + decade FE     at average distance  0.189 [ 0.137,  0.241] | interaction  0.067 [ 0.028,  0.106] | at +1 SD distance  0.256 [ 0.178,  0.334] | N=447955 events=783
 
 ######## Escalation given onset, full panel ########
-Onsets with hostility information: 1441; use of force or war: 955 (66.3%); any fatalities: 190 (13.2%)
+Onsets with hostility information: 1493; use of force or war: 996 (66.7%); any fatalities: 180 (12.1%)
   spec: baseline
-    y_force   0.043 [-0.017,  0.103] p=0.1597 events 955 of 1441
-    y_fat     0.007 [-0.092,  0.106] p=0.8865 events 190 of 1441
+    y_force   0.030 [-0.028,  0.088] p=0.3126 events 996 of 1493
+    y_fat     0.048 [-0.055,  0.151] p=0.3582 events 180 of 1493
   spec: + z_vol + decade
-    y_force   0.130 [ 0.061,  0.200] p=0.0002 events 955 of 1441
-    y_fat     0.086 [-0.010,  0.181] p=0.0779 events 190 of 1441
+    y_force   0.129 [ 0.063,  0.195] p=0.0001 events 996 of 1493
+    y_fat     0.094 [-0.018,  0.205] p=0.1004 events 180 of 1493

@@ -1,37 +1,37 @@
 ######## (a) FULL PANEL, contemporaneous partner counts as controls ########
-dispute onset baseline                         larger share  0.146 [ 0.097,  0.196] | N=608957 events=1441 dyads=630
-dispute onset + vol + decade FE                larger share  0.052 [ 0.003,  0.102] | N=608957 events=1441 dyads=630
-dispute ending baseline                        larger share  0.003 [-0.035,  0.041] | N=2730 events=1359 dyads=587
-dispute ending + vol + decade FE               larger share -0.017 [-0.058,  0.024] | N=2730 events=1359 dyads=587
-alliance formation baseline                    larger share  0.093 [ 0.044,  0.141] | N=565832 events=900 dyads=859
-alliance formation + vol + decade FE           larger share  0.073 [ 0.023,  0.124] | N=565832 events=900 dyads=859
-alliance ending baseline                       larger share -0.117 [-0.229, -0.005] | N=43125 events=195 dyads=181
-alliance ending + vol + decade FE              larger share -0.101 [-0.213,  0.012] | N=43125 events=195 dyads=181
+dispute onset baseline                         larger share  0.118 [ 0.071,  0.165] | N=496688 events=1493 dyads=634
+dispute onset + vol + decade FE                larger share  0.032 [-0.017,  0.081] | N=496688 events=1493 dyads=634
+dispute ending baseline                        larger share  0.013 [-0.027,  0.053] | N=2794 events=1409 dyads=586
+dispute ending + vol + decade FE               larger share -0.013 [-0.055,  0.029] | N=2794 events=1409 dyads=586
+alliance formation baseline                    larger share  0.074 [ 0.019,  0.129] | N=462501 events=835 dyads=787
+alliance formation + vol + decade FE           larger share  0.074 [ 0.014,  0.133] | N=462501 events=835 dyads=787
+alliance ending baseline                       larger share -0.188 [-0.311, -0.066] | N=34187 events=191 dyads=180
+alliance ending + vol + decade FE              larger share -0.186 [-0.307, -0.064] | N=34187 events=191 dyads=180
 
 -- full panel, larger share x contiguity (onset, formation)
-dispute onset baseline                         larger share  0.298 [ 0.265,  0.330] | interaction -0.310 [-0.363, -0.256] | N=608957 events=1441 dyads=630
-dispute onset + vol + decade FE                larger share  0.197 [ 0.158,  0.237] | interaction -0.306 [-0.374, -0.237] | N=608957 events=1441 dyads=630
-alliance formation baseline                    larger share  0.207 [ 0.168,  0.246] | interaction -0.316 [-0.429, -0.203] | N=565832 events=900 dyads=859
-alliance formation + vol + decade FE           larger share  0.171 [ 0.127,  0.215] | interaction -0.251 [-0.352, -0.151] | N=565832 events=900 dyads=859
+dispute onset baseline                         larger share  0.269 [ 0.235,  0.303] | interaction -0.324 [-0.381, -0.266] | N=496688 events=1493 dyads=634
+dispute onset + vol + decade FE                larger share  0.176 [ 0.138,  0.215] | interaction -0.311 [-0.379, -0.243] | N=496688 events=1493 dyads=634
+alliance formation baseline                    larger share  0.190 [ 0.144,  0.236] | interaction -0.294 [-0.420, -0.168] | N=462501 events=835 dyads=787
+alliance formation + vol + decade FE           larger share  0.153 [ 0.106,  0.200] | interaction -0.183 [-0.271, -0.095] | N=462501 events=835 dyads=787
 
 -- full panel: severity of onsets (risk set: no MID at t)
-severity y_dis baseline                        larger share  0.104 [ 0.043,  0.165] | N=608840 events=482 dyads=286
-severity y_dis + vol + decade FE               larger share -0.031 [-0.102,  0.039] | N=608840 events=482 dyads=286
-severity y_force baseline                      larger share  0.162 [ 0.112,  0.213] | N=608840 events=945 dyads=506
-severity y_force + vol + decade FE             larger share  0.089 [ 0.036,  0.141] | N=608840 events=945 dyads=506
-severity y_fat baseline                        larger share  0.156 [ 0.069,  0.244] | N=608840 events=188 dyads=145
-severity y_fat + vol + decade FE               larger share  0.133 [ 0.039,  0.228] | N=608840 events=188 dyads=145
-severity y_any baseline                        larger share  0.145 [ 0.097,  0.194] | N=608840 events=1511 dyads=668
-severity y_any + vol + decade FE               larger share  0.048 [-0.001,  0.097] | N=608840 events=1511 dyads=668
+severity y_dis baseline                        larger share  0.089 [ 0.030,  0.147] | N=496565 events=493 dyads=287
+severity y_dis + vol + decade FE               larger share -0.042 [-0.109,  0.025] | N=496565 events=493 dyads=287
+severity y_force baseline                      larger share  0.130 [ 0.081,  0.179] | N=496565 events=985 dyads=517
+severity y_force + vol + decade FE             larger share  0.067 [ 0.014,  0.119] | N=496565 events=985 dyads=517
+severity y_fat baseline                        larger share  0.163 [ 0.076,  0.251] | N=496565 events=178 dyads=127
+severity y_fat + vol + decade FE               larger share  0.130 [ 0.035,  0.224] | N=496565 events=178 dyads=127
+severity y_any baseline                        larger share  0.117 [ 0.070,  0.163] | N=496565 events=1563 dyads=668
+severity y_any + vol + decade FE               larger share  0.029 [-0.019,  0.077] | N=496565 events=1563 dyads=668
 
 ######## (b) LAGGED EMBEDDING: embedded pair and partner counts from the network of year t-1 ########
-lagged-embedded dispute onset baseline         larger share  0.162 [ 0.116,  0.208] | N=106308 events=689 dyads=350
-lagged-embedded dispute onset + vol + decade FE larger share  0.107 [ 0.056,  0.158] | N=106308 events=689 dyads=350
-lagged-embedded dispute ending baseline        larger share  0.008 [-0.039,  0.054] | N=1536 events=758 dyads=380
-lagged-embedded dispute ending + vol + decade FE larger share  0.007 [-0.044,  0.057] | N=1536 events=758 dyads=380
-lagged-embedded alliance formation baseline    larger share  0.072 [-0.055,  0.200] | N=64737 events=160 dyads=154
-lagged-embedded alliance formation + vol + decade FE larger share  0.109 [-0.014,  0.232] | N=64737 events=160 dyads=154
-lagged-embedded alliance ending baseline       larger share -0.030 [-0.133,  0.073] | N=41571 events=182 dyads=169
-lagged-embedded alliance ending + vol + decade FE larger share -0.005 [-0.104,  0.094] | N=41571 events=182 dyads=169
+lagged-embedded dispute onset baseline         larger share  0.157 [ 0.103,  0.211] | N=90968 events=635 dyads=308
+lagged-embedded dispute onset + vol + decade FE larger share  0.098 [ 0.039,  0.156] | N=90968 events=635 dyads=308
+lagged-embedded dispute ending baseline        larger share  0.018 [-0.035,  0.071] | N=1473 events=722 dyads=359
+lagged-embedded dispute ending + vol + decade FE larger share  0.006 [-0.050,  0.062] | N=1473 events=722 dyads=359
+lagged-embedded alliance formation baseline    larger share  0.008 [-0.155,  0.171] | N=58263 events=148 dyads=142
+lagged-embedded alliance formation + vol + decade FE larger share  0.037 [-0.104,  0.179] | N=58263 events=148 dyads=142
+lagged-embedded alliance ending baseline       larger share -0.130 [-0.273,  0.014] | N=32705 events=175 dyads=166
+lagged-embedded alliance ending + vol + decade FE larger share -0.083 [-0.214,  0.048] | N=32705 events=175 dyads=166
 
-Share of contemporaneously embedded dyad-years that are also embedded at t-1: 0.885; of t-1 embedded that are embedded at t: 0.901
+Share of contemporaneously embedded dyad-years that are also embedded at t-1: 0.875; of t-1 embedded that are embedded at t: 0.891

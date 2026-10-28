@@ -1,0 +1,24 @@
+Onset sample: 496688 dyad-years, 1493 onsets. 99th percentile of larger share = 0.2609 (4967 observations above)
+all observations, baseline                     N=496688 ev=1493 | non-contig  0.269 [ 0.235,  0.303] (p=0.000) | interaction -0.324 [-0.381, -0.266] (p=0.000) | contig -0.054 [-0.110,  0.002] (p=0.057)
+excluding top 1% of larger share, baseline     N=491721 ev=1393 | non-contig  0.690 [ 0.609,  0.771] (p=0.000) | interaction -0.696 [-0.815, -0.577] (p=0.000) | contig -0.005 [-0.111,  0.100] (p=0.920)
+excluding top 5% of larger share, baseline     N=471853 ev=1085 | non-contig  1.303 [ 0.999,  1.607] (p=0.000) | interaction -1.377 [-1.800, -0.954] (p=0.000) | contig -0.074 [-0.433,  0.285] (p=0.687)
+all observations, + volume + decade FE         N=496688 ev=1493 | non-contig  0.176 [ 0.138,  0.215] (p=0.000) | interaction -0.311 [-0.379, -0.243] (p=0.000) | contig -0.135 [-0.205, -0.065] (p=0.000)
+excluding top 1% of larger share, + volume + decade FE N=491721 ev=1393 | non-contig  0.445 [ 0.343,  0.547] (p=0.000) | interaction -0.593 [-0.722, -0.464] (p=0.000) | contig -0.148 [-0.275, -0.021] (p=0.022)
+excluding top 5% of larger share, + volume + decade FE N=471853 ev=1085 | non-contig  0.496 [ 0.102,  0.889] (p=0.014) | interaction -0.952 [-1.397, -0.507] (p=0.000) | contig -0.456 [-0.884, -0.028] (p=0.037)
+
+Calendar-year fixed effects instead of decade effects (+ volume)
+calendar-year FE + volume                      N=496688 ev=1493 | non-contig  0.178 [ 0.138,  0.218] (p=0.000) | interaction -0.319 [-0.386, -0.252] (p=0.000) | contig -0.141 [-0.209, -0.072] (p=0.000)
+
+Flexible form (+ volume + decade FE): log share, and natural spline in the larger share by contiguity
+log larger share: non-contig  0.309 [ 0.222,  0.395] (p=0.000) | interaction -0.435 [-0.514, -0.356] (p=0.000)
+spline x contiguity LR test: chi2 = 245.14, df = 3, p = 7.343e-53
+Predicted onsets per 1,000 dyad-years, contig=0 (covariates at medians, decade 1980s):
+  larger share at p50 (0.0003): 0.37
+  larger share at p90 (0.0270): 0.83
+  larger share at p95 (0.0572): 1.15
+  larger share at p99 (0.2131): 2.16
+Predicted onsets per 1,000 dyad-years, contig=1 (covariates at medians, decade 1980s):
+  larger share at p50 (0.0235): 8.39
+  larger share at p90 (0.1900): 5.97
+  larger share at p95 (0.2837): 5.63
+  larger share at p99 (0.6340): 5.04
