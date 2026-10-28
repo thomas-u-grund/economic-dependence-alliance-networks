@@ -1,6 +1,6 @@
 # 30: Figure 2 (coefficient map, full panel) and Figure 3 (predicted annual onset probability by exposure percentile, contiguous vs non-contiguous). Run with ALLIANCE_DEF=defense.
 suppressMessages({ library(dplyr); library(readr); library(tidyr); library(stringr); library(ggplot2); library(patchwork); library(sandwich) })
-BLUE <- "#2a78d6"; INK <- "#0b0b0b"; INK2 <- "#52514e"; GREY <- "#8a8985"; GRID <- "#e6e5e1"
+BLUE <- "#111111"; INK <- "#0b0b0b"; INK2 <- "#505050"; GREY <- "#8c8c8c"; GRID <- "#e6e6e6"
 th <- theme_minimal(base_size = 10, base_family = "Helvetica") + theme(panel.grid.minor = element_blank(), panel.grid.major.y = element_blank(), panel.grid.major.x = element_line(colour = GRID, linewidth = 0.3),
   axis.text = element_text(colour = INK2), axis.title = element_text(colour = INK2), plot.title = element_text(colour = INK, face = "bold", size = 10, hjust = 0), legend.position = "top", legend.justification = "left", legend.text = element_text(colour = INK2), plot.margin = margin(4, 8, 4, 4))
 # ---- Figure 2 data parsed from outputs
@@ -35,7 +35,7 @@ write_csv(pred, "results/predicted_onset_by_percentile.csv")
 brk <- unname(quantile(x$mx, c(0.5, 0.9, 0.99)))
 fig3 <- ggplot(pred, aes(share, p, colour = grp, fill = grp, linetype = grp)) + geom_ribbon(aes(ymin = lo, ymax = hi), alpha = 0.15, colour = NA) + geom_line(linewidth = 0.8) +
   scale_colour_manual(values = c("Non-contiguous pairs" = BLUE, "Contiguous pairs" = GREY), name = NULL) + scale_fill_manual(values = c("Non-contiguous pairs" = BLUE, "Contiguous pairs" = GREY), name = NULL) + scale_linetype_manual(values = c("Non-contiguous pairs" = "solid", "Contiguous pairs" = "22"), name = NULL) +
-  scale_x_log10(breaks = brk, labels = c("Median\n(0.02%)", "90th percentile\n(2.9%)", "99th percentile\n(23.1%)")) + scale_y_log10(breaks = c(0.5, 1, 2, 5, 10, 20), labels = c("0.5", "1", "2", "5", "10", "20")) +
+  scale_x_log10(breaks = brk, labels = c(sprintf("Median\n(%s%%)", signif(100 * brk[1], 2)), sprintf("90th percentile\n(%s%%)", signif(100 * brk[2], 2)), sprintf("99th percentile\n(%s%%)", signif(100 * brk[3], 2)))) + scale_y_log10(breaks = c(0.5, 1, 2, 5, 10, 20), labels = c("0.5", "1", "2", "5", "10", "20")) +
   labs(x = "Larger trade share (log scale; percentile of dyad-years at risk)", y = "Predicted onsets per 1,000 dyad-years (log scale)") + th + theme(panel.grid.major.y = element_line(colour = GRID, linewidth = 0.3))
 ggsave("results/fig_predicted_onset.pdf", fig3, width = 6.4, height = 3.9, device = cairo_pdf); ggsave("results/fig_predicted_onset.png", fig3, width = 6.4, height = 3.9, dpi = 300)
 cat(sprintf("figures written; shares at p50/p90/p99: %s\n", paste(round(brk, 4), collapse = " ")))

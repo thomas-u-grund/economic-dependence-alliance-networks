@@ -8,8 +8,9 @@ Data, commented scripts, codebook, and software output for every analysis in the
 
 ```
 scripts/        01-40, run in numerical order (index: scripts/README.md)
-raw/            source data as downloaded (Correlates of War alliances, MIDs, trade, contiguity, capabilities;
-                ATOP 5.1; Penn World Table / Maddison GDP; Polity 5; state system)
+raw/            source data as downloaded (Correlates of War alliances, MIDs, trade, contiguity, capabilities,
+                state system, diplomatic exchange; UN ideal points; ICOW; ATOP 5.1, Maddison GDP and Polity 5, not
+                used by the scripts). Download links: see "Data sources" below
 data/           intermediate files built from raw/ by script 02 (CSV); two large ones are gzipped
 results/        output of the scripts: printed model output (*_output.txt), tables (CSV), figures, model objects
 CODEBOOK.md     variables in the data files and in the analysis panel
@@ -71,4 +72,20 @@ The principal population of the article is all dyad-years; the results for embed
 
 ## Data sources
 
-Correlates of War: Alliance data v4.1 (dyadic yearly), Dyadic Militarized Interstate Disputes v4.03, Trade v4.0, Direct Contiguity v3.20, National Material Capabilities v7. Alliance Treaty Obligations and Provisions (ATOP) v5.1. Penn World Table 10.01 and the Maddison Project Database 2023 (GDP). Polity 5. CShapes 2.0 (capital distances, through the R package). Full references are in the article. Source files are unmodified in `raw/`.
+All source files are in `raw/`, unmodified, as downloaded. To obtain them again, use the links below. Full references are in the article.
+
+| Data | Version | Folder in `raw/` | Source |
+|---|---|---|---|
+| Correlates of War (COW) formal alliances | 4.1 (dyadic yearly) | `alliances/` | https://correlatesofwar.org/data-sets/formal-alliances/ |
+| COW Dyadic Militarized Interstate Disputes (MIDs) | 4.03 | `mids/` | https://correlatesofwar.org/data-sets/MIDs/ |
+| COW bilateral trade | 4.0 | `trade/` | https://correlatesofwar.org/data-sets/bilateral-trade/ |
+| COW direct contiguity | 3.20 | `contiguity/` | https://correlatesofwar.org/data-sets/direct-contiguity/ |
+| COW National Material Capabilities | 7 | `nmc/` | https://correlatesofwar.org/data-sets/national-material-capabilities/ |
+| COW state system membership | 2024 | `states/` | https://correlatesofwar.org/data-sets/state-system-membership/ |
+| COW diplomatic exchange | 2006.1 | `diplex/dipex.csv` | https://correlatesofwar.org/data-sets/diplomatic-exchange/ |
+| UN General Assembly ideal points (Bailey, Strezhnev and Voeten) | Dataverse release | `diplex/unideal.csv` | https://doi.org/10.7910/DVN/LEJUQZ |
+| Issue Correlates of War (ICOW) territorial claims | dyad-year file | `icow/terr/` | https://paulhensel.org/icowterr.html |
+| ICOW colonial history | 1.1 | `icow/colhist/` | https://paulhensel.org/icowcol.html |
+| CShapes (capital locations and distances) | 2.0, through the R package `cshapes` | not in `raw/` | https://icr.ethz.ch/data/cshapes/ and https://cran.r-project.org/package=cshapes |
+
+`raw/` also holds files that the scripts of the article do not read: ATOP 5.1 (https://www.atopdata.org/data.html), the Maddison Project Database 2023 (https://www.rug.nl/ggdc/historicaldevelopment/maddison/), and Polity 5 (https://www.systemicpeace.org/inscrdata.html). Where a source page offers several versions, use the version in the table.

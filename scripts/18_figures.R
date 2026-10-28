@@ -1,7 +1,7 @@
 # 18: Figure 2 (what exposure does: coefficient plot) and Figure 3 (embedding over time). Reads results/claims_table.csv, results/hostility_gradient_output.txt, results/era_bins_*.csv.
 suppressMessages({ library(dplyr); library(readr); library(tidyr); library(stringr); library(ggplot2); library(patchwork) })
 
-BLUE <- "#2a78d6"; INK <- "#0b0b0b"; INK2 <- "#52514e"; GREY <- "#8a8985"; GRID <- "#e6e5e1"
+BLUE <- "#111111"; INK <- "#0b0b0b"; INK2 <- "#505050"; GREY <- "#8c8c8c"; GRID <- "#e6e6e6"
 th <- theme_minimal(base_size = 10, base_family = "Helvetica") + theme(panel.grid.minor = element_blank(), panel.grid.major.y = element_blank(), panel.grid.major.x = element_line(colour = GRID, linewidth = 0.3),
   axis.text = element_text(colour = INK2), axis.title = element_text(colour = INK2), plot.title = element_text(colour = INK, face = "bold", size = 10, hjust = 0), legend.position = "top", legend.justification = "left",
   legend.text = element_text(colour = INK2), plot.margin = margin(4, 8, 4, 4))
