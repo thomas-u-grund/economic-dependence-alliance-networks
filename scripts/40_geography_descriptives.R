@@ -6,7 +6,7 @@ yrs <- sort(unique(d$year))
 cap <- bind_rows(lapply(yrs, function(y) { m <- distmatrix(as.Date(paste0(y, "-01-01")), type = "capdist", useGW = FALSE); ids <- as.numeric(rownames(m)); ix <- which(upper.tri(m), arr.ind = TRUE)
   tibble(year = y, lo = pmin(ids[ix[,1]], ids[ix[,2]]), hi = pmax(ids[ix[,1]], ids[ix[,2]]), capdist = m[ix]) }))
 x <- d %>% left_join(cap, by = c("year", "lo", "hi")) %>% filter(m == 0, !is.na(capdist))
-BLUE <- "#2a78d6"; ORANGE <- "#c8651b"; INK <- "#0b0b0b"; INK2 <- "#52514e"; GRID <- "#e6e5e1"
+BLUE <- "#111111"; ORANGE <- "#8c8c8c"; INK <- "#0b0b0b"; INK2 <- "#505050"; GRID <- "#e6e6e6"
 th <- theme_minimal(base_size = 10, base_family = "Helvetica") + theme(panel.grid.minor = element_blank(), panel.grid.major.x = element_blank(), panel.grid.major.y = element_line(colour = GRID, linewidth = 0.3),
   axis.text = element_text(colour = INK2), axis.title = element_text(colour = INK2), plot.title = element_text(colour = INK, face = "bold", size = 10, hjust = 0), legend.position = "top", legend.justification = "left", plot.margin = margin(4, 8, 4, 4))
 bt <- function(k, n) { r <- binom.test(k, n)$conf.int; c(1000 * k / n, 1000 * r[1], 1000 * r[2]) }
@@ -19,9 +19,9 @@ cat("\n(a) Onsets per 1,000 dyad-years at risk by exposure tier\n"); print(as.da
 B <- x %>% filter(contig == 0) %>% mutate(band = cut(capdist, c(0, 2000, 5000, 9000, Inf), labels = c("<2,000", "2,000-5,000", "5,000-9,000", ">9,000")), expo = ifelse(mx > q[2], "Above 90th percentile", "At or below 90th percentile")) %>%
   group_by(band, expo) %>% summarise(n = n(), k = sum(onset_m), .groups = "drop") %>% rowwise() %>% mutate(r = list(bt(k, n)), rate = r[1], lo = r[2], hi = r[3]) %>% ungroup()
 cat("\n(b) Non-contiguous pairs: onsets per 1,000 by capital-distance band (km) and exposure\n"); print(as.data.frame(B %>% select(band, expo, n, k, rate, lo, hi)), digits = 3)
-pa <- ggplot(A, aes(tier, rate, colour = geo, group = geo)) + geom_pointrange(aes(ymin = lo, ymax = hi), position = position_dodge(0.4), size = 0.35) + scale_colour_manual(values = c(Contiguous = ORANGE, `Not contiguous` = BLUE), name = NULL) +
+pa <- ggplot(A, aes(tier, rate, colour = geo, shape = geo, group = geo)) + geom_pointrange(aes(ymin = lo, ymax = hi), position = position_dodge(0.4), size = 0.35) + scale_colour_manual(values = c(Contiguous = ORANGE, `Not contiguous` = BLUE), name = NULL) + scale_shape_manual(values = c(Contiguous = 17, `Not contiguous` = 16), name = NULL) +
   scale_y_log10(breaks = c(0.5, 1, 2, 5, 10, 20, 50), labels = function(v) format(v, trim = TRUE, drop0trailing = TRUE)) + labs(x = "Larger trade share, percentile band", y = "Onsets per 1,000 dyad-years", title = "A  Exposure tier and contiguity") + th
-pb <- ggplot(B, aes(band, rate, colour = expo, group = expo)) + geom_pointrange(aes(ymin = lo, ymax = hi), position = position_dodge(0.4), size = 0.35) + scale_colour_manual(values = c(`At or below 90th percentile` = "#8a8985", `Above 90th percentile` = BLUE), name = NULL) +
+pb <- ggplot(B, aes(band, rate, colour = expo, shape = expo, group = expo)) + geom_pointrange(aes(ymin = lo, ymax = hi), position = position_dodge(0.4), size = 0.35) + scale_colour_manual(values = c(`At or below 90th percentile` = "#8c8c8c", `Above 90th percentile` = BLUE), name = NULL) + scale_shape_manual(values = c(`At or below 90th percentile` = 17, `Above 90th percentile` = 16), name = NULL) +
   scale_y_log10(breaks = c(0.5, 1, 2, 5), labels = function(v) format(v, trim = TRUE, drop0trailing = TRUE)) + labs(x = "Distance between capitals (km), non-contiguous pairs", y = "Onsets per 1,000 dyad-years", title = "B  Distance and exposure") + th
 ggsave("results/fig_geography_descriptives.png", pa / pb, width = 6.4, height = 6, dpi = 300, bg = "white"); ggsave("results/fig_geography_descriptives.pdf", pa / pb, width = 6.4, height = 6, device = cairo_pdf)
 # ---- tail and map
@@ -41,8 +41,8 @@ el <- st_sf(ed, geometry = lines) %>% mutate(grp = ifelse(on > 0, "At least one 
 wd <- ne_countries(scale = 110, returnclass = "sf") %>% filter(!name %in% "Antarctica") %>% st_transform(PROJ)
 pts <- st_transform(st_as_sf(st %>% filter(!is.na(caplong)), coords = c("caplong", "caplat"), crs = 4326), PROJ)
 lab <- pts %>% filter(country_name %in% c("United States of America", "United Kingdom", "Japan")); lab$nm <- recode(lab$country_name, `United States of America` = "United States")
-mp <- ggplot() + geom_sf(data = wd, fill = "#f1f0ec", colour = "#d6d4cd", linewidth = 0.15) + geom_sf(data = el %>% filter(grp == "No onset"), aes(linewidth = ny), colour = "#8fb0de", alpha = 0.35) +
-  geom_sf(data = el %>% filter(grp != "No onset"), aes(linewidth = ny), colour = ORANGE, alpha = 0.85) + geom_sf(data = pts, aes(size = ny), colour = INK, alpha = 0.7, shape = 16) +
+mp <- ggplot() + geom_sf(data = wd, fill = "#f2f2f2", colour = "#cccccc", linewidth = 0.15) + geom_sf(data = el %>% filter(grp == "No onset"), aes(linewidth = ny), colour = "#9a9a9a", alpha = 0.35) +
+  geom_sf(data = el %>% filter(grp != "No onset"), aes(linewidth = ny), colour = "#000000", alpha = 0.85) + geom_sf(data = pts, aes(size = ny), colour = "#6e6e6e", alpha = 0.8, shape = 16) +
   geom_sf_text(data = lab, aes(label = nm), size = 2.6, colour = INK, nudge_y = 900000, fontface = "bold", family = "Helvetica") +
   scale_linewidth(range = c(0.15, 1.4), guide = "none") + scale_size(range = c(0.6, 4.5), guide = "none") + theme_void(base_family = "Helvetica") + theme(plot.margin = margin(2, 2, 2, 2), plot.background = element_rect(fill = "white", colour = NA))
 ggsave("results/fig_geography_map.png", mp, width = 6.8, height = 3.6, dpi = 300, bg = "white"); ggsave("results/fig_geography_map.pdf", mp, width = 6.8, height = 3.8, device = cairo_pdf)
