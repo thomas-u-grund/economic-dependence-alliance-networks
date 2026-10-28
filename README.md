@@ -9,9 +9,8 @@ Data, commented scripts, codebook, and software output for every analysis in the
 ```
 scripts/        01-40, run in numerical order (index: scripts/README.md)
 raw/            source data as downloaded (Correlates of War alliances, MIDs, trade, contiguity, capabilities,
-                state system, diplomatic exchange; UN ideal points; ICOW; ATOP 5.1, Maddison GDP and Polity 5, not
-                used by the scripts). Download links: see "Data sources" below
-data/           intermediate files built from raw/ by script 02 (CSV); two large ones are gzipped
+                state system, diplomatic exchange; UN ideal points; ICOW). Download links: see "Data sources" below
+data/           analysis panel built from raw/ by script 02 (CSV, gzipped because of its size)
 results/        output of the scripts: printed model output (*_output.txt), tables (CSV), figures, model objects
 CODEBOOK.md     variables in the data files and in the analysis panel
 session_info.txt   R version and package versions
@@ -25,9 +24,9 @@ R (4.6.0 used; see `session_info.txt`) and the packages `dplyr, readr, tidyr, st
 
 All paths are relative to the repository root, so run every script from there (`Rscript scripts/NN_name.R`).
 
-1. `bash scripts/01_unpack_data.sh` unpacks `data/tie_trade.csv` and `data/triads_all_years.csv` (kept gzipped because of their size). Alternatively, rebuild them from `raw/` with script 02.
+1. `bash scripts/01_unpack_data.sh` unpacks `data/tie_trade.csv` (kept gzipped because of its size). Alternatively, rebuild it from `raw/` with script 02.
 2. The article's alliance definition is the Correlates of War defence pact (Type I). Set `ALLIANCE_DEF=defense` for all scripts (`export ALLIANCE_DEF=defense`); `scripts/run_all.sh` does this and runs scripts 03 to 42 in order. Leave it unset to use all four commitment types.
-3. Scripts 03 to 42 build the dyad-year analysis panel in memory from `raw/` and `data/tie_trade.csv` (the shared preamble is in `scripts/03_layered_hazards.R`) and write their output to `results/`. Scripts 12, 13, and 18 only assemble earlier output and need scripts 04 to 11 and 15 to 17 to have run.
+3. Scripts 03 to 42 build the dyad-year analysis panel in memory from `raw/` and `data/tie_trade.csv` (the shared preamble is in `scripts/03_layered_hazards.R`) and write their output to `results/`. Scripts 12, 13, and 18 only assemble earlier output and need scripts 04 to 08, 10, 11 and 15 to 17 to have run.
 
 Example:
 ```
@@ -60,9 +59,7 @@ The principal population of the article is all dyad-years; the results for embed
 | Table 3 (controls) | 25 | `fullpanel_controls_output.txt` |
 | Appendix D, Table 12 (predictors, held-out comparisons) | 28 | `fullpanel_predictors_output.txt` |
 | Figure A1 (periods), Appendix D | 08, 17, 18 | `embedding_over_time_output.txt`, `era_bins_rates.csv`, `era_bins_shares.csv`, `fig_eras.*` |
-| Appendix A, Section 5.2 (embedded pairs only) | 04, 06, 11, 15, 19 | `triad_population_output.txt`, `predictors_in_T_output.txt`, `claims_table_output.txt`, `hostility_gradient_output.txt`, `within_between_output.txt` |
-| not in the current appendix (removed 2026-10-27) (disputes inside unbalanced triads) | 09, 10 | `negative_tie_resolution_output.txt` |
-| not in the current appendix (removed 2026-10-27), Sections 5.2 and 5.6 (lagged embedding and partner counts) | 24, 35 | `population_selection_output.txt`, `lagged_network_output.txt` |
+| Appendix A, Section 5.2 (embedded pairs only) | 04, 06, 10, 11, 15, 19 | `triad_population_output.txt`, `predictors_in_T_output.txt`, `negative_tie_resolution_output.txt`, `claims_table_output.txt`, `hostility_gradient_output.txt`, `within_between_output.txt` |
 | Appendix B, Section 5.6 (actor-overlap intervals) | 33 | `geography_actor_overlap_output.txt` |
 | Appendix H (upper tail of exposure) | 34 | `upper_tail_output.txt` |
 
@@ -88,4 +85,3 @@ All source files are in `raw/`, unmodified, as downloaded. To obtain them again,
 | ICOW colonial history | 1.1 | `icow/colhist/` | https://paulhensel.org/icowcol.html |
 | CShapes (capital locations and distances) | 2.0, through the R package `cshapes` | not in `raw/` | https://icr.ethz.ch/data/cshapes/ and https://cran.r-project.org/package=cshapes |
 
-`raw/` also holds files that the scripts of the article do not read: ATOP 5.1 (https://www.atopdata.org/data.html), the Maddison Project Database 2023 (https://www.rug.nl/ggdc/historicaldevelopment/maddison/), and Polity 5 (https://www.systemicpeace.org/inscrdata.html). Where a source page offers several versions, use the version in the table.

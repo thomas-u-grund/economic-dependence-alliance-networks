@@ -1,4 +1,4 @@
 .DS_Store
 data/tie_trade.csv
-data/triads_all_years.csv
 results/hazard_models.rds
+results/run_all_log.txt
