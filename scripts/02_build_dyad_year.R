@@ -74,11 +74,11 @@ dyadic_trade <- read_csv(file.path(raw, "trade/COW_Trade_4.0/Dyadic_COW_4.0.csv"
   summarise(total_dyadic_trade = sum(smoothtotrade, na.rm = TRUE), .groups = "drop")
 
 national_trade <- read_csv(file.path(raw, "trade/COW_Trade_4.0/National_COW_4.0.csv"), show_col_types = FALSE) %>%
-  mutate(total_trade = imports + exports,
-         # require >= $50m recorded national trade before using it as
-         # a denominator, else shares from tiny/misreported totals
-         # blow up above 1
-         total_trade = ifelse(total_trade < 50, NA, total_trade)) %>%
+  mutate(total_trade = imports + exports) %>%
+  # a state-year can serve as a denominator if its recorded total trade is at least 0.01% of the total trade
+  # recorded by all states that year (relative threshold; the earlier US$50 million nominal cutoff is script 42's benchmark)
+  group_by(year) %>% mutate(world_trade = sum(ifelse(total_trade > 0, total_trade, 0), na.rm = TRUE)) %>% ungroup() %>%
+  mutate(total_trade = ifelse(is.na(total_trade) | total_trade <= 0 | total_trade < 1e-4 * world_trade, NA, total_trade)) %>%
   select(ccode, year, total_trade)
 
 # 6. National capability (CINC), for the capability-asymmetry side of H4

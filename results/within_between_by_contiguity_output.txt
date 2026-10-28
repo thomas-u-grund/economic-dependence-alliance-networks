@@ -1,22 +1,22 @@
 
-dispute onset non-contiguous, baseline         between  0.395 [ 0.328,  0.463] | within -0.038 [-0.153,  0.078] | difference  0.433 [ 0.305,  0.561] | N=584069 events=607 dyads=15226
-dispute onset contiguous, baseline             between  0.059 [ 0.001,  0.117] | within  0.016 [-0.074,  0.105] | difference  0.043 [-0.073,  0.159] | N=24888 events=834 dyads=566
-dispute onset interaction model, baseline      contiguity difference in between -0.423 [-0.516, -0.330] | in within -0.083 [-0.219,  0.052]
+dispute onset non-contiguous, baseline         between  0.422 [ 0.356,  0.488] | within -0.029 [-0.106,  0.048] | difference  0.451 [ 0.353,  0.548] | N=472849 events=664 dyads=12397
+dispute onset contiguous, baseline             between  0.056 [-0.007,  0.119] | within -0.003 [-0.088,  0.081] | difference  0.060 [-0.050,  0.169] | N=23839 events=829 dyads=520
+dispute onset interaction model, baseline      contiguity difference in between -0.497 [-0.586, -0.409] | in within -0.101 [-0.216,  0.013]
 
-dispute onset non-contiguous, + vol + decade FE between  0.196 [ 0.133,  0.260] | within -0.083 [-0.177,  0.011] | difference  0.279 [ 0.175,  0.384] | N=584069 events=607 dyads=15226
-dispute onset contiguous, + vol + decade FE    between  0.042 [-0.031,  0.114] | within -0.009 [-0.097,  0.079] | difference  0.051 [-0.073,  0.175] | N=24888 events=834 dyads=566
-dispute onset interaction model, + vol + decade FE contiguity difference in between -0.421 [-0.532, -0.310] | in within -0.072 [-0.221,  0.077]
+dispute onset non-contiguous, + vol + decade FE between  0.241 [ 0.179,  0.304] | within -0.080 [-0.153, -0.008] | difference  0.321 [ 0.233,  0.409] | N=472849 events=664 dyads=12397
+dispute onset contiguous, + vol + decade FE    between  0.043 [-0.032,  0.118] | within -0.019 [-0.107,  0.069] | difference  0.062 [-0.057,  0.181] | N=23839 events=829 dyads=520
+dispute onset interaction model, + vol + decade FE contiguity difference in between -0.476 [-0.580, -0.371] | in within -0.081 [-0.217,  0.056]
 
-alliance formation non-contiguous, baseline    between  0.350 [ 0.292,  0.409] | within -0.131 [-0.225, -0.038] | difference  0.482 [ 0.379,  0.584] | N=550492 events=677 dyads=14952
-alliance formation contiguous, baseline        between -0.035 [-0.141,  0.072] | within -0.047 [-0.230,  0.135] | difference  0.012 [-0.173,  0.198] | N=15340 events=223 dyads=489
-alliance formation interaction model, baseline contiguity difference in between -0.493 [-0.612, -0.374] | in within -0.004 [-0.216,  0.208]
+alliance formation non-contiguous, baseline    between  0.352 [ 0.278,  0.426] | within -0.166 [-0.296, -0.035] | difference  0.518 [ 0.394,  0.642] | N=446599 events=628 dyads=12268
+alliance formation contiguous, baseline        between -0.003 [-0.120,  0.114] | within -0.060 [-0.248,  0.127] | difference  0.058 [-0.127,  0.242] | N=15902 events=207 dyads=473
+alliance formation interaction model, baseline contiguity difference in between -0.469 [-0.599, -0.338] | in within  0.024 [-0.214,  0.262]
 
-alliance formation non-contiguous, + vol + decade FE between  0.272 [ 0.201,  0.342] | within -0.125 [-0.219, -0.032] | difference  0.397 [ 0.286,  0.508] | N=550492 events=677 dyads=14952
-alliance formation contiguous, + vol + decade FE between  0.104 [ 0.003,  0.205] | within  0.096 [ 0.009,  0.183] | difference  0.008 [-0.124,  0.141] | N=15340 events=223 dyads=489
-alliance formation interaction model, + vol + decade FE contiguity difference in between -0.450 [-0.565, -0.335] | in within  0.048 [-0.107,  0.203]
+alliance formation non-contiguous, + vol + decade FE between  0.277 [ 0.195,  0.359] | within -0.106 [-0.213,  0.001] | difference  0.383 [ 0.265,  0.501] | N=446599 events=628 dyads=12268
+alliance formation contiguous, + vol + decade FE between  0.141 [ 0.024,  0.259] | within  0.107 [ 0.021,  0.192] | difference  0.035 [-0.104,  0.174] | N=15902 events=207 dyads=473
+alliance formation interaction model, + vol + decade FE contiguity difference in between -0.385 [-0.504, -0.266] | in within  0.081 [-0.055,  0.217]
 
 Dyad fixed-effects logit among non-contiguous dyads, larger share (per SD)
-dispute onset        baseline    0.049 [-0.028,  0.126] (p=0.215) | dyads used 379, obs 25035
-dispute onset        + z_vol     0.094 [ 0.015,  0.174] (p=0.020) | dyads used 379, obs 25035
-alliance formation   baseline   -0.040 [-0.219,  0.138] (p=0.657) | dyads used 656, obs 16272
-alliance formation   + z_vol    -0.038 [-0.236,  0.159] (p=0.705) | dyads used 656, obs 16272
+dispute onset        baseline    0.026 [-0.044,  0.095] (p=0.468) | dyads used 402, obs 30159
+dispute onset        + z_vol     0.067 [-0.004,  0.139] (p=0.064) | dyads used 402, obs 30159
+alliance formation   baseline   -0.106 [-0.245,  0.032] (p=0.133) | dyads used 603, obs 21452
+alliance formation   + z_vol    -0.150 [-0.309,  0.009] (p=0.064) | dyads used 603, obs 21452

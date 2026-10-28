@@ -1,0 +1,25 @@
+State-years with recorded total trade, and share meeting each rule, by era
+US$50m nominal (earlier rule)    1870-1913: 1651 (63%) | 1914-45: 1709 (75%) | 1946-89: 5259 (96%) | 1990-2010: 3721 (100%) | NA: 516 (100%)
+no minimum                       1870-1913: 1651 (100%) | 1914-45: 1709 (100%) | 1946-89: 5259 (100%) | 1990-2010: 3721 (100%) | NA: 516 (100%)
+0.01% of recorded world trade (article) 1870-1913: 1651 (100%) | 1914-45: 1709 (98%) | 1946-89: 5259 (91%) | 1990-2010: 3721 (80%) | NA: 516 (84%)
+0.05% of recorded world trade    1870-1913: 1651 (93%) | 1914-45: 1709 (87%) | 1946-89: 5259 (70%) | 1990-2010: 3721 (50%) | NA: 516 (56%)
+trade dyad-years with valid shares: 632074 
+
+== US$50m nominal (earlier rule): 608957 dyad-years with valid shares in the onset sample, 1441 onsets; by era (dyad-years/onsets): 1870-1913 11360/118, 1914-45 24195/207, 1946-89 278589/667, 1990-2010 294813/449
+  baseline           non-contiguous  0.298 [ 0.265,  0.330] | interaction -0.310 [-0.363, -0.256] | contiguous -0.012 [-0.063,  0.039]
+  + volume, decade   non-contiguous  0.197 [ 0.158,  0.237] | interaction -0.306 [-0.374, -0.237] | contiguous -0.108 [-0.179, -0.038]
+trade dyad-years with valid shares: 688315 
+
+== no minimum: 666032 dyad-years with valid shares in the onset sample, 1637 onsets; by era (dyad-years/onsets): 1870-1913 29372/214, 1914-45 44515/287, 1946-89 296516/687, 1990-2010 295629/449
+  baseline           non-contiguous  0.269 [ 0.242,  0.295] | interaction -0.283 [-0.333, -0.233] | contiguous -0.014 [-0.061,  0.034]
+  + volume, decade   non-contiguous  0.185 [ 0.152,  0.218] | interaction -0.282 [-0.342, -0.221] | contiguous -0.096 [-0.159, -0.034]
+trade dyad-years with valid shares: 522233 
+
+== 0.01% of recorded world trade (article): 496688 dyad-years with valid shares in the onset sample, 1493 onsets; by era (dyad-years/onsets): 1870-1913 29136/214, 1914-45 42942/282, 1946-89 240481/647, 1990-2010 184129/350
+  baseline           non-contiguous  0.269 [ 0.235,  0.303] | interaction -0.324 [-0.381, -0.266] | contiguous -0.054 [-0.110,  0.002]
+  + volume, decade   non-contiguous  0.176 [ 0.138,  0.215] | interaction -0.311 [-0.379, -0.243] | contiguous -0.135 [-0.205, -0.065]
+trade dyad-years with valid shares: 286064 
+
+== 0.05% of recorded world trade: 265562 dyad-years with valid shares in the onset sample, 1141 onsets; by era (dyad-years/onsets): 1870-1913 24551/194, 1914-45 32506/229, 1946-89 138178/495, 1990-2010 70327/223
+  baseline           non-contiguous  0.297 [ 0.250,  0.343] | interaction -0.383 [-0.455, -0.310] | contiguous -0.086 [-0.155, -0.017]
+  + volume, decade   non-contiguous  0.194 [ 0.142,  0.245] | interaction -0.374 [-0.463, -0.286] | contiguous -0.181 [-0.273, -0.089]

@@ -1,30 +1,30 @@
 
-######## DISPUTE ONSET, full panel: N=608957, events=1441, dyads=15754
-z_dur    joint coef (per SD) -0.563 (se 0.029, p=0.0000) | single-predictor held-out AUC 0.698
-z_mx     joint coef (per SD)  0.144 (se 0.025, p=0.0000) | single-predictor held-out AUC 0.714
-z_mn     joint coef (per SD) -0.004 (se 0.020, p=0.8337) | single-predictor held-out AUC 0.731
-z_cap    joint coef (per SD) -0.243 (se 0.051, p=0.0000) | single-predictor held-out AUC 0.554
-z_same   joint coef (per SD) -0.046 (se 0.031, p=0.1362) | single-predictor held-out AUC 0.589
-z_diff   joint coef (per SD)  0.285 (se 0.018, p=0.0000) | single-predictor held-out AUC 0.594
-contig   joint coef  2.946 (se 0.119, p=0.0000)
-Exposure + controls                              larger  0.149 (0.026) | same    -- | diff    -- | AIC   16101.2 | held-out gain 0.00343 AUC 0.8346
-+ third-state counts (structure)                 larger  0.144 (0.025) | same -0.046 (0.031) | diff  0.285 (0.018) | AIC   15684.3 | held-out gain 0.00376 AUC 0.8609
-Structure + controls (no shares)                 larger    -- | same -0.033 (0.031) | diff  0.280 (0.018) | AIC   15832.5 | held-out gain 0.00366 AUC 0.8461
-Structure + controls, larger share only removed  larger    -- | same -0.040 (0.031) | diff  0.286 (0.018) | AIC   15792.4 | held-out gain 0.00369 AUC 0.8514
-Incremental held-out LL per obs of the larger share (structure in): 0.00008 (95% CI 0.00001 to 0.00014)
-Incremental held-out LL per obs of structure (exposure in): 0.00034 (95% CI 0.00023 to 0.00045)
+######## DISPUTE ONSET, full panel: N=496688, events=1493, dyads=12870
+z_dur    joint coef (per SD) -0.515 (se 0.032, p=0.0000) | single-predictor held-out AUC 0.671
+z_mx     joint coef (per SD)  0.116 (se 0.024, p=0.0000) | single-predictor held-out AUC 0.684
+z_mn     joint coef (per SD)  0.016 (se 0.021, p=0.4591) | single-predictor held-out AUC 0.700
+z_cap    joint coef (per SD)  0.040 (se 0.047, p=0.4034) | single-predictor held-out AUC 0.461
+z_same   joint coef (per SD) -0.062 (se 0.033, p=0.0579) | single-predictor held-out AUC 0.554
+z_diff   joint coef (per SD)  0.299 (se 0.019, p=0.0000) | single-predictor held-out AUC 0.584
+contig   joint coef  2.850 (se 0.113, p=0.0000)
+Exposure + controls                              larger  0.118 (0.025) | same    -- | diff    -- | AIC   16674.5 | held-out gain 0.00364 AUC 0.8161
++ third-state counts (structure)                 larger  0.116 (0.024) | same -0.062 (0.033) | diff  0.299 (0.019) | AIC   16248.5 | held-out gain 0.00406 AUC 0.8461
+Structure + controls (no shares)                 larger    -- | same -0.040 (0.032) | diff  0.292 (0.019) | AIC   16362.1 | held-out gain 0.00396 AUC 0.8346
+Structure + controls, larger share only removed  larger    -- | same -0.053 (0.033) | diff  0.298 (0.019) | AIC   16316.8 | held-out gain 0.00400 AUC 0.8419
+Incremental held-out LL per obs of the larger share (structure in): 0.00006 (95% CI -0.00000 to 0.00012)
+Incremental held-out LL per obs of structure (exposure in): 0.00042 (95% CI 0.00029 to 0.00057)
 
-######## DISPUTE ENDING, full panel: N=2730, events=1359, dyads=603
-z_dur    joint coef (per SD) -0.644 (se 0.042, p=0.0000) | single-predictor held-out AUC 0.650
-z_mx     joint coef (per SD)  0.008 (se 0.048, p=0.8750) | single-predictor held-out AUC 0.498
-z_mn     joint coef (per SD)  0.039 (se 0.076, p=0.6070) | single-predictor held-out AUC 0.513
-z_cap    joint coef (per SD)  0.071 (se 0.051, p=0.1611) | single-predictor held-out AUC 0.524
-z_same   joint coef (per SD)  0.125 (se 0.046, p=0.0062) | single-predictor held-out AUC 0.497
-z_diff   joint coef (per SD) -0.057 (se 0.043, p=0.1870) | single-predictor held-out AUC 0.486
-contig   joint coef -0.154 (se 0.111, p=0.1651)
-Exposure + controls                              larger  0.018 (0.049) | same    -- | diff    -- | AIC    3527.1 | held-out gain 0.04381 AUC 0.6578
-+ third-state counts (structure)                 larger  0.008 (0.048) | same  0.125 (0.046) | diff -0.057 (0.043) | AIC    3520.6 | held-out gain 0.04411 AUC 0.6603
-Structure + controls (no shares)                 larger    -- | same  0.127 (0.046) | diff -0.063 (0.044) | AIC    3517.7 | held-out gain 0.04735 AUC 0.6650
-Structure + controls, larger share only removed  larger    -- | same  0.125 (0.046) | diff -0.057 (0.043) | AIC    3518.7 | held-out gain 0.04531 AUC 0.6623
-Incremental held-out LL per obs of the larger share (structure in): -0.00120 (95% CI -0.00197 to -0.00063)
-Incremental held-out LL per obs of structure (exposure in): 0.00030 (95% CI -0.00255 to 0.00307)
+######## DISPUTE ENDING, full panel: N=2794, events=1409, dyads=605
+z_dur    joint coef (per SD) -0.605 (se 0.042, p=0.0000) | single-predictor held-out AUC 0.645
+z_mx     joint coef (per SD)  0.029 (se 0.046, p=0.5299) | single-predictor held-out AUC 0.495
+z_mn     joint coef (per SD)  0.025 (se 0.073, p=0.7353) | single-predictor held-out AUC 0.492
+z_cap    joint coef (per SD)  0.101 (se 0.049, p=0.0398) | single-predictor held-out AUC 0.534
+z_same   joint coef (per SD)  0.080 (se 0.043, p=0.0663) | single-predictor held-out AUC 0.489
+z_diff   joint coef (per SD) -0.076 (se 0.043, p=0.0800) | single-predictor held-out AUC 0.504
+contig   joint coef -0.189 (se 0.109, p=0.0842)
+Exposure + controls                              larger  0.039 (0.047) | same    -- | diff    -- | AIC    3622.1 | held-out gain 0.04208 AUC 0.6547
++ third-state counts (structure)                 larger  0.029 (0.046) | same  0.080 (0.043) | diff -0.076 (0.043) | AIC    3619.3 | held-out gain 0.04195 AUC 0.6530
+Structure + controls (no shares)                 larger    -- | same  0.083 (0.044) | diff -0.082 (0.044) | AIC    3616.6 | held-out gain 0.04447 AUC 0.6573
+Structure + controls, larger share only removed  larger    -- | same  0.081 (0.043) | diff -0.078 (0.043) | AIC    3617.7 | held-out gain 0.04267 AUC 0.6549
+Incremental held-out LL per obs of the larger share (structure in): -0.00072 (95% CI -0.00135 to -0.00018)
+Incremental held-out LL per obs of structure (exposure in): -0.00013 (95% CI -0.00214 to 0.00166)

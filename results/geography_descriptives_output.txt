@@ -1,43 +1,43 @@
-At-risk dyad-years with capital distance (1886-2010): 598807; onsets 1397; contiguous 24004 (808 onsets)
-Larger-share cut points (panel-wide): p50 0.0002, p90 0.0285, p99 0.2242
+At-risk dyad-years with capital distance (1886-2010): 481918; onsets 1422; contiguous 22581 (788 onsets)
+Larger-share cut points (panel-wide): p50 0.0005, p90 0.0332, p99 0.2520
 
 (a) Onsets per 1,000 dyad-years at risk by exposure tier
-             geo           tier      n   k   rate     lo     hi
-1     Contiguous   Below median   2992 138 46.123 38.887 54.262
-2     Contiguous Median to 90th   9800 307 31.327 27.966 34.969
-3     Contiguous   90th to 99th   9607 308 32.060 28.628 35.779
-4     Contiguous         Top 1%   1605  55 34.268 25.918 44.373
-5 Not contiguous   Below median 296412 164  0.553  0.472  0.645
-6 Not contiguous Median to 90th 229722 201  0.875  0.758  1.005
-7 Not contiguous   90th to 99th  44285 170  3.839  3.284  4.460
-8 Not contiguous         Top 1%   4384  54 12.318  9.266 16.041
+             geo           tier      n   k   rate     lo    hi
+1     Contiguous   Below median   3951 167 42.268 36.208 49.02
+2     Contiguous Median to 90th   8825 289 32.748 29.133 36.68
+3     Contiguous   90th to 99th   8455 291 34.418 30.634 38.53
+4     Contiguous         Top 1%   1350  41 30.370 21.881 40.98
+5 Not contiguous   Below median 237008 213  0.899  0.782  1.03
+6 Not contiguous Median to 90th 183942 195  1.060  0.917  1.22
+7 Not contiguous   90th to 99th  34917 169  4.840  4.139  5.63
+8 Not contiguous         Top 1%   3470  57 16.427 12.464 21.23
 
 (b) Non-contiguous pairs: onsets per 1,000 by capital-distance band (km) and exposure
-         band                        expo      n   k  rate    lo    hi
-1      <2,000       Above 90th percentile   8189  36 4.396 3.081 6.081
-2      <2,000 At or below 90th percentile  34343  66 1.922 1.487 2.444
-3 2,000-5,000       Above 90th percentile  13486  81 6.006 4.773 7.460
-4 2,000-5,000 At or below 90th percentile 113601  99 0.871 0.708 1.061
-5 5,000-9,000       Above 90th percentile  14960  58 3.877 2.945 5.009
-6 5,000-9,000 At or below 90th percentile 171526 104 0.606 0.495 0.735
-7      >9,000       Above 90th percentile  12034  49 4.072 3.014 5.380
-8      >9,000 At or below 90th percentile 206664  96 0.465 0.376 0.567
+         band                        expo      n   k  rate    lo     hi
+1      <2,000       Above 90th percentile   6799  39 5.736 4.082  7.833
+2      <2,000 At or below 90th percentile  31899  68 2.132 1.656  2.702
+3 2,000-5,000       Above 90th percentile  10350  84 8.116 6.479 10.038
+4 2,000-5,000 At or below 90th percentile  90121 104 1.154 0.943  1.398
+5 5,000-9,000       Above 90th percentile  11418  58 5.080 3.859  6.562
+6 5,000-9,000 At or below 90th percentile 131372 114 0.868 0.716  1.042
+7      >9,000       Above 90th percentile   9820  45 4.582 3.344  6.127
+8      >9,000 At or below 90th percentile 167558 122 0.728 0.605  0.869
 
-(c) Top 1% of the larger share among non-contiguous at-risk dyad-years: > 0.1862; 5749 dyad-years in 460 dyads; onsets 66
-Median capital distance: tail 5094 km; other non-contiguous 7560 km; tail above 5,000 km: 51%; other: 71%
-Dyads drawn: 460 of 460
+(c) Top 1% of the larger share among non-contiguous at-risk dyad-years: > 0.2071; 4594 dyad-years in 359 dyads; onsets 66
+Median capital distance: tail 4864 km; other non-contiguous 7636 km; tail above 5,000 km: 49%; other: 70%
+Dyads drawn: 359 of 359
 
 States by tail dyad-years:
                country_name   ny
-1  United States of America 2318
-2            United Kingdom 1130
-3                    France  701
-4                     Japan  599
-5   German Federal Republic  187
-6                 Australia  172
-7     Russia (Soviet Union)  166
-8                   Belgium  128
-9                    Brazil  127
-10                    China  123
-11                    Chile  109
-12              New Zealand  106
+1  United States of America 2090
+2            United Kingdom 1009
+3                    France  510
+4                     Japan  459
+5   German Federal Republic  179
+6     Russia (Soviet Union)  122
+7                  Colombia  119
+8                 Australia  118
+9                 Venezuela  117
+10                     Peru  115
+11       Dominican Republic  110
+12                   Brazil  110

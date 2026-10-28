@@ -1,46 +1,46 @@
 
 -- dispute onset | no alliance 
-  baseline                   larger  0.136 (se 0.027, p=0.0000) | events 1120 of 565832
-  + log trade volume         larger  0.078 (se 0.027, p=0.0037) | events 1120 of 565832
-  + decade FE                larger  0.126 (se 0.029, p=0.0000) | events 1120 of 565832
-  + volume + decade FE       larger  0.022 (se 0.029, p=0.4402) | events 1120 of 565832
-  contiguous dyads only      larger  0.021 (se 0.028, p=0.4438) | events 591 of 15340
+  baseline                   larger  0.112 (se 0.025, p=0.0000) | events 1211 of 462501
+  + log trade volume         larger  0.081 (se 0.026, p=0.0015) | events 1211 of 462501
+  + decade FE                larger  0.106 (se 0.027, p=0.0001) | events 1211 of 462501
+  + volume + decade FE       larger  0.011 (se 0.027, p=0.6806) | events 1211 of 462501
+  contiguous dyads only      larger  0.014 (se 0.029, p=0.6343) | events 619 of 15902
 
 -- dispute onset | alliance 
-  baseline                   larger  0.178 (se 0.030, p=0.0000) | events 321 of 43125
-  + log trade volume         larger  0.158 (se 0.033, p=0.0000) | events 321 of 43125
-  + decade FE                larger  0.182 (se 0.030, p=0.0000) | events 321 of 43125
-  + volume + decade FE       larger  0.158 (se 0.033, p=0.0000) | events 321 of 43125
-  contiguous dyads only      larger  0.100 (se 0.042, p=0.0173) | events 243 of 9548
+  baseline                   larger  0.176 (se 0.036, p=0.0000) | events 282 of 34187
+  + log trade volume         larger  0.171 (se 0.038, p=0.0000) | events 282 of 34187
+  + decade FE                larger  0.179 (se 0.037, p=0.0000) | events 282 of 34187
+  + volume + decade FE       larger  0.158 (se 0.039, p=0.0001) | events 282 of 34187
+  contiguous dyads only      larger  0.111 (se 0.048, p=0.0223) | events 210 of 7937
 
 -- dispute ending | no alliance 
-  baseline                   larger -0.011 (se 0.022, p=0.6180) | events 1051 of 2192
-  + log trade volume         larger -0.041 (se 0.023, p=0.0761) | events 1051 of 2192
-  + decade FE                larger -0.028 (se 0.022, p=0.2047) | events 1051 of 2192
-  + volume + decade FE       larger -0.051 (se 0.025, p=0.0441) | events 1051 of 2192
-  contiguous dyads only      larger -0.051 (se 0.033, p=0.1202) | events 554 of 1248
+  baseline                   larger -0.000 (se 0.022, p=0.9884) | events 1144 of 2326
+  + log trade volume         larger -0.027 (se 0.023, p=0.2404) | events 1144 of 2326
+  + decade FE                larger -0.017 (se 0.021, p=0.4110) | events 1144 of 2326
+  + volume + decade FE       larger -0.043 (se 0.024, p=0.0771) | events 1144 of 2326
+  contiguous dyads only      larger -0.053 (se 0.036, p=0.1399) | events 583 of 1297
 
 -- dispute ending | alliance 
-  baseline                   larger  0.084 (se 0.047, p=0.0737) | events 308 of 538
-  + log trade volume         larger  0.114 (se 0.055, p=0.0369) | events 308 of 538
-  + decade FE                larger  0.092 (se 0.050, p=0.0671) | events 308 of 538
-  + volume + decade FE       larger  0.126 (se 0.057, p=0.0282) | events 308 of 538
-  contiguous dyads only      larger  0.121 (se 0.073, p=0.0991) | events 240 of 426
+  baseline                   larger  0.131 (se 0.056, p=0.0202) | events 265 of 468
+  + log trade volume         larger  0.166 (se 0.065, p=0.0109) | events 265 of 468
+  + decade FE                larger  0.151 (se 0.062, p=0.0145) | events 265 of 468
+  + volume + decade FE       larger  0.182 (se 0.070, p=0.0092) | events 265 of 468
+  contiguous dyads only      larger  0.161 (se 0.089, p=0.0684) | events 205 of 369
 
 -- alliance formation | no dispute 
-  baseline                   larger  0.093 (se 0.025, p=0.0002) | events 900 of 565832
-  + log trade volume         larger  0.084 (se 0.026, p=0.0011) | events 900 of 565832
-  + decade FE                larger  0.103 (se 0.024, p=0.0000) | events 900 of 565832
-  + volume + decade FE       larger  0.073 (se 0.026, p=0.0046) | events 900 of 565832
-  contiguous dyads only      larger -0.039 (se 0.053, p=0.4611) | events 223 of 15340
+  baseline                   larger  0.074 (se 0.028, p=0.0084) | events 835 of 462501
+  + log trade volume         larger  0.098 (se 0.026, p=0.0002) | events 835 of 462501
+  + decade FE                larger  0.113 (se 0.028, p=0.0000) | events 835 of 462501
+  + volume + decade FE       larger  0.074 (se 0.030, p=0.0149) | events 835 of 462501
+  contiguous dyads only      larger -0.025 (se 0.057, p=0.6555) | events 207 of 15902
 
 -- alliance ending | no dispute 
-  baseline                   larger -0.117 (se 0.057, p=0.0410) | events 195 of 43125
-  + log trade volume         larger -0.097 (se 0.060, p=0.1068) | events 195 of 43125
-  + decade FE                larger -0.104 (se 0.053, p=0.0514) | events 195 of 43125
-  + volume + decade FE       larger -0.101 (se 0.057, p=0.0802) | events 195 of 43125
-  contiguous dyads only      larger -0.114 (se 0.086, p=0.1873) | events 65 of 9548
+  baseline                   larger -0.188 (se 0.062, p=0.0026) | events 191 of 34187
+  + log trade volume         larger -0.128 (se 0.059, p=0.0310) | events 191 of 34187
+  + decade FE                larger -0.181 (se 0.059, p=0.0023) | events 191 of 34187
+  + volume + decade FE       larger -0.186 (se 0.062, p=0.0028) | events 191 of 34187
+  contiguous dyads only      larger -0.122 (se 0.082, p=0.1348) | events 63 of 7937
 
 == Fully interacted pooled models: larger share x alliance in force (all covariates interacted) ==
-dispute onset    larger share, no alliance  0.136 (p=0.0000) | larger x alliance  0.042 (se 0.039, p=0.2791)
-dispute ending   larger share, no alliance -0.011 (p=0.6180) | larger x alliance  0.095 (se 0.050, p=0.0598)
+dispute onset    larger share, no alliance  0.112 (p=0.0000) | larger x alliance  0.064 (se 0.043, p=0.1348)
+dispute ending   larger share, no alliance -0.000 (p=0.9884) | larger x alliance  0.131 (se 0.058, p=0.0249)

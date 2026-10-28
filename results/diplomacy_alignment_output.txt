@@ -1,63 +1,63 @@
 == D1. DIPLOMATIC EXCHANGE ==
-Non-contiguous dyad-years 584069; with exchange 33.1%
+Non-contiguous dyad-years 472849; with exchange 39.8%
      band dyad_years share_DE_pct
-1    <p90     525662         27.6
-2 p90-p99      52566         81.5
-3   >=p99       5841         88.8
+1    <p90     425564         34.6
+2 p90-p99      42556         86.6
+3   >=p99       4729         90.9
         era  band dyad_years share_DE_pct
-1 1870-1913  <p90       6662         54.5
-2 1870-1913 >=p99        502         99.4
-3   1914-45  <p90      18224         42.3
-4   1914-45 >=p99        545         83.3
-5   1946-89  <p90     240227         32.2
-6   1946-89 >=p99       2979         88.7
-7 1990-2010  <p90     260549         21.7
-8 1990-2010 >=p99       1815         87.7
-Onset rate per 1,000 non-contiguous: DE=1 2.17, DE=0 0.48
-non-contiguous, all (DE not controlled)                      baseline     z_mx        0.248 [ 0.209,  0.287] | N=584069 events=607
-non-contiguous, no diplomatic exchange                       baseline     z_mx        0.235 [ 0.149,  0.320] | N=390846 events=188
-non-contiguous, diplomatic exchange                          baseline     z_mx        0.193 [ 0.149,  0.236] | N=193223 events=419
-non-contiguous, interaction share x DE                       baseline     DE          1.410 [ 1.165,  1.655] | N=584069 events=607
-non-contiguous, interaction share x DE                       baseline     zde        -0.076 [-0.148, -0.004] | N=584069 events=607
-all dyads, geography interaction (no DE)                     baseline     zi         -0.310 [-0.363, -0.256] | N=608957 events=1441
-all dyads, geography interaction with DE and DE x share      baseline     zi         -0.269 [-0.322, -0.216] | N=608957 events=1441
-non-contiguous, all (DE not controlled)                      +vol+decade  z_mx        0.076 [ 0.026,  0.125] | N=584069 events=607
-non-contiguous, no diplomatic exchange                       +vol+decade  z_mx        0.099 [-0.042,  0.240] | N=390846 events=188
-non-contiguous, diplomatic exchange                          +vol+decade  z_mx        0.067 [ 0.012,  0.122] | N=193223 events=419
-non-contiguous, interaction share x DE                       +vol+decade  DE          0.595 [ 0.323,  0.868] | N=584069 events=607
-non-contiguous, interaction share x DE                       +vol+decade  zde        -0.021 [-0.119,  0.076] | N=584069 events=607
-all dyads, geography interaction (no DE)                     +vol+decade  zi         -0.306 [-0.374, -0.237] | N=608957 events=1441
-all dyads, geography interaction with DE and DE x share      +vol+decade  zi         -0.275 [-0.339, -0.212] | N=608957 events=1441
+1 1870-1913  <p90      22399         31.7
+2 1870-1913 >=p99        717         96.9
+3   1914-45  <p90      35170         33.3
+4   1914-45 >=p99        704         86.5
+5   1946-89  <p90     207751         36.2
+6   1946-89 >=p99       2369         88.3
+7 1990-2010  <p90     160244         33.1
+8 1990-2010 >=p99        939         96.1
+Onset rate per 1,000 non-contiguous: DE=1 2.53, DE=0 0.66
+non-contiguous, all (DE not controlled)                      baseline     z_mx        0.210 [ 0.173,  0.248] | N=472849 events=664
+non-contiguous, no diplomatic exchange                       baseline     z_mx        0.179 [ 0.095,  0.262] | N=284605 events=188
+non-contiguous, diplomatic exchange                          baseline     z_mx        0.171 [ 0.131,  0.211] | N=188244 events=476
+non-contiguous, interaction share x DE                       baseline     DE          1.366 [ 1.120,  1.611] | N=472849 events=664
+non-contiguous, interaction share x DE                       baseline     zde        -0.068 [-0.142,  0.005] | N=472849 events=664
+all dyads, geography interaction (no DE)                     baseline     zi         -0.324 [-0.381, -0.266] | N=496688 events=1493
+all dyads, geography interaction with DE and DE x share      baseline     zi         -0.284 [-0.341, -0.228] | N=496688 events=1493
+non-contiguous, all (DE not controlled)                      +vol+decade  z_mx        0.064 [ 0.019,  0.109] | N=472849 events=664
+non-contiguous, no diplomatic exchange                       +vol+decade  z_mx        0.077 [-0.043,  0.197] | N=284605 events=188
+non-contiguous, diplomatic exchange                          +vol+decade  z_mx        0.045 [-0.004,  0.094] | N=188244 events=476
+non-contiguous, interaction share x DE                       +vol+decade  DE          0.918 [ 0.665,  1.171] | N=472849 events=664
+non-contiguous, interaction share x DE                       +vol+decade  zde        -0.050 [-0.142,  0.043] | N=472849 events=664
+all dyads, geography interaction (no DE)                     +vol+decade  zi         -0.311 [-0.379, -0.243] | N=496688 events=1493
+all dyads, geography interaction with DE and DE x share      +vol+decade  zi         -0.275 [-0.338, -0.211] | N=496688 events=1493
 
 == D2. UN VOTING ALIGNMENT (1946-2010) ==
-Non-contiguous 1946-2010 with ideal points: 507915 dyad-years, 351 onsets (of 429)
+Non-contiguous 1946-2010 with ideal points: 371067 dyad-years, 309 onsets (of 388)
      band dyad_years mean_distance median_distance
-1    <p90     459549         1.001           0.816
-2 p90-p99      43855         1.429           1.379
-3   >=p99       4511         1.869           1.908
-non-contiguous 1946-2010, no alignment control               baseline     z_mx        0.253 [ 0.212,  0.295] | N=507915 events=351
-non-contiguous 1946-2010, alignment control                  baseline     z_mx        0.179 [ 0.125,  0.232] | N=507915 events=351
-non-contiguous 1946-2010, alignment control                  baseline     z_ipd       0.748 [ 0.645,  0.852] | N=507915 events=351
-non-contiguous 1946-2010, interaction share x distance       baseline     z_mx        0.263 [ 0.210,  0.316] | N=507915 events=351
-non-contiguous 1946-2010, interaction share x distance       baseline     z_ipd       0.799 [ 0.699,  0.898] | N=507915 events=351
-non-contiguous 1946-2010, interaction share x distance       baseline     zip        -0.056 [-0.079, -0.032] | N=507915 events=351
-all dyads 1946-2010, geography interaction (no alignment)    baseline     zi         -0.301 [-0.368, -0.233] | N=527144 events=960
-all dyads 1946-2010, geography interaction with alignment    baseline     zi         -0.297 [-0.365, -0.229] | N=527144 events=960
-non-contiguous 1946-2010, no alignment control               +vol+decade  z_mx        0.100 [ 0.043,  0.157] | N=507915 events=351
-non-contiguous 1946-2010, alignment control                  +vol+decade  z_mx        0.082 [ 0.018,  0.145] | N=507915 events=351
-non-contiguous 1946-2010, alignment control                  +vol+decade  z_ipd       0.583 [ 0.466,  0.700] | N=507915 events=351
-non-contiguous 1946-2010, interaction share x distance       +vol+decade  z_mx        0.168 [ 0.102,  0.234] | N=507915 events=351
-non-contiguous 1946-2010, interaction share x distance       +vol+decade  z_ipd       0.654 [ 0.530,  0.777] | N=507915 events=351
-non-contiguous 1946-2010, interaction share x distance       +vol+decade  zip        -0.057 [-0.089, -0.025] | N=507915 events=351
-all dyads 1946-2010, geography interaction (no alignment)    +vol+decade  zi         -0.317 [-0.403, -0.231] | N=527144 events=960
-all dyads 1946-2010, geography interaction with alignment    +vol+decade  zi         -0.321 [-0.399, -0.242] | N=527144 events=960
+1    <p90     334541         1.081           0.916
+2 p90-p99      33422         1.445           1.380
+3   >=p99       3104         1.855           1.848
+non-contiguous 1946-2010, no alignment control               baseline     z_mx        0.240 [ 0.191,  0.290] | N=371067 events=309
+non-contiguous 1946-2010, alignment control                  baseline     z_mx        0.175 [ 0.117,  0.233] | N=371067 events=309
+non-contiguous 1946-2010, alignment control                  baseline     z_ipd       0.736 [ 0.612,  0.859] | N=371067 events=309
+non-contiguous 1946-2010, interaction share x distance       baseline     z_mx        0.268 [ 0.205,  0.330] | N=371067 events=309
+non-contiguous 1946-2010, interaction share x distance       baseline     z_ipd       0.787 [ 0.668,  0.905] | N=371067 events=309
+non-contiguous 1946-2010, interaction share x distance       baseline     zip        -0.063 [-0.092, -0.034] | N=371067 events=309
+all dyads 1946-2010, geography interaction (no alignment)    baseline     zi         -0.349 [-0.433, -0.265] | N=387113 events=845
+all dyads 1946-2010, geography interaction with alignment    baseline     zi         -0.347 [-0.429, -0.264] | N=387113 events=845
+non-contiguous 1946-2010, no alignment control               +vol+decade  z_mx        0.087 [ 0.021,  0.153] | N=371067 events=309
+non-contiguous 1946-2010, alignment control                  +vol+decade  z_mx        0.073 [ 0.003,  0.144] | N=371067 events=309
+non-contiguous 1946-2010, alignment control                  +vol+decade  z_ipd       0.555 [ 0.422,  0.687] | N=371067 events=309
+non-contiguous 1946-2010, interaction share x distance       +vol+decade  z_mx        0.157 [ 0.078,  0.235] | N=371067 events=309
+non-contiguous 1946-2010, interaction share x distance       +vol+decade  z_ipd       0.619 [ 0.477,  0.760] | N=371067 events=309
+non-contiguous 1946-2010, interaction share x distance       +vol+decade  zip        -0.060 [-0.100, -0.020] | N=371067 events=309
+all dyads 1946-2010, geography interaction (no alignment)    +vol+decade  zi         -0.350 [-0.452, -0.248] | N=387113 events=845
+all dyads 1946-2010, geography interaction with alignment    +vol+decade  zi         -0.356 [-0.450, -0.262] | N=387113 events=845
 
 == D3. HALVES OF THE PERIOD ==
-all dyads 1870-1945, geography interaction                   baseline     zi         -0.253 [-0.349, -0.156] | N=35555 events=325
-non-contiguous 1870-1945, larger share                       baseline     z_mx        0.144 [ 0.020,  0.268] | N=31372 events=178
-all dyads 1870-1945, geography interaction                   +vol+decade  zi         -0.231 [-0.343, -0.119] | N=35555 events=325
-non-contiguous 1870-1945, larger share                       +vol+decade  z_mx       -0.011 [-0.154,  0.132] | N=31372 events=178
-all dyads 1946-2010, geography interaction                   baseline     zi         -0.296 [-0.361, -0.231] | N=573402 events=1116
-non-contiguous 1946-2010, larger share                       baseline     z_mx        0.245 [ 0.206,  0.284] | N=552697 events=429
-all dyads 1946-2010, geography interaction                   +vol+decade  zi         -0.311 [-0.393, -0.229] | N=573402 events=1116
-non-contiguous 1946-2010, larger share                       +vol+decade  z_mx        0.095 [ 0.042,  0.148] | N=552697 events=429
+all dyads 1870-1945, geography interaction                   baseline     zi         -0.254 [-0.337, -0.170] | N=72078 events=496
+non-contiguous 1870-1945, larger share                       baseline     z_mx        0.144 [ 0.083,  0.204] | N=65591 events=276
+all dyads 1870-1945, geography interaction                   +vol+decade  zi         -0.277 [-0.379, -0.176] | N=72078 events=496
+non-contiguous 1870-1945, larger share                       +vol+decade  z_mx        0.000 [-0.075,  0.076] | N=65591 events=276
+all dyads 1946-2010, geography interaction                   baseline     zi         -0.330 [-0.411, -0.249] | N=424610 events=997
+non-contiguous 1946-2010, larger share                       baseline     z_mx        0.221 [ 0.175,  0.267] | N=407258 events=388
+all dyads 1946-2010, geography interaction                   +vol+decade  zi         -0.336 [-0.434, -0.238] | N=424610 events=997
+non-contiguous 1946-2010, larger share                       +vol+decade  z_mx        0.079 [ 0.021,  0.136] | N=407258 events=388

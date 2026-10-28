@@ -1,9 +1,9 @@
 FULL PANEL: contemporaneous (t) vs lagged (t-1) partner counts; dyad-clustered SEs
-dispute onset       baseline           partners at t   | larger share  0.146 [ 0.097,  0.196] | split  1.564 [ 1.368,  1.760] | common -0.059 [-0.138,  0.019] | N=608957 events=1441
-dispute onset       baseline           partners at t-1 | larger share  0.149 [ 0.099,  0.199] | split  1.295 [ 1.104,  1.486] | common -0.040 [-0.119,  0.039] | N=608957 events=1441
-dispute onset       + vol + decade     partners at t   | larger share  0.052 [ 0.003,  0.102] | split  1.601 [ 1.414,  1.789] | common -0.007 [-0.089,  0.075] | N=608957 events=1441
-dispute onset       + vol + decade     partners at t-1 | larger share  0.056 [ 0.006,  0.107] | split  1.330 [ 1.151,  1.510] | common  0.014 [-0.069,  0.097] | N=608957 events=1441
-alliance formation  baseline           partners at t   | larger share  0.093 [ 0.044,  0.141] | split  0.047 [-0.336,  0.431] | common  0.826 [ 0.603,  1.050] | N=565832 events=900
-alliance formation  baseline           partners at t-1 | larger share  0.096 [ 0.047,  0.145] | split  0.477 [ 0.169,  0.785] | common  0.450 [ 0.244,  0.655] | N=565832 events=900
-alliance formation  + vol + decade     partners at t   | larger share  0.073 [ 0.023,  0.124] | split -0.108 [-0.493,  0.276] | common  0.658 [ 0.422,  0.893] | N=565832 events=900
-alliance formation  + vol + decade     partners at t-1 | larger share  0.075 [ 0.024,  0.125] | split  0.361 [ 0.043,  0.679] | common  0.352 [ 0.117,  0.587] | N=565832 events=900
+dispute onset       baseline           partners at t   | larger share  0.118 [ 0.071,  0.165] | split  1.586 [ 1.388,  1.784] | common -0.083 [-0.168,  0.003] | N=496688 events=1493
+dispute onset       baseline           partners at t-1 | larger share  0.120 [ 0.071,  0.169] | split  1.305 [ 1.105,  1.504] | common -0.063 [-0.150,  0.024] | N=496688 events=1493
+dispute onset       + vol + decade     partners at t   | larger share  0.032 [-0.017,  0.081] | split  1.700 [ 1.506,  1.894] | common -0.011 [-0.104,  0.081] | N=496688 events=1493
+dispute onset       + vol + decade     partners at t-1 | larger share  0.037 [-0.014,  0.088] | split  1.385 [ 1.199,  1.572] | common  0.009 [-0.085,  0.104] | N=496688 events=1493
+alliance formation  baseline           partners at t   | larger share  0.074 [ 0.019,  0.129] | split -0.123 [-0.532,  0.287] | common  0.760 [ 0.531,  0.990] | N=462501 events=835
+alliance formation  baseline           partners at t-1 | larger share  0.077 [ 0.021,  0.133] | split  0.342 [ 0.013,  0.671] | common  0.403 [ 0.178,  0.628] | N=462501 events=835
+alliance formation  + vol + decade     partners at t   | larger share  0.074 [ 0.014,  0.133] | split -0.293 [-0.701,  0.115] | common  0.371 [ 0.118,  0.624] | N=462501 events=835
+alliance formation  + vol + decade     partners at t-1 | larger share  0.076 [ 0.016,  0.136] | split  0.227 [-0.108,  0.563] | common  0.085 [-0.177,  0.348] | N=462501 events=835
