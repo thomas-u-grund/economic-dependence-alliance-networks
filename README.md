@@ -39,29 +39,29 @@ Seeds are set where randomness is used (cross-validation, bootstrap). Running a 
 
 ## Where each table and figure comes from
 
-The principal population of the article is all dyad-years; the results for embedded pairs alone are in Appendix A.
+The article analyses all dyad-years. The Online Appendix has four parts: A, main estimates and alternative estimators; B, geography and robustness; C, highly exposed relationships; D, secondary outcomes.
 
 | Item in the article | Script | Output in `results/` |
 |---|---|---|
-| Appendix A, Table 2 (composition by embedding and alliance) | 04 | `triad_population_output.txt` |
-| Figure 1 (raw onset rates by exposure, contiguity and distance) and Figure A2 (map of the most exposed non-contiguous pairs), Section 5.1 and Appendix H | 40 | `geography_descriptives_output.txt`, `fig_geography_descriptives.*`, `fig_geography_map.*` |
-| Calendar-year effects, trimmed and spline checks on the geographical interaction, Section 5.3 and Appendix G | 41 | `geography_sensitivity_output.txt` |
-| Minimum-trade rule (none, 0.01% and 0.05% of recorded world trade), Section 4.3 and Appendix H | 42 | `trade_threshold_output.txt` |
-| Figure 2A (transitions, all dyad-years), Section 5.2, Appendix D | 24, 29, 30 | `population_selection_output.txt`, `fullpanel_shared_se_output.txt`, `fig_exposure_map_full.*` |
-| Figure 2B (severity), Sections 5.2 and 5.5, Appendices C and D | 27, 30 | `fullpanel_severity_initiator_output.txt` |
-| Table 1 and Section 5.3 (contiguity, distance), Appendix E | 26, 32, 33 | `fullpanel_within_het_output.txt`, `fullpanel_contiguity_implied_output.txt` |
-| Section 5.3, Appendix F (major powers, regions) | 22 | `distant_pairs_output.txt` |
-| Figure 3 (predicted onsets), Appendix G | 23, 30 | `effect_sizes_output.txt`, `predicted_onset_by_percentile.csv`, `fig_predicted_onset.*` |
-| Section 5.3 (colonial ties, territorial claims, issue in dispute, upper tail by era, coverage), Appendix H | 37 | `what_distinguishes_output.txt` |
-| Section 5.4 (longer-run within-pair exposure), Appendix E | 39 | `longer_run_exposure_output.txt` |
-| Section 5.3 (diplomatic exchange, UN voting alignment, halves of the period), Appendix H | 38 | `diplomacy_alignment_output.txt` |
-| Table 2 and Section 5.4 (within-between, fixed effects), Appendix E | 26, 31, 36 | `fullpanel_within_het_output.txt`, `fullpanel_dyad_fe_output.txt`, `within_between_by_contiguity_output.txt` |
+| Figure 1 (raw onset rates by exposure, contiguity and distance), Section 5.1; Figure A1 (map of the most exposed non-contiguous pairs), Appendix C | 40 | `geography_descriptives_output.txt`, `fig_geography_descriptives.*`, `fig_geography_map.*` |
+| Figure 2A (transitions), Section 5.2; Appendix A, Table 1 | 24, 30 | `population_selection_output.txt`, `fig_exposure_map_full.*` |
+| Appendix A, Table 2 (actor-overlap standard errors), Section 5.6 | 29 | `fullpanel_shared_se_output.txt`, `fullpanel_shared_se.csv` |
+| Table 1 (contiguity, with actor-overlap intervals), Section 5.3 | 32, 33 | `fullpanel_contiguity_implied_output.txt`, `geography_actor_overlap_output.txt` |
+| Table 2 and Section 5.4 (within-between, fixed effects, longer-run exposure); Appendix A, Table 3 | 26, 31, 36, 39 | `fullpanel_within_het_output.txt`, `fullpanel_dyad_fe_output.txt`, `within_between_by_contiguity_output.txt`, `longer_run_exposure_output.txt` |
 | Table 3 (controls) | 25 | `fullpanel_controls_output.txt` |
-| Appendix D, Table 12 (predictors, held-out comparisons) | 28 | `fullpanel_predictors_output.txt` |
-| Figure A1 (periods), Appendix D | 08, 17, 18 | `embedding_over_time_output.txt`, `era_bins_rates.csv`, `era_bins_shares.csv`, `fig_eras.*` |
-| Appendix A, Section 5.2 (embedded pairs only) | 04, 06, 10, 11, 15, 19 | `triad_population_output.txt`, `predictors_in_T_output.txt`, `negative_tie_resolution_output.txt`, `claims_table_output.txt`, `hostility_gradient_output.txt`, `within_between_output.txt` |
-| Appendix B, Section 5.6 (actor-overlap intervals) | 33 | `geography_actor_overlap_output.txt` |
-| Appendix H (upper tail of exposure) | 34 | `upper_tail_output.txt` |
+| Appendix A (embedded pairs: composition, transitions, embedding interaction, within-between) | 04, 19, 20 | `triad_population_output.txt`, `within_between_output.txt`, `heterogeneity_output.txt` |
+| Appendix B, Table 4 (interactions with contiguity, distance and embedding) | 20, 26, 32 | `heterogeneity_output.txt`, `fullpanel_within_het_output.txt`, `fullpanel_contiguity_implied_output.txt` |
+| Appendix B, Table 5 (major powers, regions), Section 5.3 | 22 | `distant_pairs_output.txt` |
+| Figure 3 (predicted onsets); Appendix B, Tables 6 and 7 (effect sizes, influence checks) | 23, 30 | `effect_sizes_output.txt`, `predicted_onset_by_percentile.csv`, `fig_predicted_onset.*` |
+| Appendix B (calendar-year effects, spline), Section 5.3 | 41 | `geography_sensitivity_output.txt` |
+| Appendix B (minimum-trade rule), Section 4.3 | 42 | `trade_threshold_output.txt` |
+| Appendix C, Tables 8 and 9 (upper tail, leave-outs), Section 5.3 | 34 | `upper_tail_output.txt` |
+| Appendix C, Tables 10 and 11 (colonial ties, territorial claims, issue in dispute) and coverage, Sections 5.3 and 5.6 | 37 | `what_distinguishes_output.txt` |
+| Appendix C, Table 12 (diplomatic exchange, UN voting, halves of the period), Section 5.3 | 38 | `diplomacy_alignment_output.txt` |
+| Figure 2B (severity) and Section 5.5; Appendix D, Tables 13 and 15 (severity, initiation) | 27, 30 | `fullpanel_severity_initiator_output.txt` |
+| Appendix D, Table 14 (seriousness of disputes that begin) | 26 | `fullpanel_within_het_output.txt` |
+
+Further analyses that informed the article but are not reported in the appendix (embedded pairs in detail, embedding over time, predictors of onset and ending, held-out comparisons) are produced by scripts 05-08, 10-18, 21 and 28; their output is in `results/` as well.
 
 ## Files not included
 
