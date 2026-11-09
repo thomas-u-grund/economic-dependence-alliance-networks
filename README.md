@@ -1,6 +1,6 @@
 # Replication materials
 
-*Economic Dependence and Interstate Conflict: Geography and Differences Between Relationships*
+*Trade Dependence and Conflict Beyond Neighbouring States*
 
 Data, commented scripts, codebook, and software output for every analysis in the article and its Online Appendix.
 
