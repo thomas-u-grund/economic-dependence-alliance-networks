@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------
-# 02: Build signed dyad-year panel from Correlates of War data, plus
+# build_data.R (optional): rebuilds data/tie_trade.csv.gz from raw/. Build signed dyad-year panel from Correlates of War data, plus
 # asymmetric trade-dependence and capability-asymmetry measures.
 #
 # Standard alliance/MID signed-tie construction; the trade block keeps
@@ -59,8 +59,6 @@ state_years <- states %>%
   rename(year = yrs) %>%
   distinct()
 
-write_csv(signed_ties, "data/signed_ties.csv")
-write_csv(state_years, "data/state_years.csv")
 
 # ------------------------------------------------------------------
 # 5. Trade dependence, kept ASYMMETRIC (1870-2014 coverage only, per
@@ -76,7 +74,7 @@ dyadic_trade <- read_csv(file.path(raw, "trade/COW_Trade_4.0/Dyadic_COW_4.0.csv"
 national_trade <- read_csv(file.path(raw, "trade/COW_Trade_4.0/National_COW_4.0.csv"), show_col_types = FALSE) %>%
   mutate(total_trade = imports + exports) %>%
   # a state-year can serve as a denominator if its recorded total trade is at least 0.01% of the total trade
-  # recorded by all states that year (relative threshold; the earlier US$50 million nominal cutoff is script 42's benchmark)
+  # recorded by all states that year (relative threshold; the earlier US$50 million nominal cutoff is compared in scripts/3_geography.R)
   group_by(year) %>% mutate(world_trade = sum(ifelse(total_trade > 0, total_trade, 0), na.rm = TRUE)) %>% ungroup() %>%
   mutate(total_trade = ifelse(is.na(total_trade) | total_trade <= 0 | total_trade < 1e-4 * world_trade, NA, total_trade)) %>%
   select(ccode, year, total_trade)
@@ -149,6 +147,6 @@ n_valid <- sum(!is.na(tie_trade$dep_asymmetry))
 cat("Dyad-years with valid asymmetry measure:", n_valid,
     sprintf("(%.1f%% of all trade dyad-years)\n", 100 * n_valid / nrow(tie_trade)))
 
-write_csv(tie_trade, "data/tie_trade.csv")
+write_csv(tie_trade, "data/tie_trade.csv.gz")
 
 cat("02_build_dyad_year.R complete.\n")

@@ -1,6 +1,10 @@
-# 27: FULL PANEL: severity of onsets by hostility level (risk set: no MID at t) with stacked difference tests, and initiation. Run with ALLIANCE_DEF=defense.
-suppressMessages({ library(dplyr); library(readr); library(tidyr); library(sandwich); library(lmtest) })
-src <- readLines("scripts/03_layered_hazards.R"); k <- grep("^sink\\(", src)[1]; eval(parse(text = src[1:(k - 1)]))
+# 6_severity_initiation: Section 5.5: severity of onsets and initiation (Appendix D, Tables 13 and 15).
+# Run from the repository root: Rscript scripts/6_severity_initiation.R (or run everything with Rscript run_all.R).
+# Each block below is self-contained and writes the results/ file named in its sink() call.
+source("scripts/setup.R")
+
+# ---- FULL PANEL: severity of onsets by hostility level (risk set: no MID at t) with stacked difference tests, and initiation.
+local({
 mid <- read_csv("raw/mids/dyadic_mid_4.03_update/dyadic_mid_4.03.csv", show_col_types = FALSE) %>% mutate(lo = pmin(statea, stateb), hi = pmax(statea, stateb), fatlev = ifelse(fatlev < 0, NA, fatlev)) %>%
   group_by(year, lo, hi) %>% summarise(h = max(hihost), fat = suppressWarnings(max(fatlev, na.rm = TRUE)), .groups = "drop") %>% mutate(fat = ifelse(is.infinite(fat), NA, fat))
 d <- d %>% left_join(mid, by = c("year", "lo", "hi")) %>% mutate(h = replace_na(h, 0), fat = replace_na(fat, 0))
@@ -27,3 +31,4 @@ cat(sprintf("\n== initiation: onsets %d, with a clear initiator and capability d
 x <- e %>% filter(!tied); b <- binom.test(sum(x$more_exp_init), nrow(x)); cat(sprintf("The MORE exposed state initiates in %d of %d (%.3f; 95%% CI %.3f-%.3f); the more exposed state is the weaker one in %.3f; the stronger state initiates in %.3f\n", sum(x$more_exp_init), nrow(x), b$estimate, b$conf.int[1], b$conf.int[2], mean(((x$shl > x$shh) == (x$cinc_lo < x$cinc_hi))), mean((e$cinc_lo > e$cinc_hi) == (e$lo_init == 1))))
 for (nm in c("exposure only", "+ capability")) { m <- if (nm == "exposure only") glm(lo_init ~ 0 + dshare, e, family = binomial) else glm(lo_init ~ 0 + dshare + dcinc, e, family = binomial); ct <- coeftest(m, vcov = vcovCL(m, cluster = e$dyad)); cat(sprintf("  %-14s", nm)); print(round(ct, 4)) }
 sink()
+})

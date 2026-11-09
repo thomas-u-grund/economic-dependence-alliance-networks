@@ -1,7 +1,0 @@
-population,step,est,se,pct_of_baseline,ci_lo,ci_hi
-DISPUTE ONSET in T: N=92500 events=669,pooled,0.153,0.025,100,0.104,0.202
-DISPUTE ONSET in T: N=92500 events=669,FE: dyad,0.103,0.039,67,0.027,0.179
-DISPUTE ONSET in T: N=92500 events=669,FE: dyad + decade,0.092,0.038,60,0.018,0.166
-DISPUTE ENDING in T: N=1636 events=793,pooled,0.045,0.028,100,-0.01,0.1
-DISPUTE ENDING in T: N=1636 events=793,FE: dyad,0.109,0.043,242,0.025,0.193
-DISPUTE ENDING in T: N=1636 events=793,FE: dyad + decade,0.111,0.049,247,0.015,0.207

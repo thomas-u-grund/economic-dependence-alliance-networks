@@ -1,5 +1,10 @@
-# 30: Figure 2 (coefficient map, full panel) and Figure 3 (predicted annual onset probability by exposure percentile, contiguous vs non-contiguous). Run with ALLIANCE_DEF=defense.
-suppressMessages({ library(dplyr); library(readr); library(tidyr); library(stringr); library(ggplot2); library(patchwork); library(sandwich) })
+# 7_figures: Figures 2 and 3. Reads output written by 2_main_estimates.R and 6_severity_initiation.R.
+# Run from the repository root: Rscript scripts/7_figures.R (or run everything with Rscript run_all.R).
+# Each block below is self-contained and writes the results/ file named in its sink() call.
+source("scripts/setup.R")
+
+# ---- Figure 2 (coefficient map, full panel) and Figure 3 (predicted annual onset probability by exposure percentile, contiguous vs non-contiguous).
+local({
 BLUE <- "#111111"; INK <- "#0b0b0b"; INK2 <- "#505050"; GREY <- "#8c8c8c"; GRID <- "#e6e6e6"
 th <- theme_minimal(base_size = 10, base_family = "Helvetica") + theme(panel.grid.minor = element_blank(), panel.grid.major.y = element_blank(), panel.grid.major.x = element_line(colour = GRID, linewidth = 0.3),
   axis.text = element_text(colour = INK2), axis.title = element_text(colour = INK2), plot.title = element_text(colour = INK, face = "bold", size = 10, hjust = 0), legend.position = "top", legend.justification = "left", legend.text = element_text(colour = INK2), plot.margin = margin(4, 8, 4, 4))
@@ -24,7 +29,6 @@ mk <- function(df, title, legend = FALSE) ggplot(df, aes(est, row, fill = kind, 
 fig2 <- mk(all %>% filter(panel == "A"), "A  Transitions, all dyad-years", TRUE) / (mk(all %>% filter(panel == "B"), "B  Severity of dispute onsets, by highest hostility level reached") + labs(x = "Larger trade share: log-odds per standard deviation (95% interval)")) + plot_layout(heights = c(4, 4))
 ggsave("results/fig_exposure_map_full.pdf", fig2, width = 6.4, height = 5.2, device = cairo_pdf); ggsave("results/fig_exposure_map_full.png", fig2, width = 6.4, height = 5.2, dpi = 300)
 # ---- Figure 3: predicted onset probability by percentile of the larger share
-source_lines <- readLines("scripts/03_layered_hazards.R"); k <- grep("^sink\\(", source_lines)[1]; eval(parse(text = source_lines[1:(k - 1)]))
 MU <- mean(d$mx); SDV <- sd(d$mx); x <- d %>% filter(m == 0) %>% mutate(onset_m = as.integer(m1 == 1), l_dur = log(dur_m))
 m <- glm(onset_m ~ z_mx * contig + z_mn + z_cap + l_dur + l_same + l_diff + z_vol, x, family = binomial); V <- vcovCL(m, cluster = x$dyad); b <- coef(m); ok <- names(b)[!is.na(b)]; V <- V[ok, ok]; b <- b[ok]
 base <- c(z_mn = mean(x$z_mn), z_cap = mean(x$z_cap), l_dur = mean(x$l_dur), l_same = mean(x$l_same), l_diff = mean(x$l_diff), z_vol = mean(x$z_vol))
@@ -39,3 +43,4 @@ fig3 <- ggplot(pred, aes(share, p, colour = grp, fill = grp, linetype = grp)) + 
   labs(x = "Larger trade share (log scale; percentile of dyad-years at risk)", y = "Predicted onsets per 1,000 dyad-years (log scale)") + th + theme(panel.grid.major.y = element_line(colour = GRID, linewidth = 0.3))
 ggsave("results/fig_predicted_onset.pdf", fig3, width = 6.4, height = 3.9, device = cairo_pdf); ggsave("results/fig_predicted_onset.png", fig3, width = 6.4, height = 3.9, dpi = 300)
 cat(sprintf("figures written; shares at p50/p90/p99: %s\n", paste(round(brk, 4), collapse = " ")))
+})

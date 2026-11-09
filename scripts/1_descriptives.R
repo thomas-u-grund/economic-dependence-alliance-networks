@@ -1,6 +1,10 @@
-# 40: Geographic descriptives (raw onset rates by exposure tier, contiguity and distance) and map of the highly exposed non-contiguous pairs. Run with ALLIANCE_DEF=defense.
-suppressMessages({ library(dplyr); library(readr); library(tidyr); library(ggplot2); library(patchwork); library(sf); library(cshapes); library(rnaturalearth) })
-src <- readLines("scripts/03_layered_hazards.R"); k <- grep("^sink\\(", src)[1]; eval(parse(text = src[1:(k - 1)]))
+# 1_descriptives: Figure 1 (onset rates by exposure, contiguity and distance) and Figure A1 (map of the most exposed non-contiguous pairs).
+# Run from the repository root: Rscript scripts/1_descriptives.R (or run everything with Rscript run_all.R).
+# Each block below is self-contained and writes the results/ file named in its sink() call.
+source("scripts/setup.R")
+
+# ---- Geographic descriptives (raw onset rates by exposure tier, contiguity and distance) and map of the highly exposed non-contiguous pairs.
+local({
 d <- d %>% mutate(onset_m = as.integer(m1 == 1)) %>% filter(year >= 1886, year <= 2011)
 yrs <- sort(unique(d$year))
 cap <- bind_rows(lapply(yrs, function(y) { m <- distmatrix(as.Date(paste0(y, "-01-01")), type = "capdist", useGW = FALSE); ids <- as.numeric(rownames(m)); ix <- which(upper.tri(m), arr.ind = TRUE)
@@ -47,3 +51,4 @@ mp <- ggplot() + geom_sf(data = wd, fill = "#f2f2f2", colour = "#cccccc", linewi
   scale_linewidth(range = c(0.15, 1.4), guide = "none") + scale_size(range = c(0.6, 4.5), guide = "none") + theme_void(base_family = "Helvetica") + theme(plot.margin = margin(2, 2, 2, 2), plot.background = element_rect(fill = "white", colour = NA))
 ggsave("results/fig_geography_map.png", mp, width = 6.8, height = 3.6, dpi = 300, bg = "white"); ggsave("results/fig_geography_map.pdf", mp, width = 6.8, height = 3.8, device = cairo_pdf)
 sink()
+})

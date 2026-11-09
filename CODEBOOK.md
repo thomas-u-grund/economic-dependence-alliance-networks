@@ -12,15 +12,15 @@
 ## 2. Built data files (`data/`)
 | File | Content |
 |---|---|
-| `tie_trade.csv(.gz)` | One row per dyad-year (1870-2011) with trade and capability measures: `ccode_low`, `ccode_high` (COW codes, low < high), `trade_share_low`, `trade_share_high` (share of each state's own total trade that is with the partner; missing if the state's total trade is under 0.01% of all trade recorded that year (relative threshold; script 42 compares it with a US$50 million nominal cutoff, no minimum and 0.05%) or if the dyadic flow exceeds either state's total), `total_dyadic_trade` (US$ millions), `log_trade_volume`, `cinc_low`, `cinc_high`, `cap_asymmetry` (absolute difference in log CINC), `dep_exposed`, `dep_sheltered`, `dep_asymmetry` (larger share, smaller share, their difference), and further transformations. |
+| `tie_trade.csv.gz` | One row per dyad-year (1870-2011) with trade and capability measures: `ccode_low`, `ccode_high` (COW codes, low < high), `trade_share_low`, `trade_share_high` (share of each state's own total trade that is with the partner; missing if the state's total trade is under 0.01% of all trade recorded that year (relative threshold; `scripts/3_geography.R` compares it with a US$50 million nominal cutoff, no minimum and 0.05%) or if the dyadic flow exceeds either state's total), `total_dyadic_trade` (US$ millions), `log_trade_volume`, `cinc_low`, `cinc_high`, `cap_asymmetry` (absolute difference in log CINC), `dep_exposed`, `dep_sheltered`, `dep_asymmetry` (larger share, smaller share, their difference), and further transformations. |
 
-## 3. Analysis panel (built in memory by scripts 03 to 40)
+## 3. Analysis panel (built in memory by `scripts/panel.R`)
 One row per dyad-year with trade data, 1870-2010 (611,687 rows). Defence-pact definition (`ALLIANCE_DEF=defense`).
 | Variable | Definition |
 |---|---|
 | `year` | Calendar year t |
 | `lo`, `hi`, `dyad` | COW codes of the two states (lo < hi); dyad identifier "lo hi" (clustering unit) |
-| `a` | 1 if one defence pact covers both states in year t (all four commitment types if `ALLIANCE_DEF` is unset) |
+| `a` | 1 if one defence pact covers both states in year t (all four commitment types if `ALLIANCE_DEF=all`) |
 | `m` | 1 if the two states are in a militarised dispute of hostility 3 or higher in year t |
 | `a1`, `m1` | Same, in year t+1 (the panel keeps dyad-years observed in t+1) |
 | `contig` | 1 if directly contiguous by land or water in year t |
@@ -34,7 +34,7 @@ One row per dyad-year with trade data, 1870-2010 (611,687 rows). Defence-pact de
 | `z_mx`, `z_mn`, `z_cap`, `z_vol` | `mx`, `mn`, `cap`, `lvol` standardised over the whole panel (mean 0, SD 1) |
 | `onset_m`, `end_m`, `form_a`, `end_a` | Transition indicators: dispute begins (`m == 0` and `m1 == 1`), dispute ends (`m == 1`, `m1 == 0`), alliance forms (`a == 0`, `a1 == 1`), alliance ends (`a == 1`, `a1 == 0`) |
 | `decade` | Decade factor |
-Scripts 10 and 15-16 add: `n_pp` (common allies), `n_nn` (common enemies), `capdist` (capital distance, CShapes, km), `pact` (largest covering defence pact of five or more members, otherwise "other"/"none"), `h`/`fat` (highest hostility and fatality level in the dyad-year), `init` (initiating state).
+Some analyses add variables where they need them, among them `capdist` (capital distance, CShapes, km), `pact` (largest covering defence pact of five or more members), `h`/`fat` (highest hostility and fatality level in the dyad-year) and `init` (initiating state); each is defined in the script that creates it.
 
 ## 4. Output files (`results/`)
-`*_output.txt` are the printed output of the script that produces them (see the README) (captured with `sink`); `*.csv` are tables behind figures and appendix tables; `*.png/.pdf` are figures; `*.rds` are saved model objects. See README for the map from article items to files.
+`*_output.txt` are the printed output of the script that produces them (see the README) (captured with `sink`); `*.csv` are tables behind figures and appendix tables; `*.png/.pdf` are figures. See README for the map from article items to files.
